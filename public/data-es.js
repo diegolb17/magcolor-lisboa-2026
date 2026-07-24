@@ -19,7 +19,7 @@ const demos = [
   { flag: "🇧🇷", country: "Brasil", name: "Eliane Pinto", img: "eliane-pinto", spec: "Microblading" },
   { flag: "🇧🇷", country: "Brasil", name: "Adriana Matsuoka", img: "adriana-matsuoka", spec: "Capilar" },
   { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "andreia-guerreiro", spec: "Demostración" },
-  { flag: "🇨🇴🇪🇸", country: "Colombia/España", name: "Luis Carlos Ballestas", spec: "Barba" }
+  { flag: "🇨🇴🇪🇸", country: "Colombia/España", name: "Luis Carlos Ballestas", img: "luis-carlos-ballestas", spec: "Barba" }
 ];
 
 // === TIERS ===
@@ -48,10 +48,10 @@ const day1 = [
 const day2 = [
   { t:"08:30", d:"60 min", star:true, title:"Saxofonista en Vivo", desc:"Saxofonista en directo. Ambiente festivo premium. Dress code: NEGRO Y DORADO." },
   { t:"09:15", d:"3 min", star:true, title:"Vídeo Cuenta Regresiva + Vídeo MAG Color", desc:"El Día 2 arranca con la misma energía del Día 1." },
-  { t:"09:28", d:"57 min", star:true, title:"Pigmentologia e Colorimetria · Andrea Martins · 🇧🇷", desc:"La ponencia de mayor peso académico del congreso." },
+  { t:"09:28", d:"57 min", star:true, title:"Pigmentología y Colorimetría · Andrea Martins · 🇧🇷", desc:"La ponencia de mayor peso académico del congreso." },
   { t:"10:25", d:"50 min", title:"Aspectos Jurídicos · Albert Grau · 🇪🇸", desc:"Información esencial para el mercado europeo." },
-  { t:"11:15", d:"50 min", title:"Camuflagem de Estrias · Sand Guimarães · 🇧🇷", desc:"Técnica avanzada de camuflaje." },
-  { t:"12:05", d:"50 min", title:"Reconstrução de Areola Mamaria · Isa Cercós · 🇪🇸", desc:"Sesión de alta especialización médica." },
+  { t:"11:15", d:"50 min", title:"Camuflaje de Estrías · Sand Guimarães · 🇧🇷", desc:"Técnica avanzada de camuflaje." },
+  { t:"12:05", d:"50 min", title:"Reconstrucción de Areola Mamaria · Isa Cercós · 🇪🇸", desc:"Sesión de alta especialización médica." },
   { t:"12:55", d:"60 min", title:"Almuerzo de networking", desc:"Lunch ligero." },
   { t:"13:55", d:"50 min", title:"Reconstrução de Cejas · Marcela Macedo · 🇧🇷", desc:"Técnica avanzada de reconstrucción." },
   { t:"14:45", d:"50 min", title:"Láser en Micropigmentación · Keli Ribeiro · 🇧🇷", desc:"Tecnología láser aplicada." },

@@ -17,9 +17,9 @@ const speakers = [
 
 const demos = [
   { flag: "🇧🇷", country: "Brasil", name: "Eliane Pinto", img: "eliane-pinto", spec: "Microblading" },
-  { flag: "🇧🇷", country: "Portugal", name: "Andreia Guerreiro", img: "andreia-guerreiro", spec: "Demonstração" },
+  { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "andreia-guerreiro", spec: "Demonstração" },
   { flag: "🇧🇷", country: "Brasil", name: "Adriana Matsuoka", img: "adriana-matsuoka", spec: "Capilar" },
-  { flag: "🇨🇴🇪🇸", country: "Colômbia/Espanha", name: "Luis Carlos Ballestas", spec: "Barba" }
+  { flag: "🇨🇴🇪🇸", country: "Colômbia/Espanha", name: "Luis Carlos Ballestas", img: "luis-carlos-ballestas", spec: "Barba" }
 ];
 
 // === TIERS ===

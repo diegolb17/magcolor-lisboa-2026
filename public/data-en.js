@@ -19,7 +19,7 @@ const demos = [
   { flag: "🇧🇷", country: "Brazil", name: "Eliane Pinto", img: "eliane-pinto", spec: "Microblading" },
   { flag: "🇧🇷", country: "Brazil", name: "Adriana Matsuoka", img: "adriana-matsuoka", spec: "Capillary" },
   { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "andreia-guerreiro", spec: "Demo" },
-  { flag: "🇨🇴🇪🇸", country: "Colombia/Spain", name: "Luis Carlos Ballestas", spec: "Beard" }
+  { flag: "🇨🇴🇪🇸", country: "Colombia/Spain", name: "Luis Carlos Ballestas", img: "luis-carlos-ballestas", spec: "Beard" }
 ];
 
 // === TIERS ===
@@ -48,10 +48,10 @@ const day1 = [
 const day2 = [
   { t:"08:30", d:"60 min", star:true, title:"Live Saxophonist", desc:"Live saxophonist. Premium atmosphere. Dress code: BLACK AND GOLD." },
   { t:"09:15", d:"3 min", star:true, title:"Countdown Video + MAG Color Video", desc:"Day 2 starts with the same energy as Day 1." },
-  { t:"09:28", d:"57 min", star:true, title:"Pigmentologia e Colorimetria · Andrea Martins · 🇧🇷", desc:"The most academically significant lecture of the congress." },
+  { t:"09:28", d:"57 min", star:true, title:"Pigmentology & Colorimetry · Andrea Martins · 🇧🇷", desc:"The most academically significant lecture of the congress." },
   { t:"10:25", d:"50 min", title:"Aspectos Jurídicos · Albert Grau · 🇪🇸", desc:"Essential information for the European market." },
-  { t:"11:15", d:"50 min", title:"Camuflagem de Estrias · Sand Guimarães · 🇧🇷", desc:"Advanced camouflage technique." },
-  { t:"12:05", d:"50 min", title:"Reconstrução de Areola Mamaria · Isa Cercós · 🇪🇸", desc:"Highly specialized medical session." },
+  { t:"11:15", d:"50 min", title:"Stretch Mark Camouflage · Sand Guimarães · 🇧🇷", desc:"Advanced camouflage technique." },
+  { t:"12:05", d:"50 min", title:"Areola Reconstruction · Isa Cercós · 🇪🇸", desc:"Highly specialized medical session." },
   { t:"12:55", d:"60 min", title:"Networking Lunch", desc:"Lunch ligero." },
   { t:"13:55", d:"50 min", title:"Reconstrução de Cejas · Marcela Macedo · 🇧🇷", desc:"Advanced reconstruction technique." },
   { t:"14:45", d:"50 min", title:"Láser en Micropigmentación · Keli Ribeiro · 🇧🇷", desc:"Applied laser technology." },

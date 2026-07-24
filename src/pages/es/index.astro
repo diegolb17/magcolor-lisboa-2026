@@ -37,7 +37,8 @@ import '../../styles/global.css';
         <a href="/es/entradas" class="nav-item">Entradas</a>
         <a href="/es/faq" class="nav-item">FAQ</a>
       </nav>
-      <div class="hdr-right">
+      <button class="hamburger" onclick="this.parentElement.querySelector(`.nav`).classList.toggle(`open`)"><span></span></button>
+<div class="hdr-right">
         <div class="lang">
         <a href="#" data-lang="pt" class="lang-pill">PT</a>
         <a href="#" data-lang="es" class="lang-pill active">ES</a>
