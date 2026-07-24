@@ -5,7 +5,8 @@ import '../../styles/global.css';
 <script>document.querySelectorAll('[data-fade]').forEach(el=>{new IntersectionObserver((e,o)=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('is-visible');o.unobserve(x.target)}})},{threshold:0.12}).observe(el)});document.querySelectorAll('[data-lang]').forEach(el=>{el.addEventListener('click',(e)=>{e.preventDefault();const l=el.dataset.lang;const p=window.location.pathname.replace(/^\/(pt|es|en)\//,'/'+l+'/').replace(/^\/(pt|es|en)$/,'/'+l);window.location.href=p})})</script>
 <article class="page">
   <div class="pt-flag"></div>
-<header class="hdr"><div class="hdr-inner"><a href="/en/"><img src="/logo.png" class="logo" alt="MAGColor"></a><nav class="nav"><a href="/en/" class="nav-item">Home</a><a href="/en/ponentes" class="nav-item">Speakers</a><a href="/en/programa" class="nav-item active">Program</a><a href="/en/entradas" class="nav-item">Tickets</a><a href="/en/faq" class="nav-item">FAQ</a></nav><button class="hamburger" onclick="this.parentElement.querySelector(`.nav`).classList.toggle(`open`)"><span></span></button>
+<header class="hdr"><div class="hdr-inner"><a href="/en/"><img src="/logo.png" class="logo" alt="MAGColor"></a><nav class="nav"><a href="/en/" class="nav-item">Home</a><a href="/en/ponentes" class="nav-item">Speakers</a><a href="/en/programa" class="nav-item active">Program</a><a href="/en/entradas" class="nav-item">Tickets</a><a href="/en/patrocinadores" class="nav-item">Sponsors</a>
+<a href="/en/faq" class="nav-item">FAQ</a></nav><button class="hamburger" onclick="this.parentElement.querySelector(`.nav`).classList.toggle(`open`)"><span></span></button>
 <div class="hdr-right"><div class="lang"><a href="#" data-lang="pt" class="lang-pill">PT</a><a href="#" data-lang="es" class="lang-pill">ES</a><a href="#" data-lang="en" class="lang-pill active">EN</a></div><a href="/en/entradas" class="btn btn-gold btn-sm">Reserve My Spot</a></div></div></header>
 <section class="sec" style="padding-top:140px"><div class="wrap" data-fade>
 <div class="center-block" style="margin-bottom:48px"><div class="badge">PROGRAM</div><h2 class="h2">Event Program</h2></div>
@@ -15,7 +16,7 @@ import '../../styles/global.css';
         <button class="tab" onclick="switchTab('dn')">Divine Night · Oct 23</button>
       </div><div id="tl-d1"></div><div id="tl-d2" style="display:none"></div><div id="tl-dn" style="display:none"></div>
 </div></section>
-<a class="wa-float" href="https://wa.me/34696808098" target="_blank" rel="noreferrer" aria-label="WhatsApp"><span class="wa-dot"></span></a>
+<a class="wa-float" href="https://wa.me/34696808098?text=Hello,%20I%20want%20to%20buy%20tickets%20for%20MAG%20Color%20Experience%20Lisbon%202026" target="_blank" rel="noreferrer" aria-label="WhatsApp"><span class="wa-dot"></span></a>
 <footer class="footer"><img src="/logo-horizontal.jpg" class="footer-logo" alt="MAGColor Experience Lisboa"><p>MAGColor Experience Lisbon 2026</p><p>Event organized by Instituto Miriam Alcántara</p><p>WhatsApp inquiries: +34 696 808 098</p><p>© 2026 MAGColor Experience Lisbon. All rights reserved.</p></footer>
 </article>
 <script is:inline src="/data-en.js"></script>

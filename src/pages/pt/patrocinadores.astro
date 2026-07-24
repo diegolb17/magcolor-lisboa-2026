@@ -1,0 +1,22 @@
+---
+import '../../styles/global.css';
+---
+<!DOCTYPE html><html lang="pt"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Patrocinadores — MAGColor Experience Lisboa 2026</title></head><body>
+<script>
+document.querySelectorAll('[data-fade]').forEach(el=>{new IntersectionObserver((e,o)=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('is-visible');o.unobserve(x.target)}})},{threshold:0.12}).observe(el)});
+document.querySelectorAll('[data-lang]').forEach(el=>{el.addEventListener('click',(e)=>{e.preventDefault();const l=el.dataset.lang;const p=window.location.pathname.replace(/^\/(pt|es|en)\//,'/'+l+'/').replace(/^\/(pt|es|en)\/*$/,'/'+l);window.location.href=p})});
+</script>
+<article class="page"><div class="pt-flag"></div>
+<header class="hdr"><div class="hdr-inner"><a href="/pt/"><img src="/logo.png" class="logo" alt="MAGColor"></a><button class="hamburger" onclick="this.parentElement.querySelector('.nav').classList.toggle('open')"><span></span></button><nav class="nav"><a href="/pt/" class="nav-item">Início</a><a href="/pt/ponentes" class="nav-item">Palestrantes</a><a href="/pt/programa" class="nav-item">Programa</a><a href="/pt/entradas" class="nav-item">Ingressos</a><a href="/pt/patrocinadores" class="nav-item active">Patrocinadores</a><a href="/pt/faq" class="nav-item">FAQ</a></nav><div class="hdr-right"><div class="lang"><a href="#" data-lang="pt" class="lang-pill active">PT</a><a href="#" data-lang="es" class="lang-pill">ES</a><a href="#" data-lang="en" class="lang-pill">EN</a></div><a href="/pt/entradas" class="btn btn-gold btn-sm">Garantir minha entrada</a></div></div></header>
+<section class="sec" style="padding-top:140px"><div class="wrap" data-fade>
+<div class="center-block" style="margin-bottom:48px"><div class="badge">PATROCINADORES</div><h2 class="h2">Empresas que tornam o MAGColor Experience possível</h2></div>
+<div class="grid-2" style="max-width:700px;margin:0 auto">
+  <div class="card" style="padding:48px;display:flex;align-items:center;justify-content:center"><img src="/assets/sponsors/sponsor-1.jpg" alt="Patrocinador" style="max-width:100%;max-height:120px;object-fit:contain;filter:brightness(0.9)"></div>
+  <div class="card" style="padding:48px;display:flex;align-items:center;justify-content:center"><img src="/assets/sponsors/sponsor-2.jpg" alt="Patrocinador" style="max-width:100%;max-height:120px;object-fit:contain;filter:brightness(0.9)"></div>
+</div>
+<div style="text-align:center;margin-top:64px"><a href="https://wa.me/34696808098?text=Ol%C3%A1,%20quero%20ser%20patrocinador%20do%20MAG%20Color%20Lisboa%202026" class="btn btn-outline btn-lg">Quer ser um patrocinador? Fale conosco</a></div>
+</div></section>
+<a class="wa-float" href="https://wa.me/34696808098?text=Ol%C3%A1,%20desejo%20adquirir%20entradas%20ao%20MAG%20Color%20Experience%20Lisboa%202026" target="_blank" rel="noreferrer" aria-label="WhatsApp"><span class="wa-dot"></span></a>
+<footer class="footer"><img src="/logo-horizontal.jpg" class="footer-logo" alt="MAGColor Experience Lisboa"><p>MAGColor Experience Lisboa 2026</p><p>Evento organizado por Instituto Miriam Alcántara</p><p>Consultas pelo WhatsApp: +34 696 808 098</p><p>© 2026 MAGColor Experience Lisboa. Todos os direitos reservados.</p></footer>
+</article>
+</body></html>
