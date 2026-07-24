@@ -1,0 +1,159 @@
+---
+import '../../styles/global.css';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAGColor Experience Lisbon 2026</title>
+</head>
+<body>
+<script>
+  const target = new Date('2026-10-24T09:00:00+01:00').getTime();
+  function updateCountdown() {
+    const now = Date.now(); const diff = Math.max(0, target - now);
+    ['cd-days','cd-hours','cd-mins','cd-secs'].forEach((id, i) => {
+      const v = [Math.floor(diff/86400000), Math.floor((diff/3600000)%24), Math.floor((diff/60000)%60), Math.floor((diff/1000)%60)][i];
+      const el = document.getElementById(id); if (el) el.textContent = String(v).padStart(2, '0');
+    });
+  }
+  updateCountdown(); setInterval(updateCountdown, 1000);
+  document.querySelectorAll('[data-fade]').forEach(el => {
+    new IntersectionObserver((e,o) => { e.forEach(x => { if (x.isIntersecting) { x.target.classList.add('is-visible'); o.unobserve(x.target); } }); }, { threshold: 0.12 }).observe(el);
+  });
+</script>
+
+<article class="page">
+  <div class="pt-flag"></div>
+  <header class="hdr">
+    <div class="hdr-inner">
+      <a href="/en/"><img src="/logo.png" class="logo" alt="MAGColor"></a>
+      <nav class="nav">
+        <a href="/en/" class="nav-item active">Home</a>
+        <a href="/en/ponentes" class="nav-item">Speakers</a>
+        <a href="/en/programa" class="nav-item">Program</a>
+        <a href="/en/entradas" class="nav-item">Tickets</a>
+        <a href="/en/faq" class="nav-item">FAQ</a>
+      </nav>
+      <div class="hdr-right">
+        <div class="lang">
+        <a href="#" data-lang="pt" class="lang-pill">PT</a>
+        <a href="#" data-lang="es" class="lang-pill">ES</a>
+        <a href="#" data-lang="en" class="lang-pill active">EN</a>
+      </div>
+        <a href="/en/entradas" class="btn btn-gold btn-sm">Reserve My Spot</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="hero-bg"></div>
+    <div class="hero-inner" data-fade>
+      <div class="badge-gold">FIRST EDITION · LISBON 2026</div>
+      <h1 class="hero-title"><span class="grad">MAGColor Experience</span><span class="hero-sub-title">Lisbon 2026</span></h1>
+      <p class="hero-desc">The official launch of MAG Color in Europe. An intensive experience for professionals who want to raise their standards, connect with references from Brazil, Portugal and Spain and play at another level. Event with simultaneous Portuguese-Spanish translation.</p>
+      <div class="countdown">
+        <div class="cd-box"><div class="cd-num" id="cd-days">00</div><div class="cd-lbl">Days</div></div>
+        <div class="cd-box"><div class="cd-num" id="cd-hours">00</div><div class="cd-lbl">Hrs</div></div>
+        <div class="cd-box"><div class="cd-num" id="cd-mins">00</div><div class="cd-lbl">Min</div></div>
+        <div class="cd-box"><div class="cd-num" id="cd-secs">00</div><div class="cd-lbl">Sec</div></div>
+      </div>
+      <div class="hero-date">October 24 & 25, 2026</div>
+      <div class="hero-place">HF Fénix Lisbon Hotel · Portugal</div>
+      <div class="badge-soft">Championship · International Judges</div>
+      <div class="hero-cta">
+        <a href="/en/entradas" class="btn btn-gold">Reserve My Spot</a>
+        <a href="/en/entradas" class="btn btn-outline">View Ticket Options</a>
+      </div>
+      <div class="hero-fine">Limited spots · Basic, Gold & Divine VIP</div>
+    </div>
+  </section>
+
+  <section class="sec"><div class="wrap" data-fade><div class="grid-2"><div class="card row"><span class="big-num">01</span><div><h3 class="card-title">2 days of event</h3><p class="card-desc">Training, lectures, demos and networking in Lisbon.</p></div></div><div class="card row"><span class="big-num">02</span><div><h3 class="card-title">Professional Championship</h3><p class="card-desc">Hair by hair, Powder Brows & Lips categories with international judges.</p></div></div><div class="card row"><span class="big-num">03</span><div><h3 class="card-title">White Gala Dinner</h3><p class="card-desc">Dinner, certificates, trophies and recognition.</p></div></div><div class="card row"><span class="big-num">04</span><div><h3 class="card-title">Divine VIP</h3><p class="card-desc">Only 10 spots with private dinner, accommodation & exclusive experience.</p></div></div></div></div></section>
+
+  <section class="sec alt" style="position:relative">
+    <div style="position:absolute;inset:0;display:flex;opacity:0.08;pointer-events:none;overflow:hidden">
+      <img src="/cejas.jpg" alt="" style="width:33.33%;height:100%;object-fit:cover">
+      <img src="/ojos.jpg" alt="" style="width:33.34%;height:100%;object-fit:cover">
+      <img src="/labios.jpg" alt="" style="width:33.33%;height:100%;object-fit:cover">
+    </div>
+    <div class="wrap" data-fade style="position:relative;z-index:1"><div class="center-block">
+    <div class="badge">FIRST EDITION</div>
+    <h2 class="h2">The official entry of MAG Color into Europe</h2>
+    <p class="lede">This is the first edition of MAGColor Experience Lisbon. A gathering created to mark MAG Color's official entry into Europe and bring together professionals who want to elevate their technical level, broaden their vision and be part of a new international micropigmentation community.</p>
+    <a href="/en/entradas" class="btn btn-gold">Be Part of the First Edition</a>
+  </div></div></section>
+
+  <section class="sec"><div class="wrap" data-fade>
+    <div class="center-block" style="margin-bottom:48px"><div class="badge">WHY ATTEND</div><h2 class="h2">An experience that can mark a before and after in your career</h2><p class="sub-tert">If you are a micropigmentation artist, PMU professional, trainer or advanced aesthetics specialist who wants to grow within the premium beauty industry, this event is for you.</p></div>
+    <div class="grid-2">
+      <div class="card row"><span class="big-num">01</span><div><h3 class="card-title">Advanced Technique</h3><p class="card-desc">Learn from international professionals who work with precision and an updated vision of aesthetic, capillary and paramedical micropigmentation.</p></div></div>
+      <div class="card row"><span class="big-num">02</span><div><h3 class="card-title">Professional Prestige</h3><p class="card-desc">Experience an event where competition, international judges, trophies and the gala transform the experience into real recognition.</p></div></div>
+      <div class="card row"><span class="big-num">03</span><div><h3 class="card-title">International Networking</h3><p class="card-desc">Connect with artists, trainers, speakers, judges and brands from Brazil, Portugal and Spain who share your level of commitment.</p></div></div>
+      <div class="card row"><span class="big-num">04</span><div><h3 class="card-title">Business Vision</h3><p class="card-desc">Broaden your professional vision, elevate your positioning and understand how to grow in an increasingly competitive industry.</p></div></div>
+    </div>
+  </div></section>
+
+  <section class="sec alt"><div class="wrap" data-fade><div class="grid-split">
+    <div>
+      <div class="badge">ARTISTIC DIRECTION</div><h2 class="h2">Under the direction of Miriam Alcántara</h2>
+      <p class="body">Miriam Alcántara is one of the most recognized international references in advanced and paramedical micropigmentation in Europe. With over 30 years of experience, she has trained more than 30,000 students, establishing herself as a mentor, trainer and opinion leader in the industry. Specialized in aesthetic, capillary and paramedical micropigmentation, she works with high-level clinics and medical centers developing areola reconstruction treatments, scars and advanced solutions for oncological and aesthetic patients.</p>
+      <div class="quote">"Her vision goes beyond teaching a technique: she leads a movement to transform micropigmentation artists into more solid, visible and recognized professionals within premium beauty."</div>
+      <div class="stats"><div class="stat"><div class="stat-num">+30</div><div class="stat-lbl">years of experience</div></div><div class="stat"><div class="stat-num">+30,000</div><div class="stat-lbl">students trained</div></div></div>
+    </div>
+    <div class="miriam-photo"><img src="/assets/speakers/miriam-alcantara.jpg" alt="Miriam Alcántara" style="width:100%;height:100%;object-fit:cover;border-radius:20px"></div>
+  </div></div></section>
+
+  <!-- DECORATIVE STRIP -->
+  <div style="width:100%;display:flex;overflow:hidden;opacity:0.1;pointer-events:none;border-top:1px solid var(--bd);border-bottom:1px solid var(--bd)">
+    <img src="/cejas.jpg" alt="" style="width:33.33%;height:200px;object-fit:cover">
+    <img src="/ojos.jpg" alt="" style="width:33.34%;height:200px;object-fit:cover">
+    <img src="/labios.jpg" alt="" style="width:33.33%;height:200px;object-fit:cover">
+  </div>
+
+  <section class="sec"><div class="wrap" data-fade>
+    <div class="center-block" style="margin-bottom:48px"><div class="badge">INTERNATIONAL SPEAKERS</div><h2 class="h2">Industry references, on the same stage</h2><p class="sub-tert">MAGColor Experience will bring together highly experienced professionals, creators of innovative techniques and international vision.</p></div>
+    <div class="grid-4">
+      <div class="card center speaker"><img src="/assets/speakers/andrea-martins.jpg" class="avatar" alt="Andrea Martins" style="object-fit:cover"><p class="sp-name">Andrea Martins</p><p class="sp-spec">Pigmentology & Colorimetry</p></div>
+      <div class="card center speaker"><img src="/assets/speakers/miriam-alcantara.jpg" class="avatar" alt="Miriam Alcántara" style="object-fit:cover"><p class="sp-name">Miriam Alcántara</p><p class="sp-spec">Artistic Direction</p></div>
+      <div class="card center speaker"><img src="/assets/speakers/ana-gabriela.jpg" class="avatar" alt="Ana Gabriela" style="object-fit:cover"><p class="sp-name">Ana Gabriela</p><p class="sp-spec">Full Lips</p></div>
+      <div class="card center speaker"><img src="/assets/speakers/bianca-tostes.jpg" class="avatar" alt="Bianca Tostes" style="object-fit:cover"><p class="sp-name">Bianca Tostes</p><p class="sp-spec">Microblading</p></div>
+      <div class="card center speaker"><img src="/assets/speakers/monica-puga.jpg" class="avatar" alt="Mónica Puga" style="object-fit:cover"><p class="sp-name">Mónica Puga</p><p class="sp-spec">Powder Brows</p></div>
+      <div class="card center speaker"><img src="/assets/speakers/ennio-orsini.jpg" class="avatar" alt="Ennio Orsini" style="object-fit:cover"><p class="sp-name">Ennio Orsini</p><p class="sp-spec">Applied AI</p></div>
+      <div class="card center speaker"><img src="/assets/speakers/albert-grau.jpg" class="avatar" alt="Albert Grau" style="object-fit:cover"><p class="sp-name">Albert Grau</p><p class="sp-spec">Legal Aspects</p></div>
+      <div class="card center speaker"><img src="/assets/speakers/sand-guimaraes.jpg" class="avatar" alt="Sand Guimarães" style="object-fit:cover"><p class="sp-name">Sand Guimarães</p><p class="sp-spec">Camouflage</p></div>
+    </div>
+    <div style="text-align:center;margin-top:48px"><a href="/en/ponentes" class="btn btn-outline">View all speakers →</a></div>
+  </div></section>
+
+  <section class="sec alt" style="position:relative">
+    <div style="position:absolute;inset:0;display:flex;opacity:0.08;pointer-events:none;overflow:hidden">
+      <img src="/cejas.jpg" alt="" style="width:33.33%;height:100%;object-fit:cover">
+      <img src="/ojos.jpg" alt="" style="width:33.34%;height:100%;object-fit:cover">
+      <img src="/labios.jpg" alt="" style="width:33.33%;height:100%;object-fit:cover">
+    </div>
+    <div class="wrap" data-fade style="position:relative;z-index:1"><div class="center-block">
+    <h2 class="h2-lg">Don't just come to watch where micropigmentation is heading. Come experience MAG Color's official entry into Europe.</h2>
+    <p class="lede">MAGColor Experience Lisbon 2026 brings together technique, beauty, competition, business vision, international judges and professional recognition in an intensive experience, with simultaneous Portuguese-Spanish translation, designed for professionals who want to play at another level.</p>
+    <a href="/en/entradas" class="btn btn-gold btn-lg">Reserve My Spot</a>
+    <a href="https://wa.me/34696808098" class="wa-link">Questions? · Chat on WhatsApp: +34 696 808 098</a>
+  </div></div></section>
+
+  <a class="wa-float" href="https://wa.me/34696808098" target="_blank" rel="noreferrer" aria-label="WhatsApp"><span class="wa-dot"></span></a>
+  <footer class="footer"><img src="/logo-horizontal.jpg" class="footer-logo" alt="MAGColor Experience Lisboa"><p>MAGColor Experience Lisbon 2026</p><p>Event organized by Instituto Miriam Alcántara</p><p>WhatsApp inquiries: +34 696 808 098</p><p>© 2026 MAGColor Experience Lisbon. All rights reserved.</p></footer>
+</article>
+
+<script>
+  document.querySelectorAll('[data-lang]').forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      const lang = el.dataset.lang;
+      const path = window.location.pathname.replace(/^\/(pt|es|en)\//, '/' + lang + '/').replace(/^\/(pt|es|en)\/*$/, '/' + lang);
+      window.location.href = path;
+    });
+  });
+</script>
+</body>
+</html>

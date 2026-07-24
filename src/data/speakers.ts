@@ -1,0 +1,152 @@
+export const speakers = [
+  {
+    name: "Andrea Martins",
+    country: "Brasil",
+    flag: "🇧🇷",
+    topic_es: "Pigmentología y Colorimetría",
+    topic_pt: "Pigmentologia e Colorimetria",
+    topic_en: "Pigmentology and Colorimetry",
+    bio_es: "Fundadora de MAG Color. Más de 40 años en el mercado. Líder en Latinoamérica con certificación REACH Europa.",
+    bio_pt: "Fundadora da MAG Color. Mais de 40 anos no mercado. Líder na América Latina com certificação REACH Europa.",
+    bio_en: "Founder of MAG Color. Over 40 years in the market. Leader in Latin America with REACH Europe certification.",
+    image: "/assets/speakers/andrea-martins.jpeg",
+    day: 2
+  },
+  {
+    name: "Miriam Alcántara",
+    country: "España",
+    flag: "🇪🇸",
+    topic_es: "Dirección Artística — Apertura Oficial",
+    topic_pt: "Direção Artística — Abertura Oficial",
+    topic_en: "Artistic Direction — Official Opening",
+    bio_es: "Directora y Embajadora de MAG Color para Europa. +30 años de trayectoria, +30.000 alumnas formadas.",
+    bio_pt: "Diretora e Embaixadora da MAG Color para a Europa. +30 anos de trajetória, +30.000 alunas formadas.",
+    bio_en: "Director and MAG Color Ambassador for Europe. +30 years of experience, +30,000 students trained.",
+    image: "/assets/speakers/miriam-alcantara.jpg",
+    day: 1
+  },
+  {
+    name: "Ana Gabriela",
+    country: "Venezuela",
+    flag: "🇻🇪",
+    topic_es: "Full Lips — Training Látex Labios",
+    topic_pt: "Full Lips — Training Látex Lábios",
+    topic_en: "Full Lips — Latex Lip Training",
+    bio_es: "Especialista en técnica de labios completos. Formadora internacional.",
+    bio_pt: "Especialista em técnica de lábios completos. Formadora internacional.",
+    bio_en: "Specialist in full lip technique. International trainer.",
+    image: "/assets/speakers/ana-gabriela.jpeg",
+    day: 1
+  },
+  {
+    name: "Bianca Tostes",
+    country: "Brasil",
+    flag: "🇧🇷",
+    topic_es: "Microblading — Training Látex",
+    topic_pt: "Microblading — Training Látex",
+    topic_en: "Microblading — Latex Training",
+    bio_es: "Especialista en microblading. Formadora y competidora internacional.",
+    bio_pt: "Especialista em microblading. Formadora e competidora internacional.",
+    bio_en: "Microblading specialist. International trainer and competitor.",
+    image: "/assets/speakers/bianca-tostes.jpeg",
+    day: 1
+  },
+  {
+    name: "Mónica Puga",
+    country: "España",
+    flag: "🇪🇸",
+    topic_es: "Esfumado de Cejas y Ojos",
+    topic_pt: "Esfumado de Sobrancelhas e Olhos",
+    topic_en: "Powder Brows and Eyes",
+    bio_es: "Experta en técnicas de esfumado. Natural Bloom Process.",
+    bio_pt: "Especialista em técnicas de esfumado. Natural Bloom Process.",
+    bio_en: "Expert in powder techniques. Natural Bloom Process.",
+    image: "/assets/speakers/monica-puga.jpeg",
+    day: 1
+  },
+  {
+    name: "Ennio Orsini",
+    country: "Brasil",
+    flag: "🇧🇷",
+    topic_es: "Donde el Arte Encuentra el Algoritmo — IA",
+    topic_pt: "Onde a Arte Encontra o Algoritmo — IA",
+    topic_en: "Where Art Meets the Algorithm — AI",
+    bio_es: "Experto en inteligencia artificial aplicada al sector de la micropigmentación.",
+    bio_pt: "Especialista em inteligência artificial aplicada ao setor de micropigmentação.",
+    bio_en: "Expert in artificial intelligence applied to the micropigmentation sector.",
+    image: "/assets/speakers/ennio-orsini.jpeg",
+    day: 1
+  },
+  {
+    name: "Albert Grau",
+    country: "España",
+    flag: "🇪🇸",
+    topic_es: "Aspectos Jurídicos Legales",
+    topic_pt: "Aspectos Jurídicos Legais",
+    topic_en: "Legal and Juridical Aspects",
+    bio_es: "Abogado especialista en legislación para el sector estética y belleza en Europa.",
+    bio_pt: "Advogado especialista em legislação para o setor de estética e beleza na Europa.",
+    bio_en: "Lawyer specialized in legislation for the aesthetics and beauty sector in Europe.",
+    image: "/assets/speakers/albert-grau.jpeg",
+    day: 2
+  },
+  {
+    name: "Sand Guimarães",
+    country: "Brasil",
+    flag: "🇧🇷",
+    topic_es: "Camuflaje de Estrías",
+    topic_pt: "Camuflagem de Estrias",
+    topic_en: "Stretch Mark Camouflage",
+    bio_es: "Referencia internacional en camuflaje de estrías y reconstrucción dérmica.",
+    bio_pt: "Referência internacional em camuflagem de estrias e reconstrução dérmica.",
+    bio_en: "International reference in stretch mark camouflage and dermal reconstruction.",
+    image: "/assets/speakers/sand-guimaraes.jpeg",
+    day: 2
+  },
+  {
+    name: "Isa Cercós",
+    country: "España",
+    flag: "🇪🇸",
+    topic_es: "Reconstrucción de Aréola Mamaria",
+    topic_pt: "Reconstrução de Aréola Mamária",
+    topic_en: "Areola Reconstruction",
+    bio_es: "Especialista en reconstrucción de aréola mamaria. Técnica de alta especialización médica.",
+    bio_pt: "Especialista em reconstrução de aréola mamária. Técnica de alta especialização médica.",
+    bio_en: "Specialist in areola reconstruction. Highly specialized medical technique.",
+    image: "/assets/speakers/isa-cercos.jpeg",
+    day: 2
+  },
+  {
+    name: "Marcela Macedo",
+    country: "Brasil",
+    flag: "🇧🇷",
+    topic_es: "Reconstrucción de Cejas",
+    topic_pt: "Reconstrução de Sobrancelhas",
+    topic_en: "Eyebrow Reconstruction",
+    bio_es: "Especialista en reconstrucción avanzada de cejas con técnica de hiperrealismo.",
+    bio_pt: "Especialista em reconstrução avançada de sobrancelhas com técnica de hiper-realismo.",
+    bio_en: "Specialist in advanced eyebrow reconstruction with hyperrealism technique.",
+    image: "/assets/speakers/marcela-macedo.jpeg",
+    day: 2
+  },
+  {
+    name: "Keli Ribeiro",
+    country: "Brasil",
+    flag: "🇧🇷",
+    topic_es: "Nanoblading de Excelencia — Láser en Micropigmentación",
+    topic_pt: "Nanoblading de Excelência — Laser em Micropigmentação",
+    topic_en: "Excellence Nanoblading — Laser in Micropigmentation",
+    bio_es: "Experta en nanoblading y tecnología láser aplicada a la micropigmentación.",
+    bio_pt: "Especialista em nanoblading e tecnologia laser aplicada à micropigmentação.",
+    bio_en: "Expert in nanoblading and laser technology applied to micropigmentation.",
+    image: "/assets/speakers/keli-ribeiro.jpeg",
+    day: 2
+  }
+];
+
+export const demos = [
+  { name: "Eliane Pinto", country: "Brasil", flag: "🇧🇷", topic_es: "Microblading", topic_pt: "Microblading", topic_en: "Microblading" },
+  { name: "Adriana Matzuoka", country: "Brasil", flag: "🇧🇷", topic_es: "Capilar", topic_pt: "Capilar", topic_en: "Capillary" },
+  { name: "Luiza Furiatti", country: "Brasil", flag: "🇧🇷", topic_es: "Demostración", topic_pt: "Demonstração", topic_en: "Demonstration" },
+  { name: "Luis Carlos Ballestas", country: "Colombia/España", flag: "🇨🇴🇪🇸", topic_es: "Barba", topic_pt: "Barba", topic_en: "Beard" }
+];

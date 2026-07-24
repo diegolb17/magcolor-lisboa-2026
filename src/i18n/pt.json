@@ -1,0 +1,190 @@
+{
+  "site": {
+    "title": "MAGColor Experience Lisboa 2026",
+    "description": "Congresso Internacional de Micropigmentação. 24-25 Outubro 2026. Hotel HF Fénix Lisboa."
+  },
+  "nav": {
+    "home": "Início",
+    "speakers": "Palestrantes",
+    "program": "Programa",
+    "championship": "Campeonato",
+    "tickets": "Ingressos",
+    "sponsors": "Patrocinadores",
+    "faq": "FAQ",
+    "contact": "Contato"
+  },
+  "hero": {
+    "edition": "Primeira edição · Lisboa 2026",
+    "title": "MAGColor Experience Lisboa 2026",
+    "subtitle": "A apresentação oficial da MAG Color na Europa. Dois dias de formação, competição e networking com os melhores profissionais da micropigmentação internacional.",
+    "date": "24 e 25 de outubro de 2026",
+    "venue": "Hotel HF Fénix Lisboa · Portugal",
+    "championship_badge": "Campeonato · Jurados internacionais",
+    "cta": "Garantir minha entrada",
+    "cta_secondary": "Ver opções de ingresso",
+    "limited": "Vagas limitadas · Ingressos Basic, Gold e Divine VIP",
+    "countdown_days": "Dias",
+    "countdown_hours": "Hrs",
+    "countdown_mins": "Min",
+    "countdown_secs": "Seg"
+  },
+  "highlights": {
+    "title": "Dois dias para se posicionar onde você quer estar",
+    "days": "2 dias de evento",
+    "days_desc": "Formação, palestras, demonstrações e networking em Lisboa.",
+    "championship": "Campeonato profissional",
+    "championship_desc": "Categorias Fio a fio, Esfumado de Sobrancelhas e Lábios com jurados internacionais.",
+    "gala": "Cena Branca de Gala",
+    "gala_desc": "Jantar incluído, certificados, taças e reconhecimentos.",
+    "vip": "Divine VIP",
+    "vip_desc": "Apenas 10 vagas com jantar privado, hospedagem e experiência exclusiva.",
+    "translation": "Tradução simultânea",
+    "translation_desc": "Evento com tradução simultânea português-espanhol.",
+    "sponsors": "Patrocinadores de renome",
+    "sponsors_desc": "Marcas líderes do setor beauty premium.",
+    "practice": "Prática ao vivo",
+    "practice_desc": "Com prática simultânea das participantes."
+  },
+  "about": {
+    "title": "A entrada oficial da MAG Color na Europa",
+    "description": "Esta é a primeira edição do MAGColor Experience Lisboa. Um encontro criado para marcar a entrada oficial da MAG Color na Europa e reunir profissionais que desejam elevar seu nível técnico, ampliar sua visão e fazer parte de uma nova comunidade internacional de micropigmentação.",
+    "cta": "Fazer parte da primeira edição"
+  },
+  "why": {
+    "title": "Uma experiência que pode marcar um antes e um depois na sua carreira",
+    "subtitle": "Se você é micropigmentadora, artista PMU, formadora ou profissional de estética avançada, este evento é para você.",
+    "tech": "Técnica avançada",
+    "tech_desc": "Aprenda com profissionais internacionais que trabalham com critério, precisão e visão atualizada.",
+    "prestige": "Prestígio profissional",
+    "prestige_desc": "Viva um evento onde a competição, os jurados internacionais, as taças e a gala transformam a experiência em reconhecimento real.",
+    "networking": "Networking internacional",
+    "networking_desc": "Conecte-se com artistas, formadoras, palestrantes, jurados e marcas do Brasil, Portugal e Espanha.",
+    "business": "Visão empresarial",
+    "business_desc": "Amplie sua visão profissional, eleve seu posicionamento e entenda como crescer em uma indústria cada vez mais competitiva."
+  },
+  "miriam": {
+    "title": "Sob a direção de Miriam Alcántara",
+    "bio": "Miriam Alcántara é uma das referências internacionais mais reconhecidas em micropigmentação avançada e paramédica na Europa. Com mais de 30 anos de trajetória, formou mais de 30.000 alunas, consolidando-se como mentora, formadora e líder de opinião na indústria.",
+    "quote": "Sua visão vai além de ensinar uma técnica: lidera um movimento para transformar micropigmentadoras em profissionais mais sólidas, visíveis e reconhecidas.",
+    "years": "+30 anos de trajetória",
+    "students": "+30.000 alunas formadas",
+    "international": "Speaker e jurada internacional",
+    "paramedical": "Especialista paramédica avançada"
+  },
+  "tickets": {
+    "title": "Escolha como você quer viver o MAGColor Experience",
+    "subtitle": "Três formas de viver a experiência segundo o nível de acesso, proximidade e exclusividade. Todas incluem o evento, a formação, a tradução simultânea e a Cena Branca de Gala.",
+    "basic": "Basic",
+    "basic_desc": "Para profissionais que querem viver o evento completo.",
+    "gold": "Gold",
+    "gold_desc": "Para profissionais que querem uma experiência mais completa, com mais valor e benefícios premium.",
+    "vip": "Divine VIP",
+    "vip_desc": "Para quem quer viver o MAGColor Experience no nível máximo. Apenas 10 vagas.",
+    "most_chosen": "Mais escolhido",
+    "only_10": "Apenas 10 vagas",
+    "early_bird": "Early Bird",
+    "after": "Depois",
+    "buy": "Comprar",
+    "buy_basic": "Garantir Basic",
+    "buy_gold": "Garantir Gold",
+    "buy_vip": "Garantir Divine VIP",
+    "offer_title": "Primeiros 20 ingressos com benefício exclusivo",
+    "offer_desc": "Os 20 primeiros ingressos terão acesso a um desconto exclusivo pagando por transferência bancária ou Bizum. Além disso, receberão um brinde adicional enviado antes do evento.",
+    "offer_cta": "Solicitar desconto pelo WhatsApp",
+    "offer_conditions": "Apenas para os 20 primeiros · Pagamento total · Transferência ou Bizum · Brinde adicional",
+    "vale_title": "Recupere 100% do seu ingresso em formação de elite",
+    "vale_desc": "Todos os ingressos incluem um vale formativo equivalente ao valor do ingresso, aplicável em programas do Instituto Miriam Alcántara.",
+    "vale_cta": "Ver condições"
+  },
+  "speakers": {
+    "title": "Referências da indústria, no mesmo palco",
+    "subtitle": "O MAGColor Experience reunirá profissionais com ampla experiência, criadores de técnicas inovadoras e visão internacional."
+  },
+  "program": {
+    "title": "Programa do evento",
+    "day1": "Dia 1 — Látex Day",
+    "day2": "Dia 2 — Palestras + Gala",
+    "divine_night": "Divine Night",
+    "dress_code": "Dress code: PRETO E DOURADO",
+    "date_day1": "Sexta-feira 24 de outubro",
+    "date_day2": "Sábado 25 de outubro",
+    "date_divine": "Quinta-feira 23 de outubro"
+  },
+  "championship": {
+    "title": "Campeonato Internacional de Micropigmentação",
+    "subtitle": "A tua técnica merece um palco internacional. O teu talento merece ser reconhecido. Lisboa será o palco. Tu serás a protagonista.",
+    "cat1": "Micropigmentação fio a fio",
+    "cat1_desc": "Para profissionais que dominam o traço fino, a precisão e o efeito natural de pelos reais.",
+    "cat2": "Micropigmentação sombreada em sobrancelhas",
+    "cat2_desc": "Para artistas que trabalham degradê, suavidade, densidade e harmonia facial.",
+    "cat3": "Micropigmentação labial",
+    "cat3_desc": "Para especialistas em cor, contorno, naturalidade e técnica aplicada aos lábios.",
+    "prizes": "As vencedoras receberão taças, reconhecimentos e visibilidade durante a Cena Branca de Gala."
+  },
+  "sponsors_section": {
+    "title": "Marcas parceiras de renome",
+    "subtitle": "O MAGColor Experience contará com marcas vinculadas à micropigmentação, estética avançada, tecnologia, formação e beleza profissional.",
+    "cta": "Solicitar informações para patrocinadores"
+  },
+  "venue": {
+    "title": "Um local privilegiado no coração de Lisboa",
+    "hotel": "Hotel HF Fénix Lisboa",
+    "address": "Praça do Marquês de Pombal, 8, 1269-133 Lisboa, Portugal",
+    "map": "Ver no Google Maps",
+    "hosting_note": "A hospedagem está incluída apenas no ingresso Divine VIP (2 noites em quarto duplo compartilhado com café da manhã)."
+  },
+  "faq": {
+    "title": "Tudo o que você precisa saber",
+    "questions": [
+      {
+        "q": "O que está incluído em cada tipo de ingresso?",
+        "a": "Todos os ingressos incluem acesso aos 2 dias de evento, palestras, tradução simultânea, almoços, acesso à Cena Branca de Gala com jantar, kit de boas-vindas e certificado. O Gold inclui também kit de negócio, lugar preferencial na gala e brinde surpresa. O Divine VIP inclui hospedagem, jantar privado Divine Night, primeira fila e muito mais."
+      },
+      {
+        "q": "O alojamento está incluído?",
+        "a": "A hospedagem (2 noites em quarto duplo compartilhado com café da manhã) está incluída apenas no ingresso Divine VIP. Os ingressos Basic e Gold não incluem hospedagem, mas recomendamos o Hotel HF Fénix Lisboa, onde o evento acontece."
+      },
+      {
+        "q": "Haverá tradução simultânea?",
+        "a": "Sim! O evento conta com tradução simultânea português-espanhol. As palestrantes falarão em português, espanhol ou inglês, e haverá tradução ao vivo para que todas as participantes possam acompanhar 100% do conteúdo."
+      },
+      {
+        "q": "Como funciona o Campeonato?",
+        "a": "O campeonato tem 3 categorias: Fio a Fio, Sombreado de Sobrancelhas e Lábios. As participantes competem com modelos reais ao vivo. Um júri internacional avalia cada trabalho e as vencedoras são premiadas na Cena Branca de Gala com troféus, reconhecimento e visibilidade internacional."
+      },
+      {
+        "q": "Quais são as formas de pagamento?",
+        "a": "Aceitamos pagamento com cartão de crédito/débito através do Stripe. Também oferecemos a opção de pagamento por transferência bancária ou Bizum com desconto exclusivo para os primeiros 20 ingressos. Consulte-nos pelo WhatsApp para esta opção."
+      },
+      {
+        "q": "Qual é a política de cancelamento e reembolso?",
+        "a": "Em caso de cancelamento até 60 dias antes do evento, reembolsamos 50% do valor do ingresso. Após esse prazo, não será possível realizar reembolso. No entanto, a vaga é transferível: você pode ceder seu ingresso a outra profissional, comunicando a alteração por e-mail com pelo menos 7 dias de antecedência."
+      },
+      {
+        "q": "Como funciona o vale formativo incluído nos ingressos?",
+        "a": "Cada ingresso inclui um vale de formação equivalente ao valor do ingresso (497 €, 797 € ou 1.297 €) para ser usado em programas do Instituto Miriam Alcántara. O vale é pessoal e intransferível, válido por 12 meses após o evento. Consulte as condições no site do instituto."
+      }
+    ]
+  },
+  "cta_final": {
+    "title": "Não venha apenas para olhar para onde a micropigmentação está indo. Venha viver a entrada oficial da MAG Color na Europa.",
+    "button": "Garantir minha entrada"
+  },
+  "footer": {
+    "copyright": "© 2026 MAGColor Experience Lisboa. Todos os direitos reservados.",
+    "institute": "Instituto Miriam Alcántara",
+    "organized": "Evento organizado por",
+    "whatsapp": "Consultas pelo WhatsApp"
+  },
+  "contact": {
+    "title": "Fale connosco",
+    "subtitle": "Estamos aqui para ajudar. Escolhe o canal que preferires.",
+    "whatsapp_label": "WhatsApp",
+    "whatsapp_desc": "Resposta rápida em horário comercial",
+    "email_label": "Email",
+    "email_desc": "Resposta em até 24 horas",
+    "address_label": "Local do evento",
+    "address_desc": "Hotel HF Fénix Lisboa",
+    "map_label": "Abrir no Google Maps"
+  }
+}

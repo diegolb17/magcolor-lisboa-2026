@@ -1,0 +1,190 @@
+{
+  "site": {
+    "title": "MAGColor Experience Lisbon 2026",
+    "description": "International Micropigmentation Congress. October 24-25, 2026. HF Fénix Lisbon Hotel."
+  },
+  "nav": {
+    "home": "Home",
+    "speakers": "Speakers",
+    "program": "Program",
+    "championship": "Championship",
+    "tickets": "Tickets",
+    "sponsors": "Sponsors",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "edition": "First edition · Lisbon 2026",
+    "title": "MAGColor Experience Lisbon 2026",
+    "subtitle": "The official launch of MAG Color in Europe. Two days of training, competition and networking with the best international micropigmentation professionals.",
+    "date": "October 24 & 25, 2026",
+    "venue": "HF Fénix Lisbon Hotel · Portugal",
+    "championship_badge": "Championship · International Judges",
+    "cta": "Reserve My Spot",
+    "cta_secondary": "View Ticket Options",
+    "limited": "Limited spots · Basic, Gold & Divine VIP Tickets",
+    "countdown_days": "Days",
+    "countdown_hours": "Hrs",
+    "countdown_mins": "Min",
+    "countdown_secs": "Sec"
+  },
+  "highlights": {
+    "title": "Two days to position yourself where you want to be",
+    "days": "2 days of event",
+    "days_desc": "Training, lectures, demonstrations and networking in Lisbon.",
+    "championship": "Professional Championship",
+    "championship_desc": "Hair by hair, Powder Brows and Lips categories with international judges.",
+    "gala": "White Gala Dinner",
+    "gala_desc": "Dinner included, certificates, trophies and recognition.",
+    "vip": "Divine VIP",
+    "vip_desc": "Only 10 spots with private dinner, accommodation and exclusive experience.",
+    "translation": "Simultaneous Translation",
+    "translation_desc": "Event with simultaneous Portuguese-Spanish translation.",
+    "sponsors": "Renowned Sponsors",
+    "sponsors_desc": "Leading brands in the premium beauty sector.",
+    "practice": "Live Practice",
+    "practice_desc": "With simultaneous participant practice."
+  },
+  "about": {
+    "title": "The official entry of MAG Color into Europe",
+    "description": "This is the first edition of MAGColor Experience Lisbon. A gathering created to mark MAG Color's official entry into Europe and bring together professionals who want to elevate their technical level, broaden their vision and be part of a new international micropigmentation community.",
+    "cta": "Be Part of the First Edition"
+  },
+  "why": {
+    "title": "An experience that can mark a before and after in your career",
+    "subtitle": "If you are a micropigmentation artist, PMU professional, trainer or advanced aesthetics specialist, this event is for you.",
+    "tech": "Advanced Technique",
+    "tech_desc": "Learn from international professionals who work with precision and an updated vision of aesthetic, capillary and paramedical micropigmentation.",
+    "prestige": "Professional Prestige",
+    "prestige_desc": "Experience an event where competition, international judges, trophies and the gala transform the experience into real recognition.",
+    "networking": "International Networking",
+    "networking_desc": "Connect with artists, trainers, speakers, judges and brands from Brazil, Portugal and Spain.",
+    "business": "Business Vision",
+    "business_desc": "Broaden your professional vision, elevate your positioning and understand how to grow in an increasingly competitive industry."
+  },
+  "miriam": {
+    "title": "Under the direction of Miriam Alcántara",
+    "bio": "Miriam Alcántara is one of the most recognized international references in advanced and paramedical micropigmentation in Europe. With over 30 years of experience, she has trained more than 30,000 students, establishing herself as a mentor, trainer and opinion leader in the industry.",
+    "quote": "Her vision goes beyond teaching a technique: she leads a movement to transform micropigmentation artists into more solid, visible and recognized professionals.",
+    "years": "+30 years of experience",
+    "students": "+30,000 students trained",
+    "international": "International Speaker and Judge",
+    "paramedical": "Advanced Paramedical Specialist"
+  },
+  "tickets": {
+    "title": "Choose how you want to experience MAGColor Experience",
+    "subtitle": "Three ways to live the experience according to your level of access, proximity and exclusivity. All include the event, training, simultaneous translation and the White Gala Dinner.",
+    "basic": "Basic",
+    "basic_desc": "For professionals who want to experience the complete event.",
+    "gold": "Gold",
+    "gold_desc": "For professionals who want a more complete experience with more value and premium benefits.",
+    "vip": "Divine VIP",
+    "vip_desc": "For those who want to live the MAGColor Experience at the highest level. Only 10 spots.",
+    "most_chosen": "Most Chosen",
+    "only_10": "Only 10 spots",
+    "early_bird": "Early Bird",
+    "after": "Regular",
+    "buy": "Buy",
+    "buy_basic": "Get Basic",
+    "buy_gold": "Get Gold",
+    "buy_vip": "Get Divine VIP",
+    "offer_title": "First 20 tickets with exclusive benefit",
+    "offer_desc": "The first 20 tickets will have access to an exclusive discount by paying via bank transfer or Bizum. Plus, an additional gift sent before the event.",
+    "offer_cta": "Request discount via WhatsApp",
+    "offer_conditions": "Only for the first 20 · Full payment · Bank transfer or Bizum · Additional gift",
+    "vale_title": "Recover 100% of your ticket in elite training",
+    "vale_desc": "All tickets include a training voucher equivalent to the ticket value, applicable to Instituto Miriam Alcántara programs.",
+    "vale_cta": "View conditions"
+  },
+  "speakers": {
+    "title": "Industry references, on the same stage",
+    "subtitle": "MAGColor Experience will bring together highly experienced professionals, creators of innovative techniques and international vision."
+  },
+  "program": {
+    "title": "Event Program",
+    "day1": "Day 1 — Latex Day",
+    "day2": "Day 2 — Lectures + Gala",
+    "divine_night": "Divine Night",
+    "dress_code": "Dress code: BLACK AND GOLD",
+    "date_day1": "Friday October 24",
+    "date_day2": "Saturday October 25",
+    "date_divine": "Thursday October 23"
+  },
+  "championship": {
+    "title": "International Micropigmentation Championship",
+    "subtitle": "Your technique deserves an international stage. Your talent deserves to be recognized. Lisbon will be the stage. You will be the protagonist.",
+    "cat1": "Hair by Hair Micropigmentation",
+    "cat1_desc": "For professionals who master fine strokes, precision and the natural effect of real hair.",
+    "cat2": "Powder/Shaded Eyebrows",
+    "cat2_desc": "For artists who work with gradients, softness, density and facial harmony.",
+    "cat3": "Lip Micropigmentation",
+    "cat3_desc": "For specialists in color, contour, naturalness and technique applied to lips.",
+    "prizes": "Winners will receive trophies, recognition and visibility during the White Gala Dinner."
+  },
+  "sponsors_section": {
+    "title": "Renowned Partner Brands",
+    "subtitle": "MAGColor Experience will feature brands linked to micropigmentation, advanced aesthetics, technology, training and professional beauty.",
+    "cta": "Request sponsor information"
+  },
+  "venue": {
+    "title": "A privileged location in the heart of Lisbon",
+    "hotel": "HF Fénix Lisbon Hotel",
+    "address": "Praça do Marquês de Pombal, 8, 1269-133 Lisbon, Portugal",
+    "map": "View on Google Maps",
+    "hosting_note": "Accommodation is only included in the Divine VIP ticket (2 nights in a shared double room with breakfast)."
+  },
+  "faq": {
+    "title": "Everything you need to know",
+    "questions": [
+      {
+        "q": "What's included in each ticket type?",
+        "a": "All tickets include access to 2 full days of the event, lectures, simultaneous translation, lunches, access to the White Gala Dinner, welcome kit and certificate. Gold also includes a business kit, preferential seating at the gala and a surprise gift. Divine VIP includes accommodation, private Divine Night dinner, front row and much more."
+      },
+      {
+        "q": "Is accommodation included?",
+        "a": "Accommodation (2 nights in a shared double room with breakfast) is only included in the Divine VIP ticket. Basic and Gold tickets do not include accommodation, but we recommend the HF Fénix Lisbon Hotel, where the event takes place."
+      },
+      {
+        "q": "Will there be simultaneous translation?",
+        "a": "Yes! The event features simultaneous Portuguese-Spanish translation. Speakers will present in Portuguese, Spanish, or English, and there will be live translation so all attendees can follow 100% of the content."
+      },
+      {
+        "q": "How does the Championship work?",
+        "a": "The championship has 3 categories: Hair by Hair, Powder/Shaded Eyebrows and Lips. Participants compete with live real models. An international jury evaluates each work and winners are awarded at the White Gala Dinner with trophies, recognition and international visibility."
+      },
+      {
+        "q": "What are the payment methods?",
+        "a": "We accept credit/debit card payment through Stripe. We also offer bank transfer or Bizum payment with an exclusive discount for the first 20 tickets. Contact us via WhatsApp for this option."
+      },
+      {
+        "q": "What is the cancellation and refund policy?",
+        "a": "In case of cancellation up to 60 days before the event, we refund 50% of the ticket value. After this period, no refund will be possible. However, the spot is transferable: you can assign your ticket to another professional by notifying us by email at least 7 days in advance."
+      },
+      {
+        "q": "How does the training voucher included in the tickets work?",
+        "a": "Each ticket includes a training voucher equivalent to the ticket value (€497, €797, or €1,297) to be used on Instituto Miriam Alcántara programs. The voucher is personal and non-transferable, valid for 12 months after the event. Check the conditions on the institute's website."
+      }
+    ]
+  },
+  "cta_final": {
+    "title": "Don't just come to watch where micropigmentation is heading. Come experience MAG Color's official entry into Europe.",
+    "button": "Reserve My Spot"
+  },
+  "footer": {
+    "copyright": "© 2026 MAGColor Experience Lisbon. All rights reserved.",
+    "institute": "Instituto Miriam Alcántara",
+    "organized": "Event organized by",
+    "whatsapp": "WhatsApp inquiries"
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "We're here to help. Choose your preferred channel.",
+    "whatsapp_label": "WhatsApp",
+    "whatsapp_desc": "Quick response during business hours",
+    "email_label": "Email",
+    "email_desc": "Response within 24 hours",
+    "address_label": "Event venue",
+    "address_desc": "HF Fénix Lisbon Hotel",
+    "map_label": "Open in Google Maps"
+  }
+}

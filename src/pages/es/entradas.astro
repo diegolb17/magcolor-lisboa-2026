@@ -1,0 +1,15 @@
+---
+import '../../styles/global.css';
+---
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Entradas — MAGColor Experience Lisboa 2026</title></head><body>
+<script>document.querySelectorAll('[data-fade]').forEach(el=>{new IntersectionObserver((e,o)=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('is-visible');o.unobserve(x.target)}})},{threshold:0.12}).observe(el)});document.querySelectorAll('[data-lang]').forEach(el=>{el.addEventListener('click',(e)=>{e.preventDefault();const l=el.dataset.lang;const p=window.location.pathname.replace(/^\/(pt|es|en)\//,'/'+l+'/').replace(/^\/(pt|es|en)$/,'/'+l);window.location.href=p})})</script>
+<article class="page">
+  <div class="pt-flag"></div>
+<header class="hdr"><div class="hdr-inner"><a href="/es/"><img src="/logo.png" class="logo" alt="MAGColor"></a><nav class="nav"><a href="/es/" class="nav-item">Inicio</a><a href="/es/ponentes" class="nav-item">Ponentes</a><a href="/es/programa" class="nav-item">Programa</a><a href="/es/entradas" class="nav-item active">Entradas</a><a href="/es/faq" class="nav-item">FAQ</a></nav><div class="hdr-right"><div class="lang"><a href="#" data-lang="pt" class="lang-pill">PT</a><a href="#" data-lang="es" class="lang-pill active">ES</a><a href="#" data-lang="en" class="lang-pill">EN</a></div><a href="/es/entradas" class="btn btn-gold btn-sm">Reservar mi entrada</a></div></div></header>
+<section class="sec" style="padding-top:140px"><div class="wrap" data-fade>
+<div class="center-block" style="margin-bottom:48px"><div class="badge">ENTRADAS</div><h2 class="h2">Elige cómo quieres vivir el MAGColor Experience</h2><p class="sub-tert">Tres formas de vivir la experiencia según el nivel de acceso, proximidad y exclusividad. Todas incluyen el evento completo, la formación, la traducción simultánea y la Cena Blanca de Gala.</p></div>
+
+<div class="tiers" id="tiers"></div>
+<div class="extra-grid mt-64"><div class="card extra-card"><span class="extra-icon">🎁</span><h3 class="card-title">Primeras 20 entradas con beneficio exclusivo</h3><p class="card-desc">Las 20 primeras entradas tendrán acceso a un descuento exclusivo pagando por transferencia bancaria o Bizum. Regalo adicional enviado antes del evento.</p><p class="fine-print">Disponible solo para los 20 primeros · Pago total · Transferencia o Bizum</p><a href="https://wa.me/34696808098" class="btn btn-outline" style="margin-top:auto">Solicitar descuento por WhatsApp</a></div><div class="card extra-card"><span class="extra-icon">💎</span><h3 class="card-title">Recupera el 100% de tu entrada en formación de élite</h3><p class="card-desc">Todas las entradas incluyen un vale formativo equivalente, aplicable a programas del Instituto Miriam Alcántara.</p><a href="https://wa.me/34696808098" class="btn btn-outline" style="margin-top:auto">Ver condiciones</a></div></div>
+<script is:inline src="/data-es.js"></script>
+</body></html>
