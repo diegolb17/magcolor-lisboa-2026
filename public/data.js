@@ -135,4 +135,5 @@ renderTiers();
 renderTimeline('tl-d1', day1);
 renderTimeline('tl-d2', day2);
 renderTimeline('tl-dn', divineNight);
+renderJurados();
 renderFAQ();
