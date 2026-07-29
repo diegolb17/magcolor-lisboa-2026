@@ -31,19 +31,20 @@ const tiers = [
 
 // === PROGRAM ===
 const day1 = [
-  { t:"08:30", d:"60 min", title:"Registro e Welcome Coffee", desc:"Acreditación, entrega de lanyard personalizado negro e dourado com QR do programa. Bolsa de boas-vindas em cada cadeira." },
-  { t:"09:00", d:"5 min", star:true, title:"Vídeo Contagem Regressiva", desc:"Na tela aparece uma contagem regressiva de 5 minutos com música potente." },
-  { t:"09:05", d:"3 min", star:true, title:"Vídeo Institucional MAG Color Experience", desc:"Primeiro grande impacto visual e emocional do evento." },
-  { t:"09:08", d:"14 min", star:true, title:"Boas-vindas Oficiais + Miriam Alcántara e Andrea Martins", desc:"Abertura oficial do congresso." },
-  { t:"09:22", d:"60 min", title:"Training Látex Lábios · Ana Gabriela · 🇻🇪", desc:"Câmara ao vivo. Tradução simultânea." },
-  { t:"10:22", d:"60 min", title:"Training Látex Microblading · Bianca Tostes · 🇧🇷", desc:"Técnica com camilla, lupa e taburete." },
-  { t:"11:22", d:"60 min", title:"Training Látex Esfumado · Mónica Puga · 🇪🇸", desc:"Última ponencia de la mañana." },
-  { t:"12:22", d:"60 min", title:"Almoço de networking", desc:"Lunch ligero. Detalle dulce sorpresa." },
-  { t:"13:22", d:"40 min", title:"Marketing e Vendas · Ennio Orsini · 🇧🇷", desc:"Posicionamiento y negocio." },
-  { t:"14:02", d:"40 min", title:"Arte e Algoritmo — IA · Ennio Orsini · 🇧🇷", desc:"Inteligencia artificial aplicada." },
-  { t:"14:42", d:"30 min", title:"Coffee Break", desc:"Pausa. Detalle dulce sorpresa." },
-  { t:"15:12", d:"120 min", star:true, title:"Campeonato em Látex — 3 categorias", desc:"Fio a Fio · Sombreado · Lábios. Jurados internacionais." },
-  { t:"17:12", d:"30 min", star:true, title:"Sorteio e Encerramento do Dia 1", desc:"Premio especial. Palavras de Miriam Alcántara." }
+{t:"08:30", d:"60 min", title:"Registro e Welcome Coffee", desc:"Acreditación, entrega de lanyard personalizado negro e dourado com QR do programa. Bolsa de boas-vindas em cada cadeira. Café de boas-vindas."},
+{t:"09:00", d:"5 min", star:true, title:"Vídeo Contagem Regressiva", desc:"Na tela aparece uma contagem regressiva de 5 minutos com música potente."},
+{t:"09:05", d:"3 min", star:true, title:"Vídeo Institucional MAG Color Experience", desc:"Primeiro grande impacto visual e emocional do evento."},
+{t:"09:10", d:"10 min", star:true, title:"Boas-vindas Oficiais — Apresentador MC", desc:"Abertura oficial do congresso. Palavras de Miriam Alcántara e Andrea Martins."},
+{t:"09:20", d:"70 min", title:"Training Látex Lábios · Ana Gabriela · 🇻🇪", desc:"Câmara ao vivo. Tradução simultânea. Participantes podem praticar com sua própria máquina."},
+{t:"10:30", d:"60 min", title:"Training Látex Microblading · Bianca Tostes · 🇧🇷", desc:"Técnica com camilla, lupa e taburete. Câmara ao vivo."},
+{t:"11:30", d:"60 min", title:"Training Látex Natural Bloom Process · Mónica Puga · 🇪🇸", desc:"Cejas difuminadas. Tradução simultânea."},
+{t:"12:30", d:"5 min", star:true, title:"Sorteio", desc:"Premio especial. Todos os participantes concorrem."},
+{t:"12:35", d:"55 min", title:"Almoço de networking", desc:"Lunch ligero. Detalle dulce sorpresa en las mesas."},
+{t:"13:30", d:"5 min", star:true, title:"Sorteio", desc:"Segundo sorteio do dia. Premio especial."},
+{t:"13:35", d:"45 min", title:"Técnica e Colorimetria em Peles Negras · Bárbara Monteiro · 🇧🇷", desc:"Ponencia especializada em colorimetria para peles negras."},
+{t:"14:20", d:"30 min", title:"Coffee Break", desc:"Pausa. Detalle dulce sorpresa."},
+{t:"14:50", d:"120 min", star:true, title:"Campeonato em Látex — 3 categorias", desc:"Fio a Fio · Sombreado · Lábios. Jurados internacionais avaliam ao vivo."},
+{t:"16:50", d:"30 min", star:true, title:"Sorteio e Encerramento do Dia 1", desc:"Premio especial. Palavras de Miriam Alcántara."}
 ];
 const day2 = [
   { t:"08:30", d:"60 min", star:true, title:"Saxofonista ao Vivo", desc:"Saxofonista em direto. Ambiente festivo premium. Dress code: PRETO E DOURADO." },

@@ -31,19 +31,20 @@ const tiers = [
 
 // === PROGRAM ===
 const day1 = [
-  { t:"08:30", d:"60 min", title:"Registration & Welcome Coffee", desc:"Accreditation, personalized black & gold lanyard with program QR. Welcome bag on each chair." },
-  { t:"09:00", d:"5 min", star:true, title:"Countdown Video", desc:"A 5-minute countdown appears on screen with powerful music." },
-  { t:"09:05", d:"3 min", star:true, title:"Vídeo Institucional MAG Color Experience", desc:"First major visual and emotional impact of the event." },
-  { t:"09:08", d:"14 min", star:true, title:"Official Welcome + Miriam Alcántara & Andrea Martins", desc:"Official congress opening." },
-  { t:"09:22", d:"60 min", title:"Training Látex Labios · Ana Gabriela · 🇻🇪", desc:"Live camera. Simultaneous translation." },
-  { t:"10:22", d:"60 min", title:"Training Latex Microblading · Bianca Tostes · 🇧🇷", desc:"Technique with stretcher, magnifier and stool." },
-  { t:"11:22", d:"60 min", title:"Training Látex Difuminado · Mónica Puga · 🇪🇸", desc:"Última ponencia de la mañana." },
-  { t:"12:22", d:"60 min", title:"Networking Lunch", desc:"Lunch ligero. Detalle dulce sorpresa." },
-  { t:"13:22", d:"40 min", title:"Marketing y Ventas · Ennio Orsini · 🇧🇷", desc:"Positioning and business for professionals." },
-  { t:"14:02", d:"40 min", title:"Arte y Algoritmo — IA · Ennio Orsini · 🇧🇷", desc:"Artificial intelligence applied to the sector." },
-  { t:"14:42", d:"30 min", title:"Coffee Break", desc:"Break. Sweet surprise detail." },
-  { t:"15:12", d:"120 min", star:true, title:"Latex Championship — 3 Categories", desc:"Hair by Hair · Powder · Lips. International judges." },
-  { t:"17:12", d:"30 min", star:true, title:"Raffle & Day 1 Closing", desc:"Special prize. Words from Miriam Alcántara." }
+{t:"08:30", d:"60 min", title:"Registration & Welcome Coffee", desc:"Accreditation, personalized black & gold lanyard with program QR. Welcome bag on each chair. Welcome coffee."},
+{t:"09:00", d:"5 min", star:true, title:"Countdown Video", desc:"A 5-minute countdown appears on screen with powerful music."},
+{t:"09:05", d:"3 min", star:true, title:"MAG Color Experience Video", desc:"First major visual and emotional impact of the event."},
+{t:"09:10", d:"10 min", star:true, title:"Official Welcome — MC Host", desc:"Official congress opening. Words from Miriam Alcántara and Andrea Martins."},
+{t:"09:20", d:"70 min", title:"Latex Lip Training · Ana Gabriela · 🇻🇪", desc:"Live camera. Simultaneous translation. Participants can practice with their own machine."},
+{t:"10:30", d:"60 min", title:"Latex Microblading Training · Bianca Tostes · 🇧🇷", desc:"Technique with stretcher, magnifier and stool. Live camera."},
+{t:"11:30", d:"60 min", title:"Latex Natural Bloom Process Training · Mónica Puga · 🇪🇸", desc:"Powder brows. Simultaneous translation."},
+{t:"12:30", d:"5 min", star:true, title:"Raffle", desc:"Special prize. All participants are eligible."},
+{t:"12:35", d:"55 min", title:"Networking Lunch", desc:"Light lunch. Sweet surprise detail on tables."},
+{t:"13:30", d:"5 min", star:true, title:"Raffle", desc:"Second raffle of the day. Special prize."},
+{t:"13:35", d:"45 min", title:"Technique & Colorimetry for Black Skin · Bárbara Monteiro · 🇧🇷", desc:"Specialized lecture on colorimetry for black skin."},
+{t:"14:20", d:"30 min", title:"Coffee Break", desc:"Break. Sweet surprise detail."},
+{t:"14:50", d:"120 min", star:true, title:"Latex Championship — 3 Categories", desc:"Hair by Hair · Powder · Lips. International judges evaluate live."},
+{t:"16:50", d:"30 min", star:true, title:"Raffle & Day 1 Closing", desc:"Special prize. Words from Miriam Alcántara."}
 ];
 const day2 = [
   { t:"08:30", d:"60 min", star:true, title:"Live Saxophonist", desc:"Live saxophonist. Premium atmosphere. Dress code: BLACK AND GOLD." },
