@@ -12,8 +12,8 @@ const speakers = [
   { flag: "🇧🇷", country: "Brasil", name: "Sand Guimarães", img: "sand-guimaraes", spec: "Camuflagem de Estrias", bio: "Referência internacional em camuflagem de estrias e reconstrução dérmica." },
   { flag: "🇪🇸", country: "Espanha", name: "Isa Cercós", img: "isa-cercos", spec: "Reconstrução de Aréola Mamária", bio: "Especialista em reconstrução de aréola mamária. Técnica de alta especialização médica." },
   { flag: "🇧🇷", country: "Brasil", name: "Marcela Macedo", img: "marcela-macedo", spec: "Reconstrução de Sobrancelhas", bio: "Especialista em reconstrução avançada de sobrancelhas com técnica de hiper-realismo." },
-  { flag: "🇧🇷", country: "Brasil", name: "Keli Ribeiro", img: "keli-ribeiro", spec: "Nanoblading de Excelência", bio: "Especialista em nanoblading e tecnologia laser aplicada à micropigmentação.",
-  { flag: "🇧🇷", country: "Brasil", name: "Bárbara Monteiro", img: "barbara-monteiro", spec: "Shadow line — Pele negra", bio: "Especialista em Shadow Line. Referência em técnica para peles negras."" } }
+  { flag: "🇧🇷", country: "Brasil", name: "Keli Ribeiro", img: "keli-ribeiro", spec: "Nanoblading de Excelência", bio: "Especialista em nanoblading e tecnologia laser aplicada à micropigmentação." },
+  { flag: "🇧🇷", country: "Brasil", name: "Bárbara Monteiro", img: "barbara-monteiro", spec: "Shadow line — Pele negra", bio: "Especialista em Shadow Line. Referência em técnica para peles negras." },
 ];
 
 const demos = [
