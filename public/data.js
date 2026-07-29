@@ -6,9 +6,9 @@ const speakers = [
   { flag: "🇪🇸", country: "Espanha", name: "Miriam Alcántara", img: "miriam-alcantara", spec: "Direção Artística", bio: "+30 anos de trajetória. +30.000 alunas formadas. Speaker e jurada internacional." },
   { flag: "🇻🇪", country: "Venezuela", name: "Ana Gabriela", img: "ana-gabriela", spec: "Full Lips — Training Látex Lábios", bio: "Especialista em técnica de lábios completos. Formadora internacional." },
   { flag: "🇧🇷", country: "Brasil", name: "Bianca Tostes", img: "bianca-tostes", spec: "Microblading — Training Látex", bio: "Especialista em microblading. Formadora e competidora internacional." },
-  { flag: "🇪🇸", country: "Espanha", name: "Mónica Puga", img: "monica-puga", spec: "Esfumado de Sobrancelhas e Olhos", bio: "Especialista em técnicas de esfumado. Natural Bloom Process." },
-  { flag: "🇧🇷", country: "Brasil", name: "Ennio Orsini", img: "ennio-orsini", spec: "Onde a Arte Encontra o Algoritmo — IA", bio: "Especialista em inteligência artificial aplicada ao setor de micropigmentação." },
-  { flag: "🇪🇸", country: "Espanha", name: "Albert Grau", img: "albert-grau", spec: "Aspectos Jurídicos Legais", bio: "Advogado especialista em legislação para o setor de estética e beleza na Europa." },
+  { flag: "🇪🇸", country: "Espanha", name: "Mónica Puga", img: "monica-puga", spec: "Natural Bloom Process — Cejas difuminadas", bio: "Especialista em técnicas de esfumado. Natural Bloom Process." },
+  { flag: "🇧🇷", country: "Brasil", name: "Ennio Orsini", img: "ennio-orsini", spec: "Donde el arte se encuentra con el algoritmo", bio: "Especialista em inteligência artificial aplicada ao setor de micropigmentação." },
+  { flag: "🇪🇸", country: "Espanha", name: "Albert Grau", img: "albert-grau", spec: "Aspectos legales del sector", bio: "Empresário com mais de 30 anos no setor sanitário relacionado à micropigmentação, tattoo e piercing. Fundador da sua própria escola em Barcelona, é quem guia e orienta os profissionais no sistema legal atual." },
   { flag: "🇧🇷", country: "Brasil", name: "Sand Guimarães", img: "sand-guimaraes", spec: "Camuflagem de Estrias", bio: "Referência internacional em camuflagem de estrias e reconstrução dérmica." },
   { flag: "🇪🇸", country: "Espanha", name: "Isa Cercós", img: "isa-cercos", spec: "Reconstrução de Aréola Mamária", bio: "Especialista em reconstrução de aréola mamária. Técnica de alta especialização médica." },
   { flag: "🇧🇷", country: "Brasil", name: "Marcela Macedo", img: "marcela-macedo", spec: "Reconstrução de Sobrancelhas", bio: "Especialista em reconstrução avançada de sobrancelhas com técnica de hiper-realismo." },
@@ -17,8 +17,8 @@ const speakers = [
 
 const demos = [
   { flag: "🇧🇷", country: "Brasil", name: "Eliane Pinto", img: "eliane-pinto", spec: "Microblading" },
+  { flag: "🇵🇹", country: "Portugal", name: "Adriana Matsuoka", img: "adriana-matsuoka", spec: "Capilar" },
   { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "andreia-guerreiro", spec: "Demonstração" },
-  { flag: "🇧🇷", country: "Brasil", name: "Adriana Matsuoka", img: "adriana-matsuoka", spec: "Capilar" },
   { flag: "🇨🇴🇪🇸", country: "Colômbia/Espanha", name: "Luis Carlos Ballestas", img: "luis-carlos-ballestas", spec: "Barba" }
 ];
 
