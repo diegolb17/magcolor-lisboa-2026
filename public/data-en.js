@@ -76,6 +76,11 @@ const faqs = [
 ];
 
 // === RENDER ===
+
+const jurados = [
+  { flag: "🇧🇷", country: "Brasil", name: "Gerliene Trindade", spec: "Jurado" },
+  { flag: "🇪🇸", country: "España", name: "Natalia Puche", spec: "Jurado" },
+];
 function renderSpeakers() {
   const grid = document.getElementById('sp-grid');
   if (!grid) return;
@@ -103,6 +108,12 @@ function renderTimeline(containerId, data) {
   el.innerHTML = data.map(s => `<div class="tl-item"><div class="tl-time"><div class="tl-hour">${s.t}</div>${s.d?`<div class="tl-dur">${s.d}</div>`:''}</div><div class="tl-line"><div class="tl-dot"></div></div><div class="tl-body"><h4 class="tl-title">${s.star?'<span class="tl-star">✦</span>':''}${s.title}</h4><p class="tl-desc">${s.desc}</p></div></div>`).join('');
 }
 
+
+function renderJurados() {
+  const grid = document.getElementById('jurados-grid');
+  if (!grid) return;
+  grid.innerHTML = jurados.map(j => `<div class="card center speaker"><img src="/assets/speakers/${j.name.toLowerCase().replace(/ /g,'-').normalize('NFD').replace(/[̀-ͯ]/g,'')}.jpg" class="avatar" alt="${j.name}" style="object-fit:cover" onerror="this.style.display='none'"><p class="sp-name">${j.name}</p><p class="sp-spec">${j.spec}</p></div>`).join('');
+}
 function renderFAQ() {
   const el = document.getElementById('faq-list');
   if (!el) return;
