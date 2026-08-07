@@ -18,8 +18,8 @@ const speakers = [
 
 const demos = [
   { flag: "🇧🇷", country: "Brasil", name: "Eliane Pinto", img: "eliane-pinto", spec: "Microblading" },
-  { flag: "🇵🇹", country: "Portugal", name: "Adriana Matsuoka", img: "adriana-matsuoka", spec: "Capilar" },
-  { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "andreia-guerreiro", spec: "Demonstração" },
+  { flag: "🇵🇹", country: "Portugal", name: "Adriana Matsuoka", img: "andreia-guerreiro", spec: "Capilar" },
+  { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "adriana-matsuoka", spec: "Demonstração" },
   { flag: "🇨🇴🇪🇸", country: "Colômbia/Espanha", name: "Luis Carlos Ballestas", img: "luis-carlos-ballestas", spec: "Barba" }
 ];
 
