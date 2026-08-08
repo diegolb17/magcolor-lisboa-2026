@@ -20,7 +20,8 @@ const demos = [
   { flag: "🇧🇷", country: "Brasil", name: "Eliane Pinto", img: "eliane-pinto", spec: "Microblading" },
   { flag: "🇵🇹", country: "Portugal", name: "Adriana Matsuoka", img: "andreia-guerreiro", spec: "Capilar" },
   { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "adriana-matsuoka", spec: "Demonstração" },
-  { flag: "🇨🇴🇪🇸", country: "Colômbia/Espanha", name: "Luis Carlos Ballestas", img: "luis-carlos-ballestas", spec: "Barba" }
+  { flag: "🇨🇴🇪🇸", country: "Colômbia/Espanha", name: "Luis Carlos Ballestas", img: "luis-carlos-ballestas", spec: "Barba" },
+  { flag: "🇧🇷", country: "Brasil", name: "Luiza Furiatti", spec: "Demonstracao" }
 ];
 
 // === TIERS ===
@@ -32,35 +33,41 @@ const tiers = [
 
 // === PROGRAM ===
 const day1 = [
-{t:"08:30", d:"60 min", title:"Registro e Welcome Coffee", desc:"Acreditación, entrega de lanyard personalizado negro e dourado com QR do programa. Bolsa de boas-vindas em cada cadeira. Café de boas-vindas."},
-{t:"09:00", d:"5 min", star:true, title:"Vídeo Contagem Regressiva", desc:"Na tela aparece uma contagem regressiva de 5 minutos com música potente."},
-{t:"09:05", d:"3 min", star:true, title:"Vídeo Institucional MAG Color Experience", desc:"Primeiro grande impacto visual e emocional do evento."},
-{t:"09:10", d:"10 min", star:true, title:"Boas-vindas Oficiais — Apresentador MC", desc:"Abertura oficial do congresso. Palavras de Miriam Alcántara e Andrea Martins."},
-{t:"09:20", d:"70 min", title:"Training Látex Lábios · Ana Gabriela · 🇻🇪", desc:"Câmara ao vivo. Tradução simultânea. Participantes podem praticar com sua própria máquina."},
-{t:"10:30", d:"60 min", title:"Training Látex Microblading · Bianca Tostes · 🇧🇷", desc:"Técnica com camilla, lupa e taburete. Câmara ao vivo."},
-{t:"11:30", d:"60 min", title:"Training Látex Natural Bloom Process · Mónica Puga · 🇪🇸", desc:"Cejas difuminadas. Tradução simultânea."},
-{t:"12:30", d:"5 min", star:true, title:"Sorteio", desc:"Premio especial. Todos os participantes concorrem."},
-{t:"12:35", d:"55 min", title:"Almoço de networking", desc:"Lunch ligero. Detalle dulce sorpresa en las mesas."},
-{t:"13:30", d:"5 min", star:true, title:"Sorteio", desc:"Segundo sorteio do dia. Premio especial."},
-{t:"13:35", d:"45 min", title:"Técnica e Colorimetria em Peles Negras · Bárbara Monteiro · 🇧🇷", desc:"Ponencia especializada em colorimetria para peles negras."},
-{t:"14:20", d:"30 min", title:"Coffee Break", desc:"Pausa. Detalle dulce sorpresa."},
-{t:"14:50", d:"120 min", star:true, title:"Campeonato em Látex — 3 categorias", desc:"Fio a Fio · Sombreado · Lábios. Jurados internacionais avaliam ao vivo."},
-{t:"16:50", d:"30 min", star:true, title:"Sorteio e Encerramento do Dia 1", desc:"Premio especial. Palavras de Miriam Alcántara."}
+  {t:"08:30", title:"Acreditacao e entrega de lanyard. Cafe de boas-vindas.", desc:""},
+  {t:"09:00", title:"Inicio do congresso", desc:""},
+  {t:"09:05", title:"Video Contagem Regressiva + Video Institucional MAG Color", desc:""},
+  {t:"09:10", title:"Boas-vindas Oficiais — Miriam Alcantara e Andrea Martins", desc:""},
+  {t:"09:20", title:"Training Latex Labios · Ana Gabriela · 🇻🇪", desc:"As participantes podem praticar com sua propria maquina em latex."},
+  {t:"10:30", title:"Training Latex Microblading · Bianca Tostes · 🇧🇷", desc:"As participantes podem praticar com seu proprio tebori em latex."},
+  {t:"11:30", title:"Training Latex Esfumado · Monica Puga · 🇪🇸", desc:"As participantes podem praticar com sua propria maquina em latex."},
+  {t:"12:30", star:true, title:"Sorteio especial", desc:""},
+  {t:"12:35", title:"Almoco de networking", desc:""},
+  {t:"13:30", star:true, title:"Sorteio", desc:""},
+  {t:"13:35", title:"Tecnica e Colorimetria em Peles Negras · Barbara Monteiro · 🇧🇷", desc:"Ponencia especializada em colorimetria para peles negras."},
+  {t:"14:10", title:"Arte e Algoritmo · Ennio Orsini · 🇧🇷", desc:""},
+  {t:"14:45", title:"Eliane Pinto · 🇧🇷", desc:""},
+  {t:"15:25", title:"Luiza Furiatti · 🇧🇷", desc:""},
+  {t:"15:35", star:true, title:"Sorteio", desc:""},
+  {t:"15:45", title:"Coffee Break", desc:""},
+  {t:"16:00", star:true, title:"Campeonato em Latex — 3 categorias", desc:"Fio a Fio · Sombreado · Labios. Jurados internacionais avaliam ao vivo."},
+
 ];
+
 const day2 = [
-  { t:"08:30", d:"60 min", star:true, title:"Saxofonista ao Vivo", desc:"Saxofonista em direto. Ambiente festivo premium. Dress code: PRETO E DOURADO." },
-  { t:"09:15", d:"3 min", star:true, title:"Vídeo Contagem Regressiva + Vídeo MAG Color", desc:"O Dia 2 arranca com a mesma energia do Dia 1." },
-  { t:"09:28", d:"57 min", star:true, title:"Pigmentologia e Colorimetria · Andrea Martins · 🇧🇷", desc:"A palestra de maior peso académico do congresso." },
-  { t:"10:25", d:"50 min", title:"Aspectos Jurídicos · Albert Grau · 🇪🇸", desc:"Informação essencial para o mercado europeu." },
-  { t:"11:15", d:"50 min", title:"Camuflagem de Estrias · Sand Guimarães · 🇧🇷", desc:"Técnica avançada de camuflagem." },
-  { t:"12:05", d:"50 min", title:"Reconstrução de Aréola Mamária · Isa Cercós · 🇪🇸", desc:"Sessão de alta especialização médica." },
-  { t:"12:55", d:"60 min", title:"Almoço de networking", desc:"Lunch ligero." },
-  { t:"13:55", d:"50 min", title:"Reconstrução de Sobrancelhas · Marcela Macedo · 🇧🇷", desc:"Técnica avançada de reconstrução." },
-  { t:"14:45", d:"50 min", title:"Laser em Micropigmentação · Keli Ribeiro · 🇧🇷", desc:"Tecnologia laser aplicada." },
-  { t:"15:35", d:"120 min", star:true, title:"Demonstrações Práticas ao Vivo", desc:"5 artistas em 5 estações simultâneas." },
-  { t:"18:30", d:"120 min", star:true, title:"Cena Branca de Gala — Premiação", desc:"Dress code: PRETO E DOURADO. Mesa VIP. Troféus." },
-  { t:"20:30", d:"30 min", star:true, title:"Encerramento Final", desc:"Palavras finais. Anúncio da próxima edição europeia." }
+  {t:"09:00", title:"Abertura MAG Experience 2º Dia", desc:"Segundo dia do congresso. Dress code: PRETO E DOURADO."},
+  {t:"09:30", title:"Pigmentologia e Colorimetria · Andrea Martins · 🇧🇷", desc:""},
+  {t:"10:15", title:"Aspectos Legais do Setor · Albert Grau · 🇪🇸", desc:""},
+  {t:"10:55", star:true, title:"Sorteio", desc:""},
+  {t:"11:15", title:"Camuflagem de Estrias · Sand Guimaraes · 🇧🇷", desc:""},
+  {t:"12:05", title:"Reconstrucao de Areola · Isa Cercos · 🇪🇸", desc:""},
+  {t:"12:55", title:"Almoco de networking", desc:""},
+  {t:"13:55", title:"Reconstrucao de Sobrancelhas · Marcela Macedo · 🇧🇷", desc:""},
+  {t:"14:45", title:"Laser em Micropigmentacao · Keli Ribeiro · 🇧🇷", desc:""},
+  {t:"15:35", title:"Demonstracoes Praticas ao Vivo — Dia 2", desc:"Eliane Pinto, Adriana Matsuoka, Andreia Guerreiro, Luis Carlos Ballestas."},
+  {t:"18:30", star:true, title:"Cerimonia de Entrega de Premios", desc:""},
+
 ];
+
 const divineNight = [
   { t:"21:00", star:true, title:"Divine Night — Jantar Privado VIP", desc:"Apenas para as 10 participantes com ingresso Divine VIP. Jantar íntimo com Miriam Alcántara, Andrea Martins e os palestrantes. Recepção com coquetel." }
 ];

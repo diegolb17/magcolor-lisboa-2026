@@ -32,35 +32,41 @@ const tiers = [
 
 // === PROGRAM ===
 const day1 = [
-{t:"08:30", d:"60 min", title:"Registration & Welcome Coffee", desc:"Accreditation, personalized black & gold lanyard with program QR. Welcome bag on each chair. Welcome coffee."},
-{t:"09:00", d:"5 min", star:true, title:"Countdown Video", desc:"A 5-minute countdown appears on screen with powerful music."},
-{t:"09:05", d:"3 min", star:true, title:"MAG Color Experience Video", desc:"First major visual and emotional impact of the event."},
-{t:"09:10", d:"10 min", star:true, title:"Official Welcome — MC Host", desc:"Official congress opening. Words from Miriam Alcántara and Andrea Martins."},
-{t:"09:20", d:"70 min", title:"Latex Lip Training · Ana Gabriela · 🇻🇪", desc:"Live camera. Simultaneous translation. Participants can practice with their own machine."},
-{t:"10:30", d:"60 min", title:"Latex Microblading Training · Bianca Tostes · 🇧🇷", desc:"Technique with stretcher, magnifier and stool. Live camera."},
-{t:"11:30", d:"60 min", title:"Latex Natural Bloom Process Training · Mónica Puga · 🇪🇸", desc:"Powder brows. Simultaneous translation."},
-{t:"12:30", d:"5 min", star:true, title:"Raffle", desc:"Special prize. All participants are eligible."},
-{t:"12:35", d:"55 min", title:"Networking Lunch", desc:"Light lunch. Sweet surprise detail on tables."},
-{t:"13:30", d:"5 min", star:true, title:"Raffle", desc:"Second raffle of the day. Special prize."},
-{t:"13:35", d:"45 min", title:"Technique & Colorimetry for Black Skin · Bárbara Monteiro · 🇧🇷", desc:"Specialized lecture on colorimetry for black skin."},
-{t:"14:20", d:"30 min", title:"Coffee Break", desc:"Break. Sweet surprise detail."},
-{t:"14:50", d:"120 min", star:true, title:"Latex Championship — 3 Categories", desc:"Hair by Hair · Powder · Lips. International judges evaluate live."},
-{t:"16:50", d:"30 min", star:true, title:"Raffle & Day 1 Closing", desc:"Special prize. Words from Miriam Alcántara."}
+  {t:"08:30", title:"Registration & Lanyard Pickup. Welcome Coffee.", desc:""},
+  {t:"09:00", title:"Congress Opening", desc:""},
+  {t:"09:05", title:"Countdown Video + MAG Color Institutional Video", desc:""},
+  {t:"09:10", title:"Official Welcome — Miriam Alcantara & Andrea Martins", desc:""},
+  {t:"09:20", title:"Latex Lip Training · Ana Gabriela · 🇻🇪", desc:"Participants can practice with their own machine on latex."},
+  {t:"10:30", title:"Latex Microblading Training · Bianca Tostes · 🇧🇷", desc:"Participants can practice with their own tebori on latex."},
+  {t:"11:30", title:"Latex Powder Training · Monica Puga · 🇪🇸", desc:"Participants can practice with their own machine on latex."},
+  {t:"12:30", star:true, title:"Special Raffle", desc:""},
+  {t:"12:35", title:"Networking Lunch", desc:""},
+  {t:"13:30", star:true, title:"Raffle", desc:""},
+  {t:"13:35", title:"Technique & Colorimetry for Black Skin · Barbara Monteiro · 🇧🇷", desc:"Specialized lecture on colorimetry for black skin."},
+  {t:"14:10", title:"Art & Algorithm · Ennio Orsini · 🇧🇷", desc:""},
+  {t:"14:45", title:"Eliane Pinto · 🇧🇷", desc:""},
+  {t:"15:25", title:"Luiza Furiatti · 🇧🇷", desc:""},
+  {t:"15:35", star:true, title:"Raffle", desc:""},
+  {t:"15:45", title:"Coffee Break", desc:""},
+  {t:"16:00", star:true, title:"Latex Championship — 3 Categories", desc:"Hair by Hair · Powder · Lips. International judges evaluate live."},
+
 ];
+
 const day2 = [
-  { t:"08:30", d:"60 min", star:true, title:"Live Saxophonist", desc:"Live saxophonist. Premium atmosphere. Dress code: BLACK AND GOLD." },
-  { t:"09:15", d:"3 min", star:true, title:"Countdown Video + MAG Color Video", desc:"Day 2 starts with the same energy as Day 1." },
-  { t:"09:28", d:"57 min", star:true, title:"Pigmentology & Colorimetry · Andrea Martins · 🇧🇷", desc:"The most academically significant lecture of the congress." },
-  { t:"10:25", d:"50 min", title:"Aspectos Jurídicos · Albert Grau · 🇪🇸", desc:"Essential information for the European market." },
-  { t:"11:15", d:"50 min", title:"Stretch Mark Camouflage · Sand Guimarães · 🇧🇷", desc:"Advanced camouflage technique." },
-  { t:"12:05", d:"50 min", title:"Areola Reconstruction · Isa Cercós · 🇪🇸", desc:"Highly specialized medical session." },
-  { t:"12:55", d:"60 min", title:"Networking Lunch", desc:"Lunch ligero." },
-  { t:"13:55", d:"50 min", title:"Reconstrução de Cejas · Marcela Macedo · 🇧🇷", desc:"Advanced reconstruction technique." },
-  { t:"14:45", d:"50 min", title:"Láser en Micropigmentación · Keli Ribeiro · 🇧🇷", desc:"Applied laser technology." },
-  { t:"15:35", d:"120 min", star:true, title:"Live Practical Demos", desc:"5 artists at 5 simultaneous stations." },
-  { t:"18:30", d:"120 min", star:true, title:"White Gala — Awards Ceremony", desc:"Dress code: BLACK AND GOLD. VIP table. Trophies." },
-  { t:"20:30", d:"30 min", star:true, title:"Final Closing", desc:"Final words. Announcement of the next European edition." }
+  {t:"09:00", title:"MAG Experience Day 2 Opening", desc:"Congress day two. Dress code: BLACK & GOLD."},
+  {t:"09:30", title:"Pigmentology & Colorimetry · Andrea Martins · 🇧🇷", desc:""},
+  {t:"10:15", title:"Legal Aspects of the Sector · Albert Grau · 🇪🇸", desc:""},
+  {t:"10:55", star:true, title:"Raffle", desc:""},
+  {t:"11:15", title:"Stretch Mark Camouflage · Sand Guimaraes · 🇧🇷", desc:""},
+  {t:"12:05", title:"Areola Reconstruction · Isa Cercos · 🇪🇸", desc:""},
+  {t:"12:55", title:"Networking Lunch", desc:""},
+  {t:"13:55", title:"Eyebrow Reconstruction · Marcela Macedo · 🇧🇷", desc:""},
+  {t:"14:45", title:"Laser in Micropigmentation · Keli Ribeiro · 🇧🇷", desc:""},
+  {t:"15:35", title:"Live Demos — Day 2", desc:"Eliane Pinto, Adriana Matsuoka, Andreia Guerreiro, Luis Carlos Ballestas."},
+  {t:"18:30", star:true, title:"Awards Ceremony", desc:""},
+
 ];
+
 const divineNight = [
   { t:"21:00", star:true, title:"Divine Night — Private VIP Dinner", desc:"Only for the 10 Divine VIP participants. Intimate dinner with Miriam Alcántara, Andrea Martins and congress speakers. Cocktail reception." }
 ];
