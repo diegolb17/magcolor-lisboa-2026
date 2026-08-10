@@ -13,7 +13,7 @@ const speakers = [
   { flag: "🇪🇸", country: "Spain", name: "Isa Cercós", img: "isa-cercos", spec: "Areola Reconstruction", bio: "Specialist in areola reconstruction. Highly specialized medical technique." },
   { flag: "🇧🇷", country: "Brazil", name: "Marcela Macedo", img: "marcela-macedo", spec: "Eyebrow Reconstruction", bio: "Specialist in advanced eyebrow reconstruction with hyperrealism technique." },
   { flag: "🇧🇷", country: "Brazil", name: "Keli Ribeiro", img: "keli-ribeiro", spec: "Excellence Nanoblading", bio: "Specialist in nanoblading and laser technology applied to micropigmentation." },
-  { flag: "🇵🇹", country: "Portugal", name: "Bárbara Monteiro", img: "barbara-monteiro", spec: "Black skin", bio: "Reference in technique for black skin." },
+  { flag: "🇵🇹", country: "Portugal", name: "Bárbara Monteiro", img: "barbara-monteiro-v2", spec: "Black skin", bio: "Reference in technique for black skin." },
 ];
 
 const demos = [

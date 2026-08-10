@@ -13,7 +13,7 @@ const speakers = [
   { flag: "🇪🇸", country: "Espanha", name: "Isa Cercós", img: "isa-cercos", spec: "Reconstrução de Aréola Mamária", bio: "Especialista em reconstrução de aréola mamária. Técnica de alta especialização médica." },
   { flag: "🇧🇷", country: "Brasil", name: "Marcela Macedo", img: "marcela-macedo", spec: "Reconstrução de Sobrancelhas", bio: "Especialista em reconstrução avançada de sobrancelhas com técnica de hiper-realismo." },
   { flag: "🇧🇷", country: "Brasil", name: "Keli Ribeiro", img: "keli-ribeiro", spec: "Nanoblading de Excelência", bio: "Especialista em nanoblading e tecnologia laser aplicada à micropigmentação." },
-  { flag: "🇵🇹", country: "Portugal", name: "Bárbara Monteiro", img: "barbara-monteiro", spec: "Pele negra", bio: "Referente en técnica para pieles negras." },
+  { flag: "🇵🇹", country: "Portugal", name: "Bárbara Monteiro", img: "barbara-monteiro-v2", spec: "Pele negra", bio: "Referente en técnica para pieles negras." },
 ];
 
 const demos = [
