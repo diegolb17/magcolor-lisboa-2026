@@ -43,7 +43,7 @@ const day1 = [
   {t:"12:30", star:true, title:"Sorteio especial", desc:""},
   {t:"12:35", title:"Almoco de networking", desc:""},
   {t:"13:30", star:true, title:"Sorteio", desc:""},
-  {t:"13:35", title:"Tecnica e Colorimetria em Peles Negras · Barbara Monteiro · 🇧🇷", desc:"Ponencia especializada em colorimetria para peles negras."},
+  {t:"13:35", title:"Tecnica e Colorimetria em Peles Negras · Barbara Monteiro · 🇵🇹", desc:"Ponencia especializada em colorimetria para peles negras."},
   {t:"14:10", title:"Arte e Algoritmo · Ennio Orsini · 🇮🇹", desc:""},
   {t:"14:45", title:"Eliane Pinto · 🇵🇹", desc:""},
   {t:"15:25", title:"Luiza Furiatti · 🇧🇷", desc:""},

@@ -42,7 +42,7 @@ const day1 = [
   {t:"12:30", star:true, title:"Special Raffle", desc:""},
   {t:"12:35", title:"Networking Lunch", desc:""},
   {t:"13:30", star:true, title:"Raffle", desc:""},
-  {t:"13:35", title:"Technique & Colorimetry for Black Skin · Barbara Monteiro · 🇧🇷", desc:"Specialized lecture on colorimetry for black skin."},
+  {t:"13:35", title:"Technique & Colorimetry for Black Skin · Barbara Monteiro · 🇵🇹", desc:"Specialized lecture on colorimetry for black skin."},
   {t:"14:10", title:"Art & Algorithm · Ennio Orsini · 🇮🇹", desc:""},
   {t:"14:45", title:"Eliane Pinto · 🇵🇹", desc:""},
   {t:"15:25", title:"Luiza Furiatti · 🇧🇷", desc:""},
