@@ -7,17 +7,17 @@ const speakers = [
   { flag: "🇻🇪", country: "Venezuela", name: "Ana Gabriela", img: "ana-gabriela", spec: "Full Lips — Latex Lip Training", bio: "Specialist in full lip technique. International trainer." },
   { flag: "🇧🇷", country: "Brazil", name: "Bianca Tostes", img: "bianca-tostes", spec: "Microblading — Latex Training", bio: "Specialist in microblading. International trainer and competitor." },
   { flag: "🇪🇸", country: "Spain", name: "Mónica Puga", img: "monica-puga", spec: "Natural Bloom Process — Powder Brows", bio: "Specialist in powder techniques. Natural Bloom Process." },
-  { flag: "🇧🇷", country: "Brazil", name: "Ennio Orsini", img: "ennio-orsini", spec: "Where art meets the algorithm", bio: "Specialist in artificial intelligence applied to the micropigmentation sector." },
+  { flag: "🇮🇹", country: "Italy", name: "Ennio Orsini", img: "ennio-orsini", spec: "Where art meets the algorithm", bio: "Specialist in artificial intelligence applied to the micropigmentation sector." },
   { flag: "🇪🇸", country: "Spain", name: "Albert Grau", img: "albert-grau", spec: "Legal aspects of the sector", bio: "Entrepreneur with over 30 years in the healthcare sector related to micropigmentation, tattooing and piercing. Founder of his own school in Barcelona, he guides and advises professionals on the current legal system." },
   { flag: "🇧🇷", country: "Brazil", name: "Sand Guimarães", img: "sand-guimaraes", spec: "Stretch Mark Camouflage", bio: "International reference in stretch mark camouflage and dermal reconstruction." },
   { flag: "🇪🇸", country: "Spain", name: "Isa Cercós", img: "isa-cercos", spec: "Areola Reconstruction", bio: "Specialist in areola reconstruction. Highly specialized medical technique." },
   { flag: "🇧🇷", country: "Brazil", name: "Marcela Macedo", img: "marcela-macedo", spec: "Eyebrow Reconstruction", bio: "Specialist in advanced eyebrow reconstruction with hyperrealism technique." },
   { flag: "🇧🇷", country: "Brazil", name: "Keli Ribeiro", img: "keli-ribeiro", spec: "Excellence Nanoblading", bio: "Specialist in nanoblading and laser technology applied to micropigmentation." },
-  { flag: "🇧🇷", country: "Brazil", name: "Bárbara Monteiro", img: "barbara-monteiro", spec: "Shadow line — Black skin", bio: "Shadow Line specialist. Reference in technique for black skin." },
+  { flag: "🇵🇹", country: "Portugal", name: "Bárbara Monteiro", img: "barbara-monteiro", spec: "Black skin", bio: "Reference in technique for black skin." },
 ];
 
 const demos = [
-  { flag: "🇧🇷", country: "Brazil", name: "Eliane Pinto", img: "eliane-pinto", spec: "Microblading" },
+  { flag: "🇵🇹", country: "Portugal", name: "Eliane Pinto", img: "eliane-pinto", spec: "Microblading" },
   { flag: "🇧🇷", country: "Brazil", name: "Adriana Matsuoka", img: "andreia-guerreiro", spec: "Capillary" },
   { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "adriana-matsuoka", spec: "Demo" },
   { flag: "🇨🇴🇪🇸", country: "Colombia/Spain", name: "Luis Carlos Ballestas", img: "luis-carlos-ballestas", spec: "Beard" }
@@ -43,8 +43,8 @@ const day1 = [
   {t:"12:35", title:"Networking Lunch", desc:""},
   {t:"13:30", star:true, title:"Raffle", desc:""},
   {t:"13:35", title:"Technique & Colorimetry for Black Skin · Barbara Monteiro · 🇧🇷", desc:"Specialized lecture on colorimetry for black skin."},
-  {t:"14:10", title:"Art & Algorithm · Ennio Orsini · 🇧🇷", desc:""},
-  {t:"14:45", title:"Eliane Pinto · 🇧🇷", desc:""},
+  {t:"14:10", title:"Art & Algorithm · Ennio Orsini · 🇮🇹", desc:""},
+  {t:"14:45", title:"Eliane Pinto · 🇵🇹", desc:""},
   {t:"15:25", title:"Luiza Furiatti · 🇧🇷", desc:""},
   {t:"15:35", star:true, title:"Raffle", desc:""},
   {t:"15:45", title:"Coffee Break", desc:""},
