@@ -12,16 +12,15 @@ const speakers = [
   { flag: "🇧🇷", country: "Brasil", name: "Sand Guimarães", img: "sand-guimaraes", spec: "Camuflagem de Estrias", bio: "Referência internacional em camuflagem de estrias e reconstrução dérmica." },
   { flag: "🇪🇸", country: "Espanha", name: "Isa Cercós", img: "isa-cercos", spec: "Reconstrução de Aréola Mamária", bio: "Especialista em reconstrução de aréola mamária. Técnica de alta especialização médica." },
   { flag: "🇧🇷", country: "Brasil", name: "Marcela Macedo", img: "marcela-macedo", spec: "Reconstrução de Sobrancelhas", bio: "Especialista em reconstrução avançada de sobrancelhas com técnica de hiper-realismo." },
-  { flag: "🇧🇷", country: "Brasil", name: "Keli Ribeiro", img: "keli-ribeiro", spec: "Nanoblading de Excelência", bio: "Especialista em nanoblading e tecnologia laser aplicada à micropigmentação." },
+  { flag: "🇵🇹", country: "Portugal", name: "Eliane Pinto", img: "eliane-pinto", spec: "Traços de Amor — Micropigmentação que acolhe e transforma", bio: "Especialista em micropigmentação humanizada. Transforma vidas com técnica e acolhimento." },
   { flag: "🇵🇹", country: "Portugal", name: "Bárbara Monteiro", img: "barbara-monteiro-v2", spec: "Pele negra", bio: "Referente en técnica para pieles negras." },
 ];
 
 const demos = [
-  { flag: "🇵🇹", country: "Portugal", name: "Eliane Pinto", img: "eliane-pinto", spec: "Microblading" },
   { flag: "🇵🇹", country: "Portugal", name: "Adriana Matsuoka", img: "andreia-guerreiro", spec: "Capilar" },
   { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "adriana-matsuoka", spec: "Demonstração" },
   { flag: "🇨🇴🇪🇸", country: "Colômbia/Espanha", name: "Luis Carlos Ballestas", img: "luis-carlos-ballestas", spec: "Barba" },
-  { flag: "🇧🇷", country: "Brasil", name: "Luiza Furiatti", spec: "Demonstracao" }
+  { flag: "🇧🇷", country: "Brasil", name: "Bia Lacerada", img: "bia-lacerada", spec: "Luxer Liner — Técnica em olhos" }
 ];
 
 // === TIERS ===
@@ -45,16 +44,19 @@ const day1 = [
   {t:"13:30", star:true, title:"Sorteio", desc:""},
   {t:"13:35", title:"Tecnica e Colorimetria em Peles Negras · Barbara Monteiro · 🇵🇹", desc:"Ponencia especializada em colorimetria para peles negras."},
   {t:"14:10", title:"Arte e Algoritmo · Ennio Orsini · 🇮🇹", desc:""},
-  {t:"14:45", title:"Eliane Pinto · 🇵🇹", desc:""},
-  {t:"15:25", title:"Luiza Furiatti · 🇧🇷", desc:""},
+  {t:"14:45", title:"Traços de Amor · Eliane Pinto · 🇵🇹", desc:""},
+  {t:"15:25", title:"Luiza Furiatti · 🇧🇷", desc:"Do diagnóstico ao pigmento: O que sua sobrancelha precisa? Como transformar análise em estratégia e resultado."},
   {t:"15:35", star:true, title:"Sorteio", desc:""},
   {t:"15:45", title:"Coffee Break", desc:""},
   {t:"16:00", star:true, title:"Campeonato em Latex — 3 categorias", desc:"Fio a Fio · Sombreado · Labios. Jurados internacionais avaliam ao vivo."},
+  {t:"18:00", title:"Fim do Campeonato e deliberação do júri", desc:""},
+  {t:"18:30", title:"Descanso", desc:""},
+  {t:"20:00", star:true, title:"Cena de Gala — Entrega de Prêmios", desc:"Dress code: PRETO E DOURADO."},
 
 ];
 
 const day2 = [
-  {t:"09:00", title:"Abertura MAG Experience 2º Dia", desc:"Segundo dia do congresso. Dress code: PRETO E DOURADO."},
+  {t:"09:00", title:"Abertura MAG Experience 2º Dia", desc:"Segundo dia do congresso."},
   {t:"09:30", title:"Pigmentologia e Colorimetria · Andrea Martins · 🇧🇷", desc:""},
   {t:"10:15", title:"Aspectos Legais do Setor · Albert Grau · 🇪🇸", desc:""},
   {t:"10:55", star:true, title:"Sorteio", desc:""},
@@ -62,9 +64,8 @@ const day2 = [
   {t:"12:05", title:"Reconstrucao de Areola · Isa Cercos · 🇪🇸", desc:""},
   {t:"12:55", title:"Almoco de networking", desc:""},
   {t:"13:55", title:"Reconstrucao de Sobrancelhas · Marcela Macedo · 🇧🇷", desc:""},
-  {t:"14:45", title:"Laser em Micropigmentacao · Keli Ribeiro · 🇧🇷", desc:""},
-  {t:"15:35", title:"Demonstracoes Praticas ao Vivo — Dia 2", desc:"Eliane Pinto, Adriana Matsuoka, Andreia Guerreiro, Luis Carlos Ballestas."},
-  {t:"18:30", star:true, title:"Cerimonia de Entrega de Premios", desc:""},
+  {t:"14:45", title:"Traços de Amor · Eliane Pinto · 🇵🇹", desc:""},
+  {t:"15:35", title:"Demonstracoes Praticas ao Vivo — Dia 2", desc:"Adriana Matsuoka, Andreia Guerreiro, Luis Carlos Ballestas, Bia Lacerada."},
 
 ];
 
@@ -88,6 +89,7 @@ const faqs = [
 const jurados = [
   { flag: "🇧🇷", country: "Brasil", name: "Gerliene Trindade", spec: "Jurado" },
   { flag: "🇪🇸", country: "España", name: "Natalia Puche", spec: "Jurado" },
+  { flag: "🇧🇷", country: "Brasil", name: "Glaucia Ferreira", spec: "Jurado" },
 ];
 function renderSpeakers() {
   const grid = document.getElementById('sp-grid');

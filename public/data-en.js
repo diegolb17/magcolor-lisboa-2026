@@ -12,12 +12,11 @@ const speakers = [
   { flag: "🇧🇷", country: "Brazil", name: "Sand Guimarães", img: "sand-guimaraes", spec: "Stretch Mark Camouflage", bio: "International reference in stretch mark camouflage and dermal reconstruction." },
   { flag: "🇪🇸", country: "Spain", name: "Isa Cercós", img: "isa-cercos", spec: "Areola Reconstruction", bio: "Specialist in areola reconstruction. Highly specialized medical technique." },
   { flag: "🇧🇷", country: "Brazil", name: "Marcela Macedo", img: "marcela-macedo", spec: "Eyebrow Reconstruction", bio: "Specialist in advanced eyebrow reconstruction with hyperrealism technique." },
-  { flag: "🇧🇷", country: "Brazil", name: "Keli Ribeiro", img: "keli-ribeiro", spec: "Excellence Nanoblading", bio: "Specialist in nanoblading and laser technology applied to micropigmentation." },
+  { flag: "🇵🇹", country: "Portugal", name: "Eliane Pinto", img: "eliane-pinto", spec: "Traces of Love — Micropigmentation that welcomes and transforms", bio: "Specialist in humanized micropigmentation. Transforms lives with technique and care." },
   { flag: "🇵🇹", country: "Portugal", name: "Bárbara Monteiro", img: "barbara-monteiro-v2", spec: "Black skin", bio: "Reference in technique for black skin." },
 ];
 
 const demos = [
-  { flag: "🇵🇹", country: "Portugal", name: "Eliane Pinto", img: "eliane-pinto", spec: "Microblading" },
   { flag: "🇧🇷", country: "Brazil", name: "Adriana Matsuoka", img: "andreia-guerreiro", spec: "Capillary" },
   { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "adriana-matsuoka", spec: "Demo" },
   { flag: "🇨🇴🇪🇸", country: "Colombia/Spain", name: "Luis Carlos Ballestas", img: "luis-carlos-ballestas", spec: "Beard" }
@@ -44,16 +43,19 @@ const day1 = [
   {t:"13:30", star:true, title:"Raffle", desc:""},
   {t:"13:35", title:"Technique & Colorimetry for Black Skin · Barbara Monteiro · 🇵🇹", desc:"Specialized lecture on colorimetry for black skin."},
   {t:"14:10", title:"Art & Algorithm · Ennio Orsini · 🇮🇹", desc:""},
-  {t:"14:45", title:"Eliane Pinto · 🇵🇹", desc:""},
-  {t:"15:25", title:"Luiza Furiatti · 🇧🇷", desc:""},
+  {t:"14:45", title:"Traces of Love · Eliane Pinto · 🇵🇹", desc:""},
+  {t:"15:25", title:"Luiza Furiatti · 🇧🇷", desc:"From diagnosis to pigment: What does your brow need? How to turn analysis into strategy and results."},
   {t:"15:35", star:true, title:"Raffle", desc:""},
   {t:"15:45", title:"Coffee Break", desc:""},
   {t:"16:00", star:true, title:"Latex Championship — 3 Categories", desc:"Hair by Hair · Powder · Lips. International judges evaluate live."},
+  {t:"18:00", title:"End of Championship & jury deliberation", desc:""},
+  {t:"18:30", title:"Break", desc:""},
+  {t:"20:00", star:true, title:"Gala Dinner — Awards Ceremony", desc:"Dress code: BLACK & GOLD."},
 
 ];
 
 const day2 = [
-  {t:"09:00", title:"MAG Experience Day 2 Opening", desc:"Congress day two. Dress code: BLACK & GOLD."},
+  {t:"09:00", title:"MAG Experience Day 2 Opening", desc:"Congress day two."},
   {t:"09:30", title:"Pigmentology & Colorimetry · Andrea Martins · 🇧🇷", desc:""},
   {t:"10:15", title:"Legal Aspects of the Sector · Albert Grau · 🇪🇸", desc:""},
   {t:"10:55", star:true, title:"Raffle", desc:""},
@@ -61,9 +63,8 @@ const day2 = [
   {t:"12:05", title:"Areola Reconstruction · Isa Cercos · 🇪🇸", desc:""},
   {t:"12:55", title:"Networking Lunch", desc:""},
   {t:"13:55", title:"Eyebrow Reconstruction · Marcela Macedo · 🇧🇷", desc:""},
-  {t:"14:45", title:"Laser in Micropigmentation · Keli Ribeiro · 🇧🇷", desc:""},
-  {t:"15:35", title:"Live Demos — Day 2", desc:"Eliane Pinto, Adriana Matsuoka, Andreia Guerreiro, Luis Carlos Ballestas."},
-  {t:"18:30", star:true, title:"Awards Ceremony", desc:""},
+  {t:"14:45", title:"Traces of Love · Eliane Pinto · 🇵🇹", desc:""},
+  {t:"15:35", title:"Live Demos — Day 2", desc:"Adriana Matsuoka, Andreia Guerreiro, Luis Carlos Ballestas, Bia Lacerada."},
 
 ];
 
