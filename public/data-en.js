@@ -43,7 +43,7 @@ const day1 = [
   {t:"13:30", star:true, title:"Raffle", desc:""},
   {t:"13:35", title:"Technique & Colorimetry for Black Skin · Barbara Monteiro · 🇵🇹", desc:"Specialized lecture on colorimetry for black skin."},
   {t:"14:10", title:"Art & Algorithm · Ennio Orsini · 🇮🇹", desc:""},
-  {t:"14:45", title:"Traces of Love · Eliane Pinto · 🇵🇹", desc:""},
+  {t:"14:45", title:"Eliane Pinto · 🇵🇹", desc:""},
   {t:"15:25", title:"Luiza Furiatti · 🇧🇷", desc:"From diagnosis to pigment: What does your brow need? How to turn analysis into strategy and results."},
   {t:"15:35", star:true, title:"Raffle", desc:""},
   {t:"15:45", title:"Coffee Break", desc:""},
@@ -63,7 +63,7 @@ const day2 = [
   {t:"12:05", title:"Areola Reconstruction · Isa Cercos · 🇪🇸", desc:""},
   {t:"12:55", title:"Networking Lunch", desc:""},
   {t:"13:55", title:"Eyebrow Reconstruction · Marcela Macedo · 🇧🇷", desc:""},
-  {t:"14:45", title:"Traces of Love · Eliane Pinto · 🇵🇹", desc:""},
+  {t:"14:45", title:"André Boring", desc:""},
   {t:"15:35", title:"Live Demos — Day 2", desc:"Adriana Matsuoka, Andreia Guerreiro, Luis Carlos Ballestas, Bia Lacerada."},
 
 ];

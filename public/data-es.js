@@ -44,7 +44,7 @@ const day1 = [
   {t:"13:30", star:true, title:"Sorteo", desc:""},
   {t:"13:35", title:"Tecnica y Colorimetria en Pieles Negras · Barbara Monteiro · 🇵🇹", desc:"Ponencia especializada en colorimetria para pieles negras."},
   {t:"14:10", title:"Arte y Algoritmo · Ennio Orsini · 🇮🇹", desc:""},
-  {t:"14:45", title:"Trazos de Amor · Eliane Pinto · 🇵🇹", desc:""},
+  {t:"14:45", title:"Eliane Pinto · 🇵🇹", desc:""},
   {t:"15:25", title:"Luiza Furiatti · 🇧🇷", desc:"Del diagnóstico al pigmento: ¿Qué necesita tu ceja? Cómo transformar análisis en estrategia y resultado."},
   {t:"15:35", star:true, title:"Sorteo", desc:""},
   {t:"15:45", title:"Coffee Break", desc:""},
@@ -64,7 +64,7 @@ const day2 = [
   {t:"12:05", title:"Reconstruccion de Areola · Isa Cercos · 🇪🇸", desc:""},
   {t:"12:55", title:"Almuerzo de networking", desc:""},
   {t:"13:55", title:"Reconstruccion de Cejas · Marcela Macedo · 🇧🇷", desc:""},
-  {t:"14:45", title:"Trazos de Amor · Eliane Pinto · 🇵🇹", desc:""},
+  {t:"14:45", title:"André Boring", desc:""},
   {t:"15:35", title:"Demostraciones Prácticas en Vivo — Día 2", desc:"Adriana Matsuoka, Andreia Guerreiro, Luis Carlos Ballestas, Bia Lacerada."},
 
 ];
