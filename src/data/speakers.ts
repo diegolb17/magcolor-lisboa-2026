@@ -146,7 +146,7 @@ export const speakers = [
 
 export const demos = [
   { name: "Eliane Pinto", country: "Brasil", flag: "🇧🇷", topic_es: "Microblading", topic_pt: "Microblading", topic_en: "Microblading" },
-  { name: "Adriana Matzuoka", country: "Brasil", flag: "🇧🇷", topic_es: "Capilar", topic_pt: "Capilar", topic_en: "Capillary" },
+  { name: "Adriana Matsuoka", country: "Brasil", flag: "🇧🇷", topic_es: "Capilar", topic_pt: "Capilar", topic_en: "Capillary" },
   { name: "Luiza Furiatti", country: "Brasil", flag: "🇧🇷", topic_es: "Demostración", topic_pt: "Demonstração", topic_en: "Demonstration" },
   { name: "Luis Carlos Ballestas", country: "Colombia/España", flag: "🇨🇴🇪🇸", topic_es: "Barba", topic_pt: "Barba", topic_en: "Beard" }
 ];

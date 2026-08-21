@@ -6,21 +6,25 @@ const speakers = [
   { flag: "🇪🇸", country: "España", name: "Miriam Alcántara", img: "miriam-alcantara", spec: "Dirección Artística", bio: "+30 años de trayectoria. +30.000 alumnas formadas. Speaker y jurado internacional." },
   { flag: "🇻🇪", country: "Venezuela", name: "Ana Gabriela", img: "ana-gabriela", spec: "Full Lips — Training Látex Labios", bio: "Especialista en técnica de labios completos. Formadora internacional." },
   { flag: "🇧🇷", country: "Brasil", name: "Bianca Tostes", img: "bianca-tostes", spec: "Microblading — Training Látex", bio: "Especialista en microblading. Formadora y competidora internacional." },
-  { flag: "🇪🇸", country: "España", name: "Mónica Puga", img: "monica-puga", spec: "Natural Bloom Process — Cejas difuminadas", bio: "Especialista en técnicas de difuminado. Natural Bloom Process." },
+  { flag: "🇪🇸", country: "España", name: "Mónica Puga", img: "monica-puga-v2", spec: "Natural Bloom Process — Cejas difuminadas", bio: "Especialista en técnicas de difuminado. Natural Bloom Process." },
   { flag: "🇮🇹", country: "Italia", name: "Ennio Orsini", img: "ennio-orsini", spec: "Donde el arte se encuentra con el algoritmo", bio: "Especialista en inteligencia artificial aplicada al sector de la micropigmentación." },
-  { flag: "🇪🇸", country: "España", name: "Albert Grau", img: "albert-grau", spec: "Aspectos legales del sector", bio: "Empresario con más de 30 años en el sector sanitario relacionado con la micropigmentación, el tattoo y el piercing. Fundador de su propia escuela en Barcelona, guía y orienta a los profesionales en el sistema legal actual." },
-  { flag: "🇧🇷", country: "Brasil", name: "Sand Guimarães", img: "sand-guimaraes", spec: "Camuflaje de Estrías", bio: "Referencia internacional en camuflaje de estrías y reconstrucción dérmica." },
+  { flag: "🇪🇸", country: "España", name: "Albert Grau", img: "albert-grau-v2", spec: "Aspectos legales del sector", bio: "Empresario con más de 30 años en el sector sanitario relacionado con la micropigmentación, el tattoo y el piercing. Fundador de su propia escuela en Barcelona, guía y orienta a los profesionales en el sistema legal actual." },
+  { flag: "🇧🇷", country: "Brasil", name: "Sand Guimarães", img: "sand-guimaraes-v2", spec: "Camuflaje de Estrías", bio: "Referencia internacional en camuflaje de estrías y reconstrucción dérmica." },
   { flag: "🇪🇸", country: "España", name: "Isa Cercós", img: "isa-cercos", spec: "Reconstrucción de Areola Mamaria", bio: "Especialista en reconstrucción de areola mamaria. Técnica de alta especialización médica." },
   { flag: "🇧🇷", country: "Brasil", name: "Marcela Macedo", img: "marcela-macedo", spec: "Reconstrucción de Cejas", bio: "Especialista en reconstrucción avanzada de cejas con técnica de hiperrealismo." },
-  { flag: "🇵🇹", country: "Portugal", name: "Eliane Pinto", img: "eliane-pinto", spec: "Trazos de Amor — Micropigmentación que acoge y transforma", bio: "Especialista en micropigmentación humanizada. Transforma vidas con técnica y acogimiento." },
-  { flag: "🇵🇹", country: "Portugal", name: "Bárbara Monteiro", img: "barbara-monteiro-v2", spec: "Pele negra", bio: "Referente en técnica para pieles negras." },
+  { flag: "🇵🇹", country: "Portugal", name: "Eliane Pinto", img: "eliane-pinto-v2", spec: "Trazos de Amor — Micropigmentación que acoge y transforma", bio: "Especialista en micropigmentación humanizada. Transforma vidas con técnica y acogimiento." },
+  { flag: "🇵🇹", country: "Portugal", name: "Bárbara Monteiro", img: "barbara-monteiro-v3", spec: "Pele negra", bio: "Referente en técnica para pieles negras." },
+,
+  { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "andreia-guerreiro-v2", spec: "Demostración en vivo", bio: "Profesional portuguesa de micropigmentación." },
+  { flag: "🇧🇷", country: "Brasil", name: "Bia Lacerada", img: "bia-lacerada-v2", spec: "Luxer Liner — Técnica en ojos", bio: "Especialista en técnica de ojos. Creadora del Luxer Liner." },
+  { flag: "🇧🇷", country: "Brasil", name: "Luiza Furiatti", img: "luiza-furiatti", spec: "Del diagnóstico al pigmento", bio: "Especialista en diagnóstico y estrategia para cejas." }
 ];
 
 const demos = [
-  { flag: "🇧🇷", country: "Brasil", name: "Adriana Matsuoka", img: "andreia-guerreiro", spec: "Capilar" },
-  { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "adriana-matsuoka", spec: "Demostración" },
+  { flag: "🇧🇷", country: "Brasil", name: "Adriana Matsuoka", img: "adriana-matsuoka-v2", spec: "Capilar" },
+  { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "andreia-guerreiro-v2", spec: "Demostración" },
   { flag: "🇨🇴🇪🇸", country: "Colombia/España", name: "Luis Carlos Ballestas", img: "luis-carlos-ballestas", spec: "Barba" },
-  { flag: "🇧🇷", country: "Brasil", name: "Bia Lacerada", img: "bia-lacerada", spec: "Luxer Liner — Técnica en ojos" }
+  { flag: "🇧🇷", country: "Brasil", name: "Bia Lacerada", img: "bia-lacerada-v2", spec: "Luxer Liner — Técnica en ojos" }
 ];
 
 // === TIERS ===
@@ -87,10 +91,19 @@ const faqs = [
 // === RENDER ===
 
 const jurados = [
-  { flag: "🇧🇷", country: "Brasil", name: "Gerliene Trindade", spec: "Jurado" },
-  { flag: "🇪🇸", country: "España", name: "Natalia Puche", spec: "Jurado" },
-  { flag: "🇧🇷", country: "Brasil", name: "Glaucia Ferreira", spec: "Jurado" },
+  { flag: "🇧🇷", country: "Brasil", name: "Gerliene Trindade", img: "gerliene-trindade-v2", spec: "Jurado" },
+  { flag: "🇪🇸", country: "España", name: "Natalia Puche", img: "natalia-puche-v2", spec: "Jurado" },
+  { flag: "🇧🇷", country: "Brasil", name: "Glaucia Ferreira", img: "glaucia-ferreira", spec: "Jurado" },
+  { flag: "🇧🇷", country: "Brasil", name: "Daiane Santos", img: "daiane-santos", spec: "Jurado" },
+  { flag: "🇵🇹", country: "Portugal", name: "Elisa Pereira", img: "elisa-pereira", spec: "Jurado" },
 ];
+const embajadoras = [
+  { flag: "🇧🇷", country: "Brasil", name: "Adriana Matsuoka", img: "adriana-matsuoka-v2", spec: "Embajadora" },
+  { flag: "🇧🇷", country: "Brasil", name: "Daiane Santos", img: "daiane-santos", spec: "Embajadora" },
+  { flag: "🇵🇹", country: "Portugal", name: "Elisa Pereira", img: "elisa-pereira", spec: "Embajadora" },
+  { flag: "🇧🇷", country: "Brasil", name: "Gerliene Trindade", img: "gerliene-trindade-v2", spec: "Embajadora" },
+];
+
 function renderSpeakers() {
   const grid = document.getElementById('sp-grid');
   if (!grid) return;
@@ -122,8 +135,15 @@ function renderTimeline(containerId, data) {
 function renderJurados() {
   const grid = document.getElementById('jurados-grid');
   if (!grid) return;
-  grid.innerHTML = jurados.map(j => `<div class="card center speaker"><img src="/assets/speakers/${j.name.toLowerCase().replace(/ /g,'-').normalize('NFD').replace(/[̀-ͯ]/g,'')}.jpg" class="avatar" alt="${j.name}" style="object-fit:cover" onerror="this.style.display='none'"><p class="sp-name">${j.name}</p><p class="sp-spec">${j.spec}</p></div>`).join('');
+  grid.innerHTML = jurados.map(j => `<div class="card center speaker"><img src="/assets/speakers/${j.img || j.name.toLowerCase().replace(/ /g,'-').normalize('NFD').replace(/[̀-ͯ]/g,'')}.jpg" class="avatar" alt="${j.name}" style="object-fit:cover" onerror="this.style.display='none'"><p class="sp-name">${j.name}</p><p class="sp-spec">${j.spec}</p></div>`).join('');
 }
+
+function renderEmbajadoras() {
+  const grid = document.getElementById('embajadoras-grid');
+  if (!grid) return;
+  grid.innerHTML = embajadoras.map(e => `<div class="card center speaker"><img src="/assets/speakers/${e.img}.jpg" class="avatar" alt="${e.name}" style="object-fit:cover" onerror="this.style.display='none'"><p class="sp-name">${e.name}</p><p class="sp-spec">${e.spec}</p></div>`).join('');
+}
+
 function renderFAQ() {
   const el = document.getElementById('faq-list');
   if (!el) return;
@@ -146,4 +166,5 @@ renderTimeline('tl-d1', day1);
 renderTimeline('tl-d2', day2);
 renderTimeline('tl-dn', divineNight);
 renderJurados();
+renderEmbajadoras();
 renderFAQ();

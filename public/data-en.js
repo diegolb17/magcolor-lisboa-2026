@@ -6,19 +6,23 @@ const speakers = [
   { flag: "🇪🇸", country: "Spain", name: "Miriam Alcántara", img: "miriam-alcantara", spec: "Artistic Direction", bio: "30+ years of experience. 30,000+ students trained. International speaker and judge." },
   { flag: "🇻🇪", country: "Venezuela", name: "Ana Gabriela", img: "ana-gabriela", spec: "Full Lips — Latex Lip Training", bio: "Specialist in full lip technique. International trainer." },
   { flag: "🇧🇷", country: "Brazil", name: "Bianca Tostes", img: "bianca-tostes", spec: "Microblading — Latex Training", bio: "Specialist in microblading. International trainer and competitor." },
-  { flag: "🇪🇸", country: "Spain", name: "Mónica Puga", img: "monica-puga", spec: "Natural Bloom Process — Powder Brows", bio: "Specialist in powder techniques. Natural Bloom Process." },
+  { flag: "🇪🇸", country: "Spain", name: "Mónica Puga", img: "monica-puga-v2", spec: "Natural Bloom Process — Powder Brows", bio: "Specialist in powder techniques. Natural Bloom Process." },
   { flag: "🇮🇹", country: "Italy", name: "Ennio Orsini", img: "ennio-orsini", spec: "Where art meets the algorithm", bio: "Specialist in artificial intelligence applied to the micropigmentation sector." },
-  { flag: "🇪🇸", country: "Spain", name: "Albert Grau", img: "albert-grau", spec: "Legal aspects of the sector", bio: "Entrepreneur with over 30 years in the healthcare sector related to micropigmentation, tattooing and piercing. Founder of his own school in Barcelona, he guides and advises professionals on the current legal system." },
-  { flag: "🇧🇷", country: "Brazil", name: "Sand Guimarães", img: "sand-guimaraes", spec: "Stretch Mark Camouflage", bio: "International reference in stretch mark camouflage and dermal reconstruction." },
+  { flag: "🇪🇸", country: "Spain", name: "Albert Grau", img: "albert-grau-v2", spec: "Legal aspects of the sector", bio: "Entrepreneur with over 30 years in the healthcare sector related to micropigmentation, tattooing and piercing. Founder of his own school in Barcelona, he guides and advises professionals on the current legal system." },
+  { flag: "🇧🇷", country: "Brazil", name: "Sand Guimarães", img: "sand-guimaraes-v2", spec: "Stretch Mark Camouflage", bio: "International reference in stretch mark camouflage and dermal reconstruction." },
   { flag: "🇪🇸", country: "Spain", name: "Isa Cercós", img: "isa-cercos", spec: "Areola Reconstruction", bio: "Specialist in areola reconstruction. Highly specialized medical technique." },
   { flag: "🇧🇷", country: "Brazil", name: "Marcela Macedo", img: "marcela-macedo", spec: "Eyebrow Reconstruction", bio: "Specialist in advanced eyebrow reconstruction with hyperrealism technique." },
-  { flag: "🇵🇹", country: "Portugal", name: "Eliane Pinto", img: "eliane-pinto", spec: "Traces of Love — Micropigmentation that welcomes and transforms", bio: "Specialist in humanized micropigmentation. Transforms lives with technique and care." },
-  { flag: "🇵🇹", country: "Portugal", name: "Bárbara Monteiro", img: "barbara-monteiro-v2", spec: "Black skin", bio: "Reference in technique for black skin." },
+  { flag: "🇵🇹", country: "Portugal", name: "Eliane Pinto", img: "eliane-pinto-v2", spec: "Traces of Love — Micropigmentation that welcomes and transforms", bio: "Specialist in humanized micropigmentation. Transforms lives with technique and care." },
+  { flag: "🇵🇹", country: "Portugal", name: "Bárbara Monteiro", img: "barbara-monteiro-v3", spec: "Black skin", bio: "Reference in technique for black skin." },
+,
+  { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "andreia-guerreiro-v2", spec: "Live Demo", bio: "Portuguese micropigmentation professional." },
+  { flag: "🇧🇷", country: "Brazil", name: "Bia Lacerada", img: "bia-lacerada-v2", spec: "Luxer Liner — Eye technique", bio: "Eye technique specialist. Creator of Luxer Liner." },
+  { flag: "🇧🇷", country: "Brazil", name: "Luiza Furiatti", img: "luiza-furiatti", spec: "From diagnosis to pigment", bio: "Specialist in brow diagnosis and strategy." }
 ];
 
 const demos = [
-  { flag: "🇧🇷", country: "Brazil", name: "Adriana Matsuoka", img: "andreia-guerreiro", spec: "Capillary" },
-  { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "adriana-matsuoka", spec: "Demo" },
+  { flag: "🇧🇷", country: "Brazil", name: "Adriana Matsuoka", img: "adriana-matsuoka-v2", spec: "Capillary" },
+  { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "andreia-guerreiro-v2", spec: "Demo" },
   { flag: "🇨🇴🇪🇸", country: "Colombia/Spain", name: "Luis Carlos Ballestas", img: "luis-carlos-ballestas", spec: "Beard" }
 ];
 
@@ -86,9 +90,19 @@ const faqs = [
 // === RENDER ===
 
 const jurados = [
-  { flag: "🇧🇷", country: "Brasil", name: "Gerliene Trindade", spec: "Jurado" },
-  { flag: "🇪🇸", country: "España", name: "Natalia Puche", spec: "Jurado" },
+  { flag: "🇧🇷", country: "Brazil", name: "Gerliene Trindade", img: "gerliene-trindade-v2", spec: "Judge" },
+  { flag: "🇪🇸", country: "Spain", name: "Natalia Puche", img: "natalia-puche-v2", spec: "Judge" },
+  { flag: "🇧🇷", country: "Brazil", name: "Glaucia Ferreira", img: "glaucia-ferreira", spec: "Judge" },
+  { flag: "🇧🇷", country: "Brazil", name: "Daiane Santos", img: "daiane-santos", spec: "Judge" },
+  { flag: "🇵🇹", country: "Portugal", name: "Elisa Pereira", img: "elisa-pereira", spec: "Judge" },
 ];
+const embajadoras = [
+  { flag: "🇧🇷", country: "Brazil", name: "Adriana Matsuoka", img: "adriana-matsuoka-v2", spec: "Ambassador" },
+  { flag: "🇧🇷", country: "Brazil", name: "Daiane Santos", img: "daiane-santos", spec: "Ambassador" },
+  { flag: "🇵🇹", country: "Portugal", name: "Elisa Pereira", img: "elisa-pereira", spec: "Ambassador" },
+  { flag: "🇧🇷", country: "Brazil", name: "Gerliene Trindade", img: "gerliene-trindade-v2", spec: "Ambassador" },
+];
+
 function renderSpeakers() {
   const grid = document.getElementById('sp-grid');
   if (!grid) return;
@@ -120,8 +134,15 @@ function renderTimeline(containerId, data) {
 function renderJurados() {
   const grid = document.getElementById('jurados-grid');
   if (!grid) return;
-  grid.innerHTML = jurados.map(j => `<div class="card center speaker"><img src="/assets/speakers/${j.name.toLowerCase().replace(/ /g,'-').normalize('NFD').replace(/[̀-ͯ]/g,'')}.jpg" class="avatar" alt="${j.name}" style="object-fit:cover" onerror="this.style.display='none'"><p class="sp-name">${j.name}</p><p class="sp-spec">${j.spec}</p></div>`).join('');
+  grid.innerHTML = jurados.map(j => `<div class="card center speaker"><img src="/assets/speakers/${j.img || j.name.toLowerCase().replace(/ /g,'-').normalize('NFD').replace(/[̀-ͯ]/g,'')}.jpg" class="avatar" alt="${j.name}" style="object-fit:cover" onerror="this.style.display='none'"><p class="sp-name">${j.name}</p><p class="sp-spec">${j.spec}</p></div>`).join('');
 }
+
+function renderEmbajadoras() {
+  const grid = document.getElementById('embajadoras-grid');
+  if (!grid) return;
+  grid.innerHTML = embajadoras.map(e => `<div class="card center speaker"><img src="/assets/speakers/${e.img}.jpg" class="avatar" alt="${e.name}" style="object-fit:cover" onerror="this.style.display='none'"><p class="sp-name">${e.name}</p><p class="sp-spec">${e.spec}</p></div>`).join('');
+}
+
 function renderFAQ() {
   const el = document.getElementById('faq-list');
   if (!el) return;
@@ -144,4 +165,5 @@ renderTimeline('tl-d1', day1);
 renderTimeline('tl-d2', day2);
 renderTimeline('tl-dn', divineNight);
 renderJurados();
+renderEmbajadoras();
 renderFAQ();
