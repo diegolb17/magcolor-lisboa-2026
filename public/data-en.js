@@ -29,7 +29,7 @@ const demos = [
 // === TIERS ===
 const tiers = [
   { name: "Basic", desc: "For professionals who want to experience the full event and access essential content.", price: "497 €", includes: ["Access to 2 full days","International lectures","Simultaneous Portuguese-Spanish translation","Lunches day 1 & 2","Networking","Access to cocktail dinner awards ceremony","Standard welcome kit","Digital participation certificate","€497 training voucher"], link: "https://buy.stripe.com/cNifZjdCn2gZ5WqgBH7kc00" },
-  { name: "Gold", desc: "For professionals who want a more complete experience with more value and premium benefits.", price: "797 €", badge: "MOST CHOSEN", badgeClass: "tier-badge-gold", hl: true, includes: ["Everything included in Basic","Business kit","Preferential seating","Surprise sponsor gift","Premium physical certificate","€797 training voucher"], link: "https://buy.stripe.com/cNibJ30PB7BjacG7177kc01" },
+  { name: "Gold", desc: "For professionals who want a more complete experience with more value and premium benefits.", price: "797 €", badge: "MOST CHOSEN", badgeClass: "tier-badge-gold", hl: true, includes: ["Everything included in Basic","Business kit","Preferential seating","Premium physical certificate","€797 training voucher"], link: "https://buy.stripe.com/cNibJ30PB7BjacG7177kc01" },
   { name: "Divine VIP", desc: "For those who want to experience MAGColor at the highest level. Only 10 spots.", price: "1.297 €", badge: "ONLY 10 SPOTS", badgeClass: "tier-badge-red", includes: ["Everything included in Gold","Guaranteed front row","Divine Night: Private VIP dinner","2 nights accommodation (shared double)","Breakfast at HF Fénix Lisbon Hotel","Preferential access","Private Meet & Greet with speakers","Popular vote right at championship","Personalized credential","VIP table at the Gala","€1,297 training voucher"], link: "https://buy.stripe.com/6oUcN769V08RgB43OV7kc02" }
 ];
 
@@ -47,7 +47,7 @@ const day1 = [
   {t:"13:30", star:true, title:"Raffle", desc:""},
   {t:"13:35", title:"Technique & Colorimetry for Black Skin · Barbara Monteiro · 🇵🇹", desc:"Specialized lecture on colorimetry for black skin."},
   {t:"14:10", title:"Art & Algorithm · Ennio Orsini · 🇮🇹", desc:""},
-  {t:"14:45", title:"Eliane Pinto · 🇵🇹", desc:""},
+  {t:"14:45", title:"Eliane Pinto · 🇵🇹", desc:"Micropigmentation that embraces and transforms."},
   {t:"15:25", title:"Luiza Furiatti · 🇧🇷", desc:"From diagnosis to pigment: What does your brow need? How to turn analysis into strategy and results."},
   {t:"15:35", star:true, title:"Raffle", desc:""},
   {t:"15:45", title:"Coffee Break", desc:""},
@@ -78,13 +78,13 @@ const divineNight = [
 
 // === FAQ ===
 const faqs = [
-  { q:"What's included in each ticket type?", a:"All tickets include access to the 2-day event, international lectures, simultaneous translation, lunches, coffee breaks, access to the White Gala Dinner, welcome kit and certificate. The differences are in the additional benefits of each category (Gold and Divine VIP)." },
+  { q:"What's included in each ticket type?", a:"All tickets include access to the 2-day event, international lectures, simultaneous translation, lunches, coffee breaks, access to the Awards Gala, welcome kit and certificate. The differences are in the additional benefits of each category (Gold and Divine VIP)." },
   { q:"Is accommodation included?", a:"Accommodation is only included in the Divine VIP ticket (2 nights in a shared double room with breakfast at the HF Fénix Lisbon Hotel). For other categories, we offer an exclusive discount link for participants." },
-  { q:"Will there be simultaneous translation?", a:"Yes! The event will have simultaneous Portuguese-Spanish translation at all lectures. A professional translator will be in the room with their own microphone." },
-  { q:"How does the Championship work?", a:"The championship has 3 categories: Hair by Hair, Powder Brows and Lips. Participants compete live. An international jury evaluates each work and the winners are awarded at the White Gala Dinner with trophies, recognition and international visibility." },
-  { q:"What are the payment methods?", a:"We accept online payment via Stripe (credit/debit card) and also bank transfer or Bizum for the first 20 tickets with exclusive discount." },
+  { q:"Will there be simultaneous translation?", a:"Yes! The event will have simultaneous Portuguese-Spanish translation at all lectures." },
+  { q:"How does the Championship work?", a:"The championship has 3 categories: Hair by Hair, Powder Brows and Lips. Participants compete live on latex. An international jury evaluates each work and the winners are awarded at the Awards Gala with trophies, recognition and international visibility." },
+  { q:"What are the payment methods?", a:"We accept online payment via Stripe (credit/debit card) and also bank transfer or Bizum." },
   { q:"What is the cancellation policy?", a:"Cancellation up to 60 days before the event: 50% refund. After this period, no refund. The spot is transferable: you can transfer your ticket to another professional with 7 days notice." },
-  { q:"How does the training voucher work?", a:"Each ticket includes an equivalent training voucher (Basic: €497, Gold: €797, Divine VIP: €1,297) fully applicable to training programs at Instituto Miriam Alcántara." }
+  { q:"How does the training voucher work?", a:"Each ticket includes an equivalent training voucher (Basic: €497, Gold: €797, Divine VIP: €1,297) fully applicable to specific training programs at Instituto Miriam Alcántara." }
 ];
 
 // === RENDER ===

@@ -30,7 +30,7 @@ const demos = [
 // === TIERS ===
 const tiers = [
   { name: "Basic", desc: "Para profesionales que quieren vivir el evento completo y acceder al contenido esencial.", price: "497 €", includes: ["Acceso a los 2 días completos","Ponencias internacionales","Traducción simultánea portugués-español","Almuerzos día 1 y día 2","Networking","Acceso a la cena cocktail entrega de premios","Kit de bienvenida estándar","Certificado digital de participación","Vale de 497 € en formación"], link: "https://buy.stripe.com/cNifZjdCn2gZ5WqgBH7kc00" },
-  { name: "Gold", desc: "Para profesionales que quieren una experiencia más completa, con más valor y beneficios premium.", price: "797 €", badge: "MÁS ELEGIDO", badgeClass: "tier-badge-gold", hl: true, includes: ["Todo lo incluido en Basic","Kit de negocio","Ubicación preferencial","Regalo sorpresa del patrocinador","Certificado físico premium","Vale de 797 € en formación"], link: "https://buy.stripe.com/cNibJ30PB7BjacG7177kc01" },
+  { name: "Gold", desc: "Para profesionales que quieren una experiencia más completa, con más valor y beneficios premium.", price: "797 €", badge: "MÁS ELEGIDO", badgeClass: "tier-badge-gold", hl: true, includes: ["Todo lo incluido en Basic","Kit de negocio","Ubicación preferencial","Certificado físico premium","Vale de 797 € en formación"], link: "https://buy.stripe.com/cNibJ30PB7BjacG7177kc01" },
   { name: "Divine VIP", desc: "Para quien quiere vivir el MAGColor Experience al máximo nivel. Solo 10 plazas.", price: "1.297 €", badge: "SOLO 10 PLAZAS", badgeClass: "tier-badge-red", includes: ["Todo lo incluido en Gold","Primera fila garantida","Divine Night: cena privada VIP","2 noches de alojamiento (doble compartido)","Desayuno en el Hotel HF Fénix Lisboa","Acceso preferencial","Meet & Greet privado con ponentes","Derecho a voto popular en el campeonato","Credencial personalizada","Mesa VIP en la Cena","Vale de 1.297 € en formación"], link: "https://buy.stripe.com/6oUcN769V08RgB43OV7kc02" }
 ];
 
@@ -48,7 +48,7 @@ const day1 = [
   {t:"13:30", star:true, title:"Sorteo", desc:""},
   {t:"13:35", title:"Tecnica y Colorimetria en Pieles Negras · Barbara Monteiro · 🇵🇹", desc:"Ponencia especializada en colorimetria para pieles negras."},
   {t:"14:10", title:"Arte y Algoritmo · Ennio Orsini · 🇮🇹", desc:""},
-  {t:"14:45", title:"Eliane Pinto · 🇵🇹", desc:""},
+  {t:"14:45", title:"Eliane Pinto · 🇵🇹", desc:"Micropigmentación que abraza y transforma."},
   {t:"15:25", title:"Luiza Furiatti · 🇧🇷", desc:"Del diagnóstico al pigmento: ¿Qué necesita tu ceja? Cómo transformar análisis en estrategia y resultado."},
   {t:"15:35", star:true, title:"Sorteo", desc:""},
   {t:"15:45", title:"Coffee Break", desc:""},
@@ -79,13 +79,13 @@ const divineNight = [
 
 // === FAQ ===
 const faqs = [
-  { q:"¿Qué incluye cada tipo de entrada?", a:"Todas las entradas incluyen acceso a los 2 días de evento, ponencias internacionales, traducción simultánea, almuerzos, coffee breaks, acceso a la Cena Blanca de Gala, kit de bienvenida y certificado. Las diferencias están en los beneficios adicionales de cada categoría (Gold y Divine VIP)." },
+  { q:"¿Qué incluye cada tipo de entrada?", a:"Todas las entradas incluyen acceso a los 2 días de evento, ponencias internacionales, traducción simultánea, almuerzos, coffee breaks, acceso a la Gala de Premiación, kit de bienvenida y certificado. Las diferencias están en los beneficios adicionales de cada categoría (Gold y Divine VIP)." },
   { q:"¿El alojamiento está incluido?", a:"El alojamiento está incluido solo en la entrada Divine VIP (2 noches en habitación doble compartida con desayuno en el Hotel HF Fénix Lisboa). Para las demás categorías, ofrecemos un enlace con descuento exclusivo para participantes." },
-  { q:"¿Habrá traducción simultánea?", a:"¡Sí! El evento tendrá traducción simultánea portugués-español en todas las ponencias. Un traductor profesional estará en la sala con micrófono propio." },
-  { q:"¿Cómo funciona el Campeonato?", a:"El campeonato tiene 3 categorías: Pelo a Pelo, Difuminado de Cejas y Labios. Las participantes compiten en vivo. Un jurado internacional evalúa cada trabajo y las ganadoras son premiadas en la Cena Blanca de Gala con trofeos, reconocimiento y visibilidad internacional." },
-  { q:"¿Cuáles son las formas de pago?", a:"Aceptamos pago online vía Stripe (tarjeta de crédito/débito) y también transferencia bancaria o Bizum para las 20 primeras entradas con descuento exclusivo." },
+  { q:"¿Habrá traducción simultánea?", a:"¡Sí! El evento tendrá traducción simultánea portugués-español en todas las ponencias." },
+  { q:"¿Cómo funciona el Campeonato?", a:"El campeonato tiene 3 categorías: Pelo a Pelo, Difuminado de Cejas y Labios. Las participantes compiten en vivo en látex. Un jurado internacional evalúa cada trabajo y las ganadoras son premiadas en la Gala de Premiación con trofeos, reconocimiento y visibilidad internacional." },
+  { q:"¿Cuáles son las formas de pago?", a:"Aceptamos pago online vía Stripe (tarjeta de crédito/débito) y también transferencia bancaria o Bizum." },
   { q:"¿Cuál es la política de cancelación?", a:"Cancelación hasta 60 días antes del evento: reembolso del 50%. Después de ese plazo, sin reembolso. La plaza es transferible: puedes ceder tu entrada a otra profesional con 7 días de antelación." },
-  { q:"¿Cómo funciona el vale formativo?", a:"Cada entrada incluye un vale formativo equivalente (Basic: 497 €, Gold: 797 €, Divine VIP: 1.297 €) aplicable íntegramente en programas de formación del Instituto Miriam Alcántara." }
+  { q:"¿Cómo funciona el vale formativo?", a:"Cada entrada incluye un vale formativo equivalente (Basic: 497 €, Gold: 797 €, Divine VIP: 1.297 €) aplicable íntegramente en programas de formación específicos del Instituto Miriam Alcántara." }
 ];
 
 // === RENDER ===
