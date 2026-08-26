@@ -2,15 +2,15 @@
 
 // === SPEAKERS ===
 const speakers = [
-  { flag: "🇧🇷", country: "Brasil", name: "Andrea Martins", img: "andrea-martins", spec: "Pigmentología y Colorimetría", bio: "Fundadora de MAG Color. Más de 40 años en el mercado. Líder en Latinoamérica con certificación REACH Europa." },
+  { flag: "🇧🇷", country: "Brasil", name: "Andrea Martins", img: "andrea-martins-v2", spec: "Pigmentología y Colorimetría", bio: "Fundadora de MAG Color. Más de 40 años en el mercado. Líder en Latinoamérica con certificación REACH Europa." },
   { flag: "🇪🇸", country: "España", name: "Miriam Alcántara", img: "miriam-alcantara", spec: "Dirección Artística", bio: "+30 años de trayectoria. +30.000 alumnas formadas. Speaker y jurado internacional." },
-  { flag: "🇻🇪", country: "Venezuela", name: "Ana Gabriela", img: "ana-gabriela", spec: "Full Lips — Training Látex Labios", bio: "Especialista en técnica de labios completos. Formadora internacional." },
-  { flag: "🇧🇷", country: "Brasil", name: "Bianca Tostes", img: "bianca-tostes", spec: "Microblading — Training Látex", bio: "Especialista en microblading. Formadora y competidora internacional." },
+  { flag: "🇻🇪", country: "Venezuela", name: "Ana Gabriela", img: "ana-gabriela-v2", spec: "Full Lips — Training Látex Labios", bio: "Especialista en técnica de labios completos. Formadora internacional." },
+  { flag: "🇧🇷", country: "Brasil", name: "Bianca Tostes", img: "bianca-tostes-v2", spec: "Microblading — Training Látex", bio: "Especialista en microblading. Formadora y competidora internacional." },
   { flag: "🇪🇸", country: "España", name: "Mónica Puga", img: "monica-puga-v2", spec: "Natural Bloom Process — Cejas difuminadas", bio: "Especialista en técnicas de difuminado. Natural Bloom Process." },
-  { flag: "🇮🇹", country: "Italia", name: "Ennio Orsini", img: "ennio-orsini", spec: "Donde el arte se encuentra con el algoritmo", bio: "Especialista en inteligencia artificial aplicada al sector de la micropigmentación." },
+  { flag: "🇮🇹", country: "Italia", name: "Ennio Orsini", img: "ennio-orsini-v2", spec: "Donde el arte se encuentra con el algoritmo", bio: "Especialista en inteligencia artificial aplicada al sector de la micropigmentación." },
   { flag: "🇪🇸", country: "España", name: "Albert Grau", img: "albert-grau-v2", spec: "Aspectos legales del sector", bio: "Empresario con más de 30 años en el sector sanitario relacionado con la micropigmentación, el tattoo y el piercing. Fundador de su propia escuela en Barcelona, guía y orienta a los profesionales en el sistema legal actual." },
   { flag: "🇧🇷", country: "Brasil", name: "Sand Guimarães", img: "sand-guimaraes-v2", spec: "Camuflaje de Estrías", bio: "Referencia internacional en camuflaje de estrías y reconstrucción dérmica." },
-  { flag: "🇪🇸", country: "España", name: "Isa Cercós", img: "isa-cercos", spec: "Reconstrucción de Areola Mamaria", bio: "Especialista en reconstrucción de areola mamaria. Técnica de alta especialización médica." },
+  { flag: "🇪🇸", country: "España", name: "Isa Cercós", img: "isa-cercos-v2", spec: "Reconstrucción de Areola Mamaria", bio: "Especialista en reconstrucción de areola mamaria. Técnica de alta especialización médica." },
   { flag: "🇧🇷", country: "Brasil", name: "Marcela Macedo", img: "marcela-macedo", spec: "Reconstrucción de Cejas", bio: "Especialista en reconstrucción avanzada de cejas con técnica de hiperrealismo." },
   { flag: "🇵🇹", country: "Portugal", name: "Eliane Pinto", img: "eliane-pinto-v2", spec: "Trazos de Amor — Micropigmentación que acoge y transforma", bio: "Especialista en micropigmentación humanizada. Transforma vidas con técnica y acogimiento." },
   { flag: "🇵🇹", country: "Portugal", name: "Bárbara Monteiro", img: "barbara-monteiro-v3", spec: "Pele negra", bio: "Referente en técnica para pieles negras." },
