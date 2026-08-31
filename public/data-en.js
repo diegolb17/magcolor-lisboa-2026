@@ -21,9 +21,9 @@ const speakers = [
 ];
 
 const demos = [
-  { flag: "🇧🇷", country: "Brazil", name: "Adriana Matsuoka", img: "adriana-matsuoka-v2", spec: "Capillary" },
-  { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "andreia-guerreiro-v2", spec: "Demo" },
-  { flag: "🇨🇴🇪🇸", country: "Colombia/Spain", name: "Luis Carlos Ballestas", img: "luis-carlos-ballestas", spec: "Beard" }
+  { flag: "🇧🇷", country: "Brazil", name: "Adriana Matsuoka", img: "adriana-matsuoka-v2", spec: "Scalp Shading" },
+  { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "andreia-guerreiro-v2", spec: "MicroScalp — Realistic stippling technique" },
+  { flag: "🇧🇷", country: "Brazil", name: "Renata Swierginski", img: "renata-swierginski", spec: "Live demo — Beard" }
 ];
 
 // === TIERS ===
@@ -68,7 +68,7 @@ const day2 = [
   {t:"12:55", title:"Networking Lunch", desc:""},
   {t:"13:55", title:"Eyebrow Reconstruction · Marcela Macedo · 🇧🇷", desc:""},
   {t:"14:45", title:"André Boring", desc:""},
-  {t:"15:35", title:"Live Demos — Day 2", desc:"Adriana Matsuoka, Andreia Guerreiro, Luis Carlos Ballestas, Bia Lacerada."},
+  {t:"15:35", title:"Live Demos — Day 2", desc:"Adriana Matsuoka, Andreia Guerreiro, Bia Lacerada, Renata Swierginski."},
 
 ];
 

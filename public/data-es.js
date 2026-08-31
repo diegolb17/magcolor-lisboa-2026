@@ -21,9 +21,9 @@ const speakers = [
 ];
 
 const demos = [
-  { flag: "🇧🇷", country: "Brasil", name: "Adriana Matsuoka", img: "adriana-matsuoka-v2", spec: "Capilar" },
-  { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "andreia-guerreiro-v2", spec: "Demostración" },
-  { flag: "🇨🇴🇪🇸", country: "Colombia/España", name: "Luis Carlos Ballestas", img: "luis-carlos-ballestas", spec: "Barba" },
+  { flag: "🇧🇷", country: "Brasil", name: "Adriana Matsuoka", img: "adriana-matsuoka-v2", spec: "Scalp Shading" },
+  { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "andreia-guerreiro-v2", spec: "MicroScalp — Técnica Realista de puntillismo" },
+  { flag: "🇧🇷", country: "Brasil", name: "Renata Swierginski", img: "renata-swierginski", spec: "Demostración en vivo — Barba" },
   { flag: "🇧🇷", country: "Brasil", name: "Bia Lacerada", img: "bia-lacerada-v2", spec: "Luxer Liner — Técnica en ojos" }
 ];
 
@@ -69,7 +69,7 @@ const day2 = [
   {t:"12:55", title:"Almuerzo de networking", desc:""},
   {t:"13:55", title:"Reconstruccion de Cejas · Marcela Macedo · 🇧🇷", desc:""},
   {t:"14:45", title:"André Boring", desc:""},
-  {t:"15:35", title:"Demostraciones Prácticas en Vivo — Día 2", desc:"Adriana Matsuoka, Andreia Guerreiro, Luis Carlos Ballestas, Bia Lacerada."},
+  {t:"15:35", title:"Demostraciones Prácticas en Vivo — Día 2", desc:"Adriana Matsuoka, Andreia Guerreiro, Bia Lacerada, Renata Swierginski."},
 
 ];
 
