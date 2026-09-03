@@ -295,9 +295,10 @@ print('rotas:',refs-have); print('sin usar:',sorted(have-refs))"
 
 - Evento: 24–25 oct 2026, Hotel HF Fénix Lisboa. Entradas: Basic 497€, Gold 797€,
   Divine VIP 1.297€ (Stripe). Premios del campeonato (array `premios`, página programa):
-  1º incluye equipo Biomaser, agujas Pink Biomaser, anillos, 10 pigmentos MAG Color,
-  puesto de ponente en la próxima edición europea y 50% en formación; 2º incluye
-  10 pigmentos, anillos, entrada a la próxima edición y 50% en formación.
+  1º incluye trofeo, equipo Biomaser, agujas Pink Biomaser, anillos, 10 pigmentos
+  MAG Color, puesto de ponente en la próxima edición europea y 50% en formación;
+  2º incluye trofeo, 10 pigmentos, anillos, entrada a la próxima edición y 50% en
+  formación. El trofeo va siempre como primer item de la lista.
   WhatsApp instituto: +34 696 808 098 (Nieves). Instagram:
   @institutomiriamalcantara. Cambios los pide Miriam vía Diego; antes de inventar
   datos (banderas, specs, bios) preguntar.

@@ -79,6 +79,7 @@ const divineNight = [
 // === CHAMPIONSHIP PRIZES ===
 const premios = [
   { pos: "1st", title: "First Prize", hl: true, items: [
+    "First place trophy",
     "1 latest-generation Biomaser machine",
     "1 box of Pink Biomaser needles",
     "1 pack of ink rings",
@@ -87,6 +88,7 @@ const premios = [
     "50% off a training program at Instituto Miriam Alcántara"
   ] },
   { pos: "2nd", title: "Second Prize", items: [
+    "Second place trophy",
     "10 units of MAG Color pigments",
     "1 pack of ink rings",
     "1 ticket to the next MAGColor Experience in Europe",

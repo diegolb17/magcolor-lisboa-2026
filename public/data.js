@@ -79,6 +79,7 @@ const divineNight = [
 // === PREMIOS DO CAMPEONATO ===
 const premios = [
   { pos: "1º", title: "Primeiro Prêmio", hl: true, items: [
+    "Troféu de primeiro lugar",
     "1 equipamento Biomaser de última geração",
     "1 caixa de agulhas Pink Biomaser",
     "1 pacote de anéis",
@@ -87,6 +88,7 @@ const premios = [
     "50% de desconto numa formação no Instituto Miriam Alcántara"
   ] },
   { pos: "2º", title: "Segundo Prêmio", items: [
+    "Troféu de segundo lugar",
     "10 unidades de pigmentos MAG Color",
     "1 pacote de anéis",
     "1 ingresso para o próximo MAGColor Experience na Europa",
