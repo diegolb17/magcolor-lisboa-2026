@@ -56,6 +56,7 @@ magcolor-lisboa-2026/
 │   ├── assets/bg/            # lisbon-bg.jpg
 │   ├── assets/logos/         # logo-mag-horizontal.jpeg, logo-mag-mark.png
 │   ├── logo.png, logo-horizontal.jpg, favicon.png, ig-logo.png
+│   ├── og-image.jpg          # ★ 1200×630 — preview al compartir (WhatsApp/IG/Facebook)
 │   ├── certificado.jpg       # imagen del vale formativo (página entradas)
 │   ├── cejas.jpg / ojos.jpg / labios.jpg   # franja decorativa del home (opacidad 0.20)
 │   └── reglas-campeonato.pdf # PDF descargable de reglas (página programa)
@@ -104,6 +105,7 @@ const divineNight = [ { t: "21:00", star: true, title, desc } ]
 const faqs     = [ { q, a }, ... ]
 const jurados  = [ { flag, country, name, img, spec }, ... ]
 const embajadoras = [ { flag, country, name, img, spec }, ... ]
+const premios  = [ { pos, title, hl?, items: [...] }, ... ]        // premios del campeonato
 ```
 
 ### Funciones de render (vanilla JS, al final de cada data file)
@@ -113,6 +115,7 @@ const embajadoras = [ { flag, country, name, img, spec }, ... ]
 | `renderSpeakers()` | `#sp-grid` (ponentes) + `#demos-grid` | fotos como `background-image` en `.sp-photo` |
 | `renderTiers()` | `#tiers` (entradas) | tarjetas con botón `Comprar` → Stripe |
 | `renderTimeline(id, data)` | `#tl-d1` `#tl-d2` `#tl-dn` (programa) | `star:true` pinta `✦` |
+| `renderPremios()` | `#premios-grid` (programa) | tarjetas `.tier.premio`; `hl:true` = borde dorado |
 | `renderJurados()` | `#jurados-grid` | `<img>` con `onerror` que oculta si falta |
 | `renderEmbajadoras()` | `#embajadoras-grid` | idem |
 | `renderFAQ()` | `#faq-list` | primer ítem con clase `open` |
@@ -217,13 +220,58 @@ la web inconsistente entre idiomas. Traduce PT/ES/EN y aplica el cambio en los 3
    con `grep -c`.
 3. **Fotos "que no se ven"**: casi siempre es caché (nombre repetido) o HTML roto
    (ej. `</a<img` en vez de `</a><img>`). Revisar con curl el asset y el HTML.
-4. **Pantalla negra en Android** (sección ponentes): los elementos `[data-fade]`
-   arrancan con `opacity:0` y dependen de IntersectionObserver. Hay un fallback
-   `setTimeout(1500ms)` que añade `.is-visible` a lo que no se reveló — **no lo borres**.
+4. **Pantalla negra en Android**: los elementos `[data-fade]` arrancan con `opacity:0`
+   y dependen de IntersectionObserver. Hay dos redes de seguridad en **las 18 páginas**
+   — **no borres ninguna**:
+   - `setTimeout(1500ms)` que añade `.is-visible` a lo que no se reveló;
+   - `<noscript><style>[data-fade]{opacity:1;transform:none}</style></noscript>` en el
+     `<head>`, para quien navega con JS desactivado.
+
+   Si creas una página nueva, cópiale las dos. Verificación (viewport corto a propósito,
+   para que casi todo quede bajo el pliegue):
+
+   ```bash
+   chrome --headless=new --window-size=1280,700 --virtual-time-budget=4000 \
+     --dump-dom http://localhost:8899/pt/ > dom.html
+   # todo elemento con data-fade debe acabar con is-visible
+   ```
 5. **Horas del programa**: redondear a `:00`/`:30` (nada de `:22`, `:02`). Los eventos
    estrella (`sorteo`, galas) llevan `star:true` para pintar el `✦`.
 6. **Links de WhatsApp**: siempre con mensaje pre-rellenado URL-encoded, por idioma
    (PT "Olá...", ES "Hola...", EN "Hello...").
+
+### SEO y preview al compartir (bloque en el `<head>` de las 18 páginas)
+
+Cada página lleva, justo después de `</title>`: `meta description` propia, `theme-color`,
+`canonical`, `hreflang` para pt/es/en + `x-default`, el juego completo de Open Graph
+(`og:title`, `og:description`, `og:url`, `og:image` → `/og-image.jpg`, 1200×630),
+Twitter Card y el `<noscript>` del fade.
+
+- **Al crear o renombrar una página, replica el bloque entero** y ajusta `canonical`,
+  `og:url` y los tres `hreflang`. Un canonical copiado de otra página es peor que no tenerlo.
+- `og:image` es absoluta y apunta al dominio canónico; nunca la pongas relativa.
+- `/` sirve `/pt/` por rewrite: su canonical apunta a `/pt/`, así que no hay contenido
+  duplicado aunque la URL sea distinta.
+- Si cambias `og-image.jpg`, usa **nombre nuevo** (cache immutable de Vercel) y luego
+  refresca el scraper de Facebook/WhatsApp en developers.facebook.com/tools/debug.
+
+### Imágenes
+
+- Todo `<img>` lleva `loading="lazy" decoding="async"`, salvo el logo del header
+  (`class="logo"`, está sobre el pliegue). Mantén esa regla en lo que añadas.
+- En `public/assets/speakers/` solo debe haber fotos **en uso**. Las versiones viejas
+  tras un cache-bust se borran (quedan en el historial de git). Comprobación:
+
+```bash
+# fotos presentes que no referencia ni data*.js ni ningun .astro
+python -c "
+import re,os,glob
+refs=set()
+for f in glob.glob('public/data*.js'): refs|={m+'.jpg' for m in re.findall(r'img:\s*\"([^\"]+)\"',open(f,encoding='utf-8').read())}
+for f in glob.glob('src/pages/*/*.astro'): refs|=set(re.findall(r'/assets/speakers/([\w\-.]+\.jpg)',open(f,encoding='utf-8').read()))
+have=set(os.listdir('public/assets/speakers'))
+print('rotas:',refs-have); print('sin usar:',sorted(have-refs))"
+```
 
 ### Reglas de estilo
 
@@ -246,7 +294,11 @@ la web inconsistente entre idiomas. Traduce PT/ES/EN y aplica el cambio en los 3
 ### Contexto de negocio útil
 
 - Evento: 24–25 oct 2026, Hotel HF Fénix Lisboa. Entradas: Basic 497€, Gold 797€,
-  Divine VIP 1.297€ (Stripe). WhatsApp instituto: +34 696 808 098. Instagram:
+  Divine VIP 1.297€ (Stripe). Premios del campeonato (array `premios`, página programa):
+  1º incluye equipo Biomaser, agujas Pink Biomaser, anillos, 10 pigmentos MAG Color,
+  puesto de ponente en la próxima edición europea y 50% en formación; 2º incluye
+  10 pigmentos, anillos, entrada a la próxima edición y 50% en formación.
+  WhatsApp instituto: +34 696 808 098 (Nieves). Instagram:
   @institutomiriamalcantara. Cambios los pide Miriam vía Diego; antes de inventar
   datos (banderas, specs, bios) preguntar.
 - El chatbot de WhatsApp/Instagram (system prompts) y la tienda WooCommerce **no

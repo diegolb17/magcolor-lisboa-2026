@@ -14,7 +14,6 @@ const speakers = [
   { flag: "🇧🇷", country: "Brasil", name: "Marcela Macedo", img: "marcela-macedo", spec: "Reconstrucción de Cejas", bio: "Especialista en reconstrucción avanzada de cejas con técnica de hiperrealismo." },
   { flag: "🇵🇹", country: "Portugal", name: "Eliane Pinto", img: "eliane-pinto-v2", spec: "Trazos de Amor — Micropigmentación que acoge y transforma", bio: "Especialista en micropigmentación humanizada. Transforma vidas con técnica y acogimiento." },
   { flag: "🇵🇹", country: "Portugal", name: "Bárbara Monteiro", img: "barbara-monteiro-v3", spec: "Pele negra", bio: "Referente en técnica para pieles negras." },
-,
   { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "andreia-guerreiro-v2", spec: "Demostración en vivo", bio: "Profesional portuguesa de micropigmentación." },
   { flag: "🇧🇷", country: "Brasil", name: "Bia Lacerada", img: "bia-lacerada-v2", spec: "Luxer Liner — Técnica en ojos", bio: "Especialista en técnica de ojos. Creadora del Luxer Liner." },
   { flag: "🇧🇷", country: "Brasil", name: "Luiza Furiatti", img: "luiza-furiatti", spec: "Del diagnóstico al pigmento", bio: "Especialista en diagnóstico y estrategia para cejas." }
@@ -77,12 +76,30 @@ const divineNight = [
   { t:"21:00", star:true, title:"Divine Night — Cena Privada VIP", desc:"Solo para las 10 participantes con entrada Divine VIP. Cena íntima con Miriam Alcántara, Andrea Martins y los ponentes del congreso. Recepción con cóctel." }
 ];
 
+// === PREMIOS DEL CAMPEONATO ===
+const premios = [
+  { pos: "1º", title: "Primer Premio", hl: true, items: [
+    "1 equipo Biomaser de última generación",
+    "1 caja de agujas Pink Biomaser",
+    "1 paquete de anillos",
+    "10 unidades de pigmentos MAG Color",
+    "1 puesto de ponente en vivo en el próximo MAGColor Experience en Europa",
+    "50% de descuento en una formación en el Instituto Miriam Alcántara"
+  ] },
+  { pos: "2º", title: "Segundo Premio", items: [
+    "10 unidades de pigmentos MAG Color",
+    "1 paquete de anillos",
+    "1 entrada para el próximo MAGColor Experience en Europa",
+    "50% de descuento en una formación en el Instituto Miriam Alcántara"
+  ] }
+];
+
 // === FAQ ===
 const faqs = [
   { q:"¿Qué incluye cada tipo de entrada?", a:"Todas las entradas incluyen acceso a los 2 días de evento, ponencias internacionales, traducción simultánea, almuerzos, coffee breaks, acceso a la Gala de Premiación, kit de bienvenida y certificado. Las diferencias están en los beneficios adicionales de cada categoría (Gold y Divine VIP)." },
   { q:"¿El alojamiento está incluido?", a:"El alojamiento está incluido solo en la entrada Divine VIP (2 noches en habitación doble compartida con desayuno en el Hotel HF Fénix Lisboa). Para las demás categorías, ofrecemos un enlace con descuento exclusivo para participantes." },
   { q:"¿Habrá traducción simultánea?", a:"¡Sí! El evento tendrá traducción simultánea portugués-español en todas las ponencias." },
-  { q:"¿Cómo funciona el Campeonato?", a:"El campeonato tiene 3 categorías: Pelo a Pelo, Difuminado de Cejas y Labios. Las participantes compiten en vivo en látex. Un jurado internacional evalúa cada trabajo y las ganadoras son premiadas en la Gala de Premiación con trofeos, reconocimiento y visibilidad internacional." },
+  { q:"¿Cómo funciona el Campeonato?", a:"El campeonato tiene 3 categorías: Pelo a Pelo, Difuminado de Cejas y Labios. Las participantes compiten en vivo en látex. Un jurado internacional evalúa cada trabajo y las ganadoras son premiadas en la Gala de Premiación con trofeos, reconocimiento y visibilidad internacional. Los premios de 1º y 2º puesto incluyen equipo Biomaser, pigmentos MAG Color, puesto de ponente o entrada para la próxima edición europea y 50% de descuento en una formación del Instituto Miriam Alcántara. Consulta la lista completa en la página de Programa." },
   { q:"¿Cuáles son las formas de pago?", a:"Aceptamos pago online vía Stripe (tarjeta de crédito/débito) y también transferencia bancaria o Bizum." },
   { q:"¿Cuál es la política de cancelación?", a:"Cancelación hasta 60 días antes del evento: reembolso del 50%. Después de ese plazo, sin reembolso. La plaza es transferible: puedes ceder tu entrada a otra profesional con 7 días de antelación." },
   { q:"¿Cómo funciona el vale formativo?", a:"Cada entrada incluye un vale formativo equivalente (Basic: 497 €, Gold: 797 €, Divine VIP: 1.297 €) aplicable íntegramente en programas de formación específicos del Instituto Miriam Alcántara." }
@@ -106,11 +123,9 @@ const embajadoras = [
 
 function renderSpeakers() {
   const grid = document.getElementById('sp-grid');
-  if (!grid) return;
-  grid.innerHTML = speakers.map(s => `<div class="sp-card"><div class="sp-photo" style="background-image:url('/assets/speakers/${s.img}.jpg');background-size:cover;background-position:center"></div><div class="sp-body"><p class="sp-title">${s.name}</p><p class="sp-spec-detail">${s.spec}</p><p class="sp-bio">${s.bio}</p></div></div>`).join('');
+  if (grid) grid.innerHTML = speakers.map(s => `<div class="sp-card"><div class="sp-photo" style="background-image:url('/assets/speakers/${s.img}.jpg');background-size:cover;background-position:center"></div><div class="sp-body"><p class="sp-title">${s.name}</p><p class="sp-spec-detail">${s.spec}</p><p class="sp-bio">${s.bio}</p></div></div>`).join('');
   const demosGrid = document.getElementById('demos-grid');
-  if (!demosGrid) return;
-  demosGrid.innerHTML = demos.map(d => `<div class="card center speaker"><img src="/assets/speakers/${d.img}.jpg" class="avatar" alt="${d.name}" style="object-fit:cover" onerror="this.style.display='none'"><p class="sp-name">${d.name}</p><p class="sp-spec">${d.spec}</p></div>`).join('');
+  if (demosGrid) demosGrid.innerHTML = demos.map(d => `<div class="card center speaker"><img src="/assets/speakers/${d.img}.jpg" class="avatar" alt="${d.name}" loading="lazy" decoding="async" style="object-fit:cover" onerror="this.style.display='none'"><p class="sp-name">${d.name}</p><p class="sp-spec">${d.spec}</p></div>`).join('');
 }
 
 function renderTiers() {
@@ -132,16 +147,22 @@ function renderTimeline(containerId, data) {
 }
 
 
+function renderPremios() {
+  const el = document.getElementById('premios-grid');
+  if (!el) return;
+  el.innerHTML = premios.map(p => `<div class="tier premio${p.hl ? ' tier-hl' : ''}"><div class="premio-pos">${p.pos}</div><h3 class="tier-name">${p.title}</h3><ul class="tier-list">${p.items.map(i => `<li><span class="chk">✓</span> ${i}</li>`).join('')}</ul></div>`).join('');
+}
+
 function renderJurados() {
   const grid = document.getElementById('jurados-grid');
   if (!grid) return;
-  grid.innerHTML = jurados.map(j => `<div class="card center speaker"><img src="/assets/speakers/${j.img || j.name.toLowerCase().replace(/ /g,'-').normalize('NFD').replace(/[̀-ͯ]/g,'')}.jpg" class="avatar" alt="${j.name}" style="object-fit:cover" onerror="this.style.display='none'"><p class="sp-name">${j.name}</p><p class="sp-spec">${j.spec}</p></div>`).join('');
+  grid.innerHTML = jurados.map(j => `<div class="card center speaker"><img src="/assets/speakers/${j.img || j.name.toLowerCase().replace(/ /g,'-').normalize('NFD').replace(/[̀-ͯ]/g,'')}.jpg" class="avatar" alt="${j.name}" loading="lazy" decoding="async" style="object-fit:cover" onerror="this.style.display='none'"><p class="sp-name">${j.name}</p><p class="sp-spec">${j.spec}</p></div>`).join('');
 }
 
 function renderEmbajadoras() {
   const grid = document.getElementById('embajadoras-grid');
   if (!grid) return;
-  grid.innerHTML = embajadoras.map(e => `<div class="card center speaker"><img src="/assets/speakers/${e.img}.jpg" class="avatar" alt="${e.name}" style="object-fit:cover" onerror="this.style.display='none'"><p class="sp-name">${e.name}</p><p class="sp-spec">${e.spec}</p></div>`).join('');
+  grid.innerHTML = embajadoras.map(e => `<div class="card center speaker"><img src="/assets/speakers/${e.img}.jpg" class="avatar" alt="${e.name}" loading="lazy" decoding="async" style="object-fit:cover" onerror="this.style.display='none'"><p class="sp-name">${e.name}</p><p class="sp-spec">${e.spec}</p></div>`).join('');
 }
 
 function renderFAQ() {
@@ -165,6 +186,7 @@ renderTiers();
 renderTimeline('tl-d1', day1);
 renderTimeline('tl-d2', day2);
 renderTimeline('tl-dn', divineNight);
+renderPremios();
 renderJurados();
 renderEmbajadoras();
 renderFAQ();

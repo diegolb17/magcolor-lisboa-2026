@@ -14,7 +14,6 @@ const speakers = [
   { flag: "🇧🇷", country: "Brazil", name: "Marcela Macedo", img: "marcela-macedo", spec: "Eyebrow Reconstruction", bio: "Specialist in advanced eyebrow reconstruction with hyperrealism technique." },
   { flag: "🇵🇹", country: "Portugal", name: "Eliane Pinto", img: "eliane-pinto-v2", spec: "Traces of Love — Micropigmentation that welcomes and transforms", bio: "Specialist in humanized micropigmentation. Transforms lives with technique and care." },
   { flag: "🇵🇹", country: "Portugal", name: "Bárbara Monteiro", img: "barbara-monteiro-v3", spec: "Black skin", bio: "Reference in technique for black skin." },
-,
   { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "andreia-guerreiro-v2", spec: "Live Demo", bio: "Portuguese micropigmentation professional." },
   { flag: "🇧🇷", country: "Brazil", name: "Bia Lacerada", img: "bia-lacerada-v2", spec: "Luxer Liner — Eye technique", bio: "Eye technique specialist. Creator of Luxer Liner." },
   { flag: "🇧🇷", country: "Brazil", name: "Luiza Furiatti", img: "luiza-furiatti", spec: "From diagnosis to pigment", bio: "Specialist in brow diagnosis and strategy." }
@@ -23,7 +22,8 @@ const speakers = [
 const demos = [
   { flag: "🇧🇷", country: "Brazil", name: "Adriana Matsuoka", img: "adriana-matsuoka-v2", spec: "Scalp Shading" },
   { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "andreia-guerreiro-v2", spec: "MicroScalp — Realistic stippling technique" },
-  { flag: "🇧🇷", country: "Brazil", name: "Renata Swierginski", img: "renata-swierginski", spec: "Live demo — Beard" }
+  { flag: "🇧🇷", country: "Brazil", name: "Renata Swierginski", img: "renata-swierginski", spec: "Live demo — Beard" },
+  { flag: "🇧🇷", country: "Brazil", name: "Bia Lacerada", img: "bia-lacerada-v2", spec: "Luxer Liner — Eye technique" }
 ];
 
 // === TIERS ===
@@ -76,12 +76,30 @@ const divineNight = [
   { t:"21:00", star:true, title:"Divine Night — Private VIP Dinner", desc:"Only for the 10 Divine VIP participants. Intimate dinner with Miriam Alcántara, Andrea Martins and congress speakers. Cocktail reception." }
 ];
 
+// === CHAMPIONSHIP PRIZES ===
+const premios = [
+  { pos: "1st", title: "First Prize", hl: true, items: [
+    "1 latest-generation Biomaser machine",
+    "1 box of Pink Biomaser needles",
+    "1 pack of ink rings",
+    "10 units of MAG Color pigments",
+    "1 live speaker slot at the next MAGColor Experience in Europe",
+    "50% off a training program at Instituto Miriam Alcántara"
+  ] },
+  { pos: "2nd", title: "Second Prize", items: [
+    "10 units of MAG Color pigments",
+    "1 pack of ink rings",
+    "1 ticket to the next MAGColor Experience in Europe",
+    "50% off a training program at Instituto Miriam Alcántara"
+  ] }
+];
+
 // === FAQ ===
 const faqs = [
   { q:"What's included in each ticket type?", a:"All tickets include access to the 2-day event, international lectures, simultaneous translation, lunches, coffee breaks, access to the Awards Gala, welcome kit and certificate. The differences are in the additional benefits of each category (Gold and Divine VIP)." },
   { q:"Is accommodation included?", a:"Accommodation is only included in the Divine VIP ticket (2 nights in a shared double room with breakfast at the HF Fénix Lisbon Hotel). For other categories, we offer an exclusive discount link for participants." },
   { q:"Will there be simultaneous translation?", a:"Yes! The event will have simultaneous Portuguese-Spanish translation at all lectures." },
-  { q:"How does the Championship work?", a:"The championship has 3 categories: Hair by Hair, Powder Brows and Lips. Participants compete live on latex. An international jury evaluates each work and the winners are awarded at the Awards Gala with trophies, recognition and international visibility." },
+  { q:"How does the Championship work?", a:"The championship has 3 categories: Hair by Hair, Powder Brows and Lips. Participants compete live on latex. An international jury evaluates each work and the winners are awarded at the Awards Gala with trophies, recognition and international visibility. The 1st and 2nd place prizes include Biomaser equipment, MAG Color pigments, a speaker slot or ticket for the next European edition, and 50% off a training program at Instituto Miriam Alcántara. See the full list on the Program page." },
   { q:"What are the payment methods?", a:"We accept online payment via Stripe (credit/debit card) and also bank transfer or Bizum." },
   { q:"What is the cancellation policy?", a:"Cancellation up to 60 days before the event: 50% refund. After this period, no refund. The spot is transferable: you can transfer your ticket to another professional with 7 days notice." },
   { q:"How does the training voucher work?", a:"Each ticket includes an equivalent training voucher (Basic: €497, Gold: €797, Divine VIP: €1,297) fully applicable to specific training programs at Instituto Miriam Alcántara." }
@@ -105,11 +123,9 @@ const embajadoras = [
 
 function renderSpeakers() {
   const grid = document.getElementById('sp-grid');
-  if (!grid) return;
-  grid.innerHTML = speakers.map(s => `<div class="sp-card"><div class="sp-photo" style="background-image:url('/assets/speakers/${s.img}.jpg');background-size:cover;background-position:center"></div><div class="sp-body"><p class="sp-title">${s.name}</p><p class="sp-spec-detail">${s.spec}</p><p class="sp-bio">${s.bio}</p></div></div>`).join('');
+  if (grid) grid.innerHTML = speakers.map(s => `<div class="sp-card"><div class="sp-photo" style="background-image:url('/assets/speakers/${s.img}.jpg');background-size:cover;background-position:center"></div><div class="sp-body"><p class="sp-title">${s.name}</p><p class="sp-spec-detail">${s.spec}</p><p class="sp-bio">${s.bio}</p></div></div>`).join('');
   const demosGrid = document.getElementById('demos-grid');
-  if (!demosGrid) return;
-  demosGrid.innerHTML = demos.map(d => `<div class="card center speaker"><img src="/assets/speakers/${d.img}.jpg" class="avatar" alt="${d.name}" style="object-fit:cover" onerror="this.style.display='none'"><p class="sp-name">${d.name}</p><p class="sp-spec">${d.spec}</p></div>`).join('');
+  if (demosGrid) demosGrid.innerHTML = demos.map(d => `<div class="card center speaker"><img src="/assets/speakers/${d.img}.jpg" class="avatar" alt="${d.name}" loading="lazy" decoding="async" style="object-fit:cover" onerror="this.style.display='none'"><p class="sp-name">${d.name}</p><p class="sp-spec">${d.spec}</p></div>`).join('');
 }
 
 function renderTiers() {
@@ -131,16 +147,22 @@ function renderTimeline(containerId, data) {
 }
 
 
+function renderPremios() {
+  const el = document.getElementById('premios-grid');
+  if (!el) return;
+  el.innerHTML = premios.map(p => `<div class="tier premio${p.hl ? ' tier-hl' : ''}"><div class="premio-pos">${p.pos}</div><h3 class="tier-name">${p.title}</h3><ul class="tier-list">${p.items.map(i => `<li><span class="chk">✓</span> ${i}</li>`).join('')}</ul></div>`).join('');
+}
+
 function renderJurados() {
   const grid = document.getElementById('jurados-grid');
   if (!grid) return;
-  grid.innerHTML = jurados.map(j => `<div class="card center speaker"><img src="/assets/speakers/${j.img || j.name.toLowerCase().replace(/ /g,'-').normalize('NFD').replace(/[̀-ͯ]/g,'')}.jpg" class="avatar" alt="${j.name}" style="object-fit:cover" onerror="this.style.display='none'"><p class="sp-name">${j.name}</p><p class="sp-spec">${j.spec}</p></div>`).join('');
+  grid.innerHTML = jurados.map(j => `<div class="card center speaker"><img src="/assets/speakers/${j.img || j.name.toLowerCase().replace(/ /g,'-').normalize('NFD').replace(/[̀-ͯ]/g,'')}.jpg" class="avatar" alt="${j.name}" loading="lazy" decoding="async" style="object-fit:cover" onerror="this.style.display='none'"><p class="sp-name">${j.name}</p><p class="sp-spec">${j.spec}</p></div>`).join('');
 }
 
 function renderEmbajadoras() {
   const grid = document.getElementById('embajadoras-grid');
   if (!grid) return;
-  grid.innerHTML = embajadoras.map(e => `<div class="card center speaker"><img src="/assets/speakers/${e.img}.jpg" class="avatar" alt="${e.name}" style="object-fit:cover" onerror="this.style.display='none'"><p class="sp-name">${e.name}</p><p class="sp-spec">${e.spec}</p></div>`).join('');
+  grid.innerHTML = embajadoras.map(e => `<div class="card center speaker"><img src="/assets/speakers/${e.img}.jpg" class="avatar" alt="${e.name}" loading="lazy" decoding="async" style="object-fit:cover" onerror="this.style.display='none'"><p class="sp-name">${e.name}</p><p class="sp-spec">${e.spec}</p></div>`).join('');
 }
 
 function renderFAQ() {
@@ -164,6 +186,7 @@ renderTiers();
 renderTimeline('tl-d1', day1);
 renderTimeline('tl-d2', day2);
 renderTimeline('tl-dn', divineNight);
+renderPremios();
 renderJurados();
 renderEmbajadoras();
 renderFAQ();

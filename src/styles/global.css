@@ -145,6 +145,12 @@ a { color: inherit; text-decoration: none; }
 .dash { color: var(--text-3); flex-shrink: 0; }
 .tier-btn { width: 100%; margin-top: auto; }
 
+/* Premios del campeonato */
+.premios { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: stretch; max-width: 900px; margin-left: auto; margin-right: auto; }
+.premio-pos { font-family: 'Lora', serif; font-size: 3rem; color: var(--gold); font-weight: 700; line-height: 1; margin-bottom: 6px; }
+.premio .tier-list { margin-bottom: 0; }
+.premio .tier-name { font-size: 1.5rem; margin-bottom: 20px; }
+
 /* Extra cards (offer + vale) */
 .extra-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .extra-card { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; padding: 36px; }
@@ -213,6 +219,7 @@ a { color: inherit; text-decoration: none; }
   .grid-split { grid-template-columns: 1fr; gap: 40px; }
   .miriam-photo { justify-self: center; }
   .tiers { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
+  .premios { grid-template-columns: 1fr; max-width: 480px; }
   .extra-grid { grid-template-columns: 1fr; }
   .sp-grid { grid-template-columns: repeat(2, 1fr); }
 }
@@ -249,6 +256,8 @@ a { color: inherit; text-decoration: none; }
   .faq-q { font-size: .85rem; padding: 16px 18px; }
   .tier { padding: 24px 20px; }
   .tier-name { font-size: 1.4rem; }
+  .premio-pos { font-size: 2.2rem; }
+  .premio .tier-name { font-size: 1.25rem; margin-bottom: 16px; }
   .extra-card { padding: 24px; }
   .footer { padding: 32px 16px; font-size: .75rem; }
   .footer-logo { height: 30px; }
