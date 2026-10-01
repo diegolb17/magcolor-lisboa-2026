@@ -11,7 +11,7 @@ const speakers = [
   { flag: "🇪🇸", country: "Spain", name: "Albert Grau", img: "albert-grau-v2", spec: "Legal aspects of the sector", bio: "Entrepreneur with over 30 years in the healthcare sector related to micropigmentation, tattooing and piercing. Founder of his own school in Barcelona, he guides and advises professionals on the current legal system." },
   { flag: "🇧🇷", country: "Brazil", name: "Sand Guimarães", img: "sand-guimaraes-v2", spec: "Stretch Mark Camouflage", bio: "International reference in stretch mark camouflage and dermal reconstruction." },
   { flag: "🇪🇸", country: "Spain", name: "Isa Cercós", img: "isa-cercos-v2", spec: "Areola Reconstruction", bio: "Specialist in areola reconstruction. Highly specialized medical technique." },
-  { flag: "🇧🇷", country: "Brazil", name: "Marcela Macedo", img: "marcela-macedo", spec: "Eyebrow Reconstruction", bio: "Specialist in advanced eyebrow reconstruction with hyperrealism technique." },
+  { flag: "🇧🇷", country: "Brazil", name: "Marcela Macedo", img: "marcela-macedo-v2", spec: "Eyebrow Reconstruction", bio: "Specialist in advanced eyebrow reconstruction with hyperrealism technique." },
   { flag: "🇵🇹", country: "Portugal", name: "Eliane Pinto", img: "eliane-pinto-v2", spec: "Traces of Love — Micropigmentation that welcomes and transforms", bio: "Specialist in humanized micropigmentation. Transforms lives with technique and care." },
   { flag: "🇵🇹", country: "Portugal", name: "Bárbara Monteiro", img: "barbara-monteiro-v3", spec: "Black skin", bio: "Reference in technique for black skin." },
   { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "andreia-guerreiro-v2", spec: "Live Demo", bio: "Portuguese micropigmentation professional." },
