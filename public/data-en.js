@@ -23,7 +23,8 @@ const demos = [
   { flag: "🇧🇷", country: "Brazil", name: "Adriana Matsuoka", img: "adriana-matsuoka-v2", spec: "Scalp Shading" },
   { flag: "🇵🇹", country: "Portugal", name: "Andreia Guerreiro", img: "andreia-guerreiro-v2", spec: "MicroScalp — Realistic stippling technique" },
   { flag: "🇧🇷", country: "Brazil", name: "Renata Swierginski", img: "renata-swierginski", spec: "Live demo — Beard" },
-  { flag: "🇧🇷", country: "Brazil", name: "Bia Lacerada", img: "bia-lacerada-v2", spec: "Luxer Liner — Eye technique" }
+  { flag: "🇧🇷", country: "Brazil", name: "Bia Lacerada", img: "bia-lacerada-v2", spec: "Luxer Liner — Eye technique" },
+  { flag: "🇪🇸", country: "Spain", name: "Leticia Márquez", img: "leticia-marquez", spec: "Silver Lips" },
 ];
 
 // === TIERS ===
@@ -115,12 +116,21 @@ const jurados = [
   { flag: "🇧🇷", country: "Brazil", name: "Glaucia Ferreira", img: "glaucia-ferreira", spec: "Judge" },
   { flag: "🇧🇷", country: "Brazil", name: "Daiane Santos", img: "daiane-santos", spec: "Judge" },
   { flag: "🇵🇹", country: "Portugal", name: "Elisa Pereira", img: "elisa-pereira", spec: "Judge" },
+  { flag: "🇵🇹", country: "Portugal", name: "Giovana Lima", img: "giovana-lima", spec: "Judge" },
+  { flag: "🇪🇸", country: "Spain", name: "Delma Lima", img: "delma-lima", spec: "Judge" },
 ];
 const embajadoras = [
   { flag: "🇧🇷", country: "Brazil", name: "Adriana Matsuoka", img: "adriana-matsuoka-v2", spec: "Ambassador" },
   { flag: "🇧🇷", country: "Brazil", name: "Daiane Santos", img: "daiane-santos", spec: "Ambassador" },
   { flag: "🇵🇹", country: "Portugal", name: "Elisa Pereira", img: "elisa-pereira", spec: "Ambassador" },
   { flag: "🇧🇷", country: "Brazil", name: "Gerliene Trindade", img: "gerliene-trindade-v2", spec: "Ambassador" },
+  { flag: "🇵🇹", country: "Portugal", name: "Thais Prestes", img: "thais-prestes", spec: "Ambassador" },
+  { flag: "🇵🇹", country: "Portugal", name: "Fernanda Zampiroli", img: "fernanda-zampiroli", spec: "Ambassador" },
+];
+
+const influencers = [
+  { flag: "🇵🇹", country: "Portugal", name: "Bia Lashes", img: "bia-lashes", spec: "Influencer" },
+  { flag: "🇵🇹", country: "Portugal", name: "Thais Silva", img: "thais-silva", spec: "Influencer" },
 ];
 
 function renderSpeakers() {
@@ -167,6 +177,12 @@ function renderEmbajadoras() {
   grid.innerHTML = embajadoras.map(e => `<div class="card center speaker"><img src="/assets/speakers/${e.img}.jpg" class="avatar" alt="${e.name}" loading="lazy" decoding="async" style="object-fit:cover" onerror="this.style.display='none'"><p class="sp-name">${e.name}</p><p class="sp-spec">${e.spec}</p></div>`).join('');
 }
 
+function renderInfluencers() {
+  const grid = document.getElementById('influencers-grid');
+  if (!grid) return;
+  grid.innerHTML = influencers.map(i => `<div class="card center speaker"><img src="/assets/speakers/${i.img}.jpg" class="avatar" alt="${i.name}" loading="lazy" decoding="async" style="object-fit:cover" onerror="this.style.display='none'"><p class="sp-name">${i.name}</p><p class="sp-spec">${i.spec}</p></div>`).join('');
+}
+
 function renderFAQ() {
   const el = document.getElementById('faq-list');
   if (!el) return;
@@ -191,4 +207,5 @@ renderTimeline('tl-dn', divineNight);
 renderPremios();
 renderJurados();
 renderEmbajadoras();
+renderInfluencers();
 renderFAQ();

@@ -32,7 +32,7 @@ Alcántara (Barcelona) y MAG Color (Brasil).
 |---|---|
 | `/` | redirige a `/pt/` (rewrite en `vercel.json`) |
 | `/pt/`, `/es/`, `/en/` | Home (countdown, hero, highlights, preview de ponentes) |
-| `/pt/ponentes` … | Ponentes, demos en vivo, jurados y embajadoras |
+| `/pt/ponentes` … | Ponentes, demos en vivo, jurados, embajadoras e influencers |
 | `/pt/programa` … | Programa con 3 pestañas: Divine Night, Día 1, Día 2 |
 | `/pt/entradas` … | Tiers Basic/Gold/Divine VIP + tarjetas extra |
 | `/pt/faq` … | Acordeón de preguntas frecuentes |
@@ -78,7 +78,7 @@ magcolor-lisboa-2026/
   footer, botón flotante de WhatsApp, scripts). Editar algo global = editar **18 archivos**
   (o escribir un script por idioma y aplicarlo a los 3).
 - **Contenido dinámico en JavaScript plano, no en Astro.** Los arrays de ponentes,
-  tiers, programa, FAQ, jurados y embajadoras viven en `public/data*.js` como
+  tiers, programa, FAQ, jurados, embajadoras e influencers viven en `public/data*.js` como
   `const` globales y se renderizan con `innerHTML` en el cliente.
 - **Qué carga cada página**: `ponentes`, `programa`, `entradas` y `faq` cargan al final
   `<script is:inline src="/data.js">` (o `data-es.js`/`data-en.js` según idioma).
@@ -105,6 +105,7 @@ const divineNight = [ { t: "21:00", star: true, title, desc } ]
 const faqs     = [ { q, a }, ... ]
 const jurados  = [ { flag, country, name, img, spec }, ... ]
 const embajadoras = [ { flag, country, name, img, spec }, ... ]
+const influencers = [ { flag, country, name, img, spec }, ... ]
 const premios  = [ { pos, title, hl?, items: [...] }, ... ]        // premios del campeonato
 ```
 
@@ -118,6 +119,7 @@ const premios  = [ { pos, title, hl?, items: [...] }, ... ]        // premios de
 | `renderPremios()` | `#premios-grid` (programa) | tarjetas `.tier.premio`; `hl:true` = borde dorado |
 | `renderJurados()` | `#jurados-grid` | `<img>` con `onerror` que oculta si falta |
 | `renderEmbajadoras()` | `#embajadoras-grid` | idem |
+| `renderInfluencers()` | `#influencers-grid` | idem |
 | `renderFAQ()` | `#faq-list` | primer ítem con clase `open` |
 | `switchTab(t)` | pestañas `d1`/`d2`/`dn` | alterna `.tab-active` y `display` |
 
@@ -195,7 +197,7 @@ curl -s "https://lisboa2026.institutomiriamalcantara.com/data.js" | grep -c "<no
 
 ### Cambios de contenido = siempre ×3
 
-Todo dato (ponentes, programa, tiers, FAQ, jurados, embajadoras) vive en **3 archivos
+Todo dato (ponentes, programa, tiers, FAQ, jurados, embajadoras, influencers) vive en **3 archivos
 sincronizados** (`data.js`, `data-es.js`, `data-en.js`). Un cambio hecho solo en uno deja
 la web inconsistente entre idiomas. Traduce PT/ES/EN y aplica el cambio en los 3.
 
@@ -209,7 +211,7 @@ la web inconsistente entre idiomas. Traduce PT/ES/EN y aplica el cambio en los 3
   (`img` en data files + previews hardcodeados de `src/pages/*/index.astro`).
 - Nombres de archivo: kebab-case ASCII sin acentos (ej. `barbara-monteiro-v3.jpg`).
 - Referencia de quién aparece dónde (evita duplicar sin querer): una misma persona
-  puede estar en `speakers`, `demos`, `jurados` y/o `embajadoras` — es intencional.
+  puede estar en `speakers`, `demos`, `jurados`, `embajadoras` y/o `influencers` — es intencional.
 
 ### Errores comunes que YA ocurrieron (no repetirlos)
 
