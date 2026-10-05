@@ -275,6 +275,19 @@ have=set(os.listdir('public/assets/speakers'))
 print('rotas:',refs-have); print('sin usar:',sorted(have-refs))"
 ```
 
+### Verificacion antes de dar algo por bueno
+
+`python verificar.py` comprueba el sitio **en produccion**: las 18 paginas, que los 3
+data files parsean (un error de sintaxis ahi deja la pagina en negro sin avisar), que
+ninguna foto referenciada esta rota, que los grids pintan de verdad en el navegador
+(no solo que el dato exista) y que el SEO de cada pagina sigue entero. Devuelve codigo
+de salida 1 si algo falla.
+
+Para medir desbordamiento horizontal en movil no sirve `--window-size=360`: Chrome en
+Windows no baja de ~512px de ventana y la captura sale recortada, lo que parece un bug
+sin serlo. Hay que cargar la pagina en un `<iframe style="width:360px">` y medir dentro:
+los media queries responden al tamano del iframe.
+
 ### Reglas de estilo
 
 - CSS: variables en `:root` de `global.css` (`--gold`, `--text`, `--bd`…). No
