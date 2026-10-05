@@ -54,7 +54,7 @@ const day1 = [
   {t:"15:45", title:"Coffee Break", desc:""},
   {t:"16:00", star:true, title:"Campeonato em Latex — 3 categorias", desc:"Fio a Fio · Sombreado · Labios. Jurados internacionais avaliam ao vivo."},
   {t:"18:00", title:"Fim do Campeonato e deliberação do júri", desc:""},
-  {t:"18:30", title:"Descanso", desc:""},
+  {t:"", title:"Descanso e spa de pés", desc:"Um presente do evento para as nossas congressistas."},
   {t:"20:00", star:true, title:"Cena de Gala — Entrega de Prêmios", desc:"Dress code: PRETO E DOURADO."},
 
 ];
@@ -68,13 +68,13 @@ const day2 = [
   {t:"12:05", title:"Reconstrucao de Areola · Isa Cercos · 🇪🇸", desc:""},
   {t:"12:55", title:"Almoco de networking", desc:""},
   {t:"13:55", title:"Reconstrucao de Sobrancelhas · Marcela Macedo · 🇧🇷", desc:""},
-  {t:"14:45", title:"André Boring", desc:""},
+  {t:"14:45", title:"Micropigmentação Capilar · Andreia Guerreiro · 🇵🇹", desc:""},
   {t:"15:35", title:"Demonstracoes Praticas ao Vivo — Dia 2", desc:"Adriana Matsuoka, Andreia Guerreiro, Bia Lacerada, Renata Swierginski."},
 
 ];
 
 const divineNight = [
-  { t:"21:00", star:true, title:"Divine Night — Jantar Privado VIP", desc:"Apenas para as 10 participantes com ingresso Divine VIP. Jantar íntimo com Miriam Alcántara, Andrea Martins e os palestrantes. Recepção com coquetel." }
+  { t:"21:00", star:true, title:"Divine Night — Jantar Privado VIP", desc:"Apenas para ingressos Divine VIP. Jantar íntimo com Miriam Alcántara e Andrea Martins, em grupo reduzido, para conversar e trocar impressões sem pressa. Recepção com coquetel." }
 ];
 
 // === PREMIOS DO CAMPEONATO ===
@@ -84,15 +84,15 @@ const premios = [
     "1 equipamento Biomaser de última geração",
     "1 caixa de agulhas Pink Biomaser",
     "1 pacote de anéis",
-    "10 unidades de pigmentos MAG Color",
+    "Pigmentos MAG Color",
     "1 vaga de palestrante ao vivo no próximo MAGColor Experience na Europa",
     "50% de desconto numa formação no Instituto Miriam Alcántara"
   ] },
   { pos: "2º", title: "Segundo Prêmio", items: [
     "Troféu de segundo lugar",
-    "10 unidades de pigmentos MAG Color",
+    "Pigmentos MAG Color",
     "1 pacote de anéis",
-    "1 ingresso para o próximo MAGColor Experience na Europa",
+    "50% de desconto no ingresso do próximo MAGColor Experience",
     "50% de desconto numa formação no Instituto Miriam Alcántara"
   ] }
 ];

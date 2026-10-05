@@ -54,7 +54,7 @@ const day1 = [
   {t:"15:45", title:"Coffee Break", desc:""},
   {t:"16:00", star:true, title:"Latex Championship — 3 Categories", desc:"Hair by Hair · Powder · Lips. International judges evaluate live."},
   {t:"18:00", title:"End of Championship & jury deliberation", desc:""},
-  {t:"18:30", title:"Break", desc:""},
+  {t:"", title:"Break and foot spa", desc:"A gift from the event for our attendees."},
   {t:"20:00", star:true, title:"Gala Dinner — Awards Ceremony", desc:"Dress code: BLACK & GOLD."},
 
 ];
@@ -68,13 +68,13 @@ const day2 = [
   {t:"12:05", title:"Areola Reconstruction · Isa Cercos · 🇪🇸", desc:""},
   {t:"12:55", title:"Networking Lunch", desc:""},
   {t:"13:55", title:"Eyebrow Reconstruction · Marcela Macedo · 🇧🇷", desc:""},
-  {t:"14:45", title:"André Boring", desc:""},
+  {t:"14:45", title:"Scalp Micropigmentation · Andreia Guerreiro · 🇵🇹", desc:""},
   {t:"15:35", title:"Live Demos — Day 2", desc:"Adriana Matsuoka, Andreia Guerreiro, Bia Lacerada, Renata Swierginski."},
 
 ];
 
 const divineNight = [
-  { t:"21:00", star:true, title:"Divine Night — Private VIP Dinner", desc:"Only for the 10 Divine VIP participants. Intimate dinner with Miriam Alcántara, Andrea Martins and congress speakers. Cocktail reception." }
+  { t:"21:00", star:true, title:"Divine Night — Private VIP Dinner", desc:"Divine VIP tickets only. Intimate dinner with Miriam Alcántara and Andrea Martins, in a small group, to talk and share ideas unhurried. Cocktail reception." }
 ];
 
 // === CHAMPIONSHIP PRIZES ===
@@ -84,15 +84,15 @@ const premios = [
     "1 latest-generation Biomaser machine",
     "1 box of Pink Biomaser needles",
     "1 pack of ink rings",
-    "10 units of MAG Color pigments",
+    "MAG Color pigments",
     "1 live speaker slot at the next MAGColor Experience in Europe",
     "50% off a training program at Instituto Miriam Alcántara"
   ] },
   { pos: "2nd", title: "Second Prize", items: [
     "Second place trophy",
-    "10 units of MAG Color pigments",
+    "MAG Color pigments",
     "1 pack of ink rings",
-    "1 ticket to the next MAGColor Experience in Europe",
+    "50% off the ticket for the next MAGColor Experience",
     "50% off a training program at Instituto Miriam Alcántara"
   ] }
 ];
