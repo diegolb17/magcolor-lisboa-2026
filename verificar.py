@@ -29,6 +29,8 @@ UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/128.0 Safa
 IDIOMAS = {"pt": "data.js", "es": "data-es.js", "en": "data-en.js"}
 PAGINAS = ["", "ponentes", "programa", "entradas", "patrocinadores", "faq"]
 
+CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+
 fallos = []
 avisos = []
 
@@ -95,8 +97,8 @@ for lang in IDIOMAS:
         continue
     D[lang] = d
     ok(len(d["speakers"]) == 15, f"{lang}: 15 ponentes", str(len(d["speakers"])))
-    ok(len(d["demos"]) == 5, f"{lang}: 5 demos", str(len(d["demos"])))
-    ok(len(d["jurados"]) == 7, f"{lang}: 7 jurados", str(len(d["jurados"])))
+    ok(len(d["demos"]) == 6, f"{lang}: 6 demos", str(len(d["demos"])))
+    ok(len(d["jurados"]) == 8, f"{lang}: 8 jurados", str(len(d["jurados"])))
     ok(len(d["embajadoras"]) == 6, f"{lang}: 6 embajadoras", str(len(d["embajadoras"])))
     ok(len(d["influencers"]) == 2, f"{lang}: 2 influencers", str(len(d["influencers"])))
     ok(len(d["premios"]) == 2, f"{lang}: 2 premios", str(len(d["premios"])))
@@ -199,13 +201,12 @@ print()
 print("=" * 72)
 print("6. RENDER REAL EN EL NAVEGADOR (no solo los datos)")
 print("=" * 72)
-CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 for lang in IDIOMAS:
     p = subprocess.run([CHROME, "--headless", "--disable-gpu", "--no-sandbox", "--dump-dom",
                         "--virtual-time-budget=20000", f"{B}/{lang}/ponentes/"],
                        capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=180)
     dom = p.stdout or ""
-    for grid, minimo in (("sp-grid", 15), ("demos-grid", 5), ("jurados-grid", 7),
+    for grid, minimo in (("sp-grid", 15), ("demos-grid", 6), ("jurados-grid", 8),
                          ("embajadoras-grid", 6), ("influencers-grid", 2)):
         m = re.search(r'id="' + grid + r'"[^>]*>(.*?)</div>\s*(?:<div style="text-align:center|</div></section>)', dom, re.S)
         trozo = m.group(1) if m else ""
@@ -227,6 +228,49 @@ for lang in IDIOMAS:
         esperado = f"{B}{ruta}".rstrip("/")
         coincide = bool(can) and can.group(1).rstrip("/") == esperado
         ok(bien and coincide, f"SEO {ruta:26s}", f"canonical={'ok' if coincide else (can.group(1) if can else 'FALTA')} · hreflang={hre}")
+
+print()
+print("=" * 72)
+print("8. ALOJAMIENTO: el enlace del hotel")
+print("=" * 72)
+HOTEL = "magcolorexperiencelisboa.hfhotels.com"
+BADGE = {"pt": "ALOJAMENTO", "es": "ALOJAMIENTO", "en": "ACCOMMODATION"}
+for lang in IDIOMAS:
+    ent = baja(f"/{lang}/entradas/")
+    ok(HOTEL in ent, f"{lang}: enlace del hotel en Entradas")
+    ok('id="alojamiento"' in ent, f"{lang}: la seccion existe")
+    ok(BADGE[lang] in ent, f"{lang}: badge {BADGE[lang]}")
+    ok("10%" in ent, f"{lang}: comunica el 10% de descuento")
+    # la FAQ la pinta el JS: hay que mirar el DOM renderizado, no el HTML servido
+    pf = subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--no-sandbox", "--dump-dom",
+                         "--virtual-time-budget=15000", f"{B}/{lang}/faq/"],
+                        capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=180)
+    ok(HOTEL in (pf.stdout or ""), f"{lang}: enlace del hotel tambien en la FAQ")
+# el enlace tiene que responder de verdad
+try:
+    r = urllib.request.Request("https://" + HOTEL + "/", headers=UA)
+    with urllib.request.urlopen(r, timeout=60) as resp:
+        cuerpo = resp.read().decode("utf-8", "replace")
+    ok(resp.status == 200, "el hotel responde 200", str(resp.status))
+    ok("Magcolor Experience Lisboa" in cuerpo, "es la pagina privada del evento")
+except Exception as e:
+    ok(False, "el hotel responde", str(e)[:70])
+
+print()
+print("=" * 72)
+print("9. DOBLES ROLES (una persona puede estar en varios grupos)")
+print("=" * 72)
+for lang, d in D.items():
+    nom = lambda a: [x["name"] for x in d[a]]
+    ok("Thais Prestes" in nom("jurados") and "Thais Prestes" in nom("embajadoras"),
+       f"{lang}: Thais Prestes jurado y embajadora")
+    ok("Sand Guimarães" in nom("demos") and "Sand Guimarães" in nom("speakers"),
+       f"{lang}: Sand Guimaraes en demos y ponente")
+    # todas las de demos deben salir citadas en el programa del Dia 2
+    linea = [x for x in d["day2"] if "15:35" == x["t"]]
+    cita = linea[0]["desc"] if linea else ""
+    faltan = [x["name"] for x in d["demos"] if x["name"].split()[0] not in cita]
+    ok(not faltan, f"{lang}: el programa cita a todas las de demos", ", ".join(faltan))
 
 print()
 print("=" * 72)
