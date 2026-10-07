@@ -25,6 +25,7 @@ const demos = [
   { flag: "🇧🇷", country: "Brasil", name: "Renata Swierginski", img: "renata-swierginski", spec: "Demonstração ao vivo — Barba" },
   { flag: "🇧🇷", country: "Brasil", name: "Bia Lacerada", img: "bia-lacerada-v2", spec: "Luxer Liner — Técnica em olhos" },
   { flag: "🇪🇸", country: "España", name: "Leticia Márquez", img: "leticia-marquez", spec: "Lábios Silver" },
+  { flag: "🇧🇷", country: "Brasil", name: "Sand Guimarães", img: "sand-guimaraes-v2", spec: "Camuflagem de Estrias" },
 ];
 
 // === TIERS ===
@@ -69,7 +70,7 @@ const day2 = [
   {t:"12:55", title:"Almoco de networking", desc:""},
   {t:"13:55", title:"Reconstrucao de Sobrancelhas · Marcela Macedo · 🇧🇷", desc:""},
   {t:"14:45", title:"Micropigmentação Capilar · Andreia Guerreiro · 🇵🇹", desc:""},
-  {t:"15:35", title:"Demonstracoes Praticas ao Vivo — Dia 2", desc:"Adriana Matsuoka, Andreia Guerreiro, Bia Lacerada, Renata Swierginski."},
+  {t:"15:35", title:"Demonstracoes Praticas ao Vivo — Dia 2", desc:"Adriana Matsuoka, Andreia Guerreiro, Bia Lacerada, Leticia Márquez, Renata Swierginski, Sand Guimarães."},
 
 ];
 
@@ -100,7 +101,7 @@ const premios = [
 // === FAQ ===
 const faqs = [
   { q:"O que está incluído em cada tipo de ingresso?", a:"Todos os ingressos incluem acesso aos 2 dias de evento, palestras internacionais, tradução simultânea, almoços, coffee breaks, acesso à Gala de Premiação, kit de boas-vindas e certificado. As diferenças estão nos benefícios adicionais de cada categoria (Gold e Divine VIP)." },
-  { q:"O alojamento está incluído?", a:"O alojamento está incluído apenas no ingresso Divine VIP (2 noites em quarto duplo compartilhado com café da manhã no Hotel HF Fénix Lisboa). Para as demais categorias, oferecemos um link com desconto exclusivo para participantes." },
+  { q:"O alojamento está incluído?", a:"O alojamento está incluído apenas no ingresso Divine VIP (2 noites em quarto duplo compartilhado com café da manhã no Hotel HF Fénix Lisboa). Para as demais categorias negociámos <b>10% de desconto</b> com os hotéis HF de Lisboa, incluindo o próprio hotel do congresso: <a href='https://magcolorexperiencelisboa.hfhotels.com/' target='_blank' rel='noopener' style='color:var(--gold)'>reserve aqui com tarifa de congressista</a>." },
   { q:"Haverá tradução simultânea?", a:"Sim! O evento terá tradução simultânea português-espanhol em todas as palestras." },
   { q:"Como funciona o Campeonato?", a:"O campeonato tem 3 categorias: Fio a Fio, Sombreado de Sobrancelhas e Lábios. As participantes competem ao vivo em látex. Um júri internacional avalia cada trabalho e as vencedoras são premiadas na Gala de Premiação com troféus, reconhecimento e visibilidade internacional. Os prêmios de 1º e 2º lugar incluem equipamento Biomaser, pigmentos MAG Color, vaga de palestrante ou ingresso para a próxima edição europeia e 50% de desconto numa formação do Instituto Miriam Alcántara. Consulta a lista completa na página do Programa." },
   { q:"Quais são as formas de pagamento?", a:"Aceitamos pagamento online via Stripe (cartão de crédito/débito) e também transferência bancária ou Bizum." },
@@ -118,6 +119,7 @@ const jurados = [
   { flag: "🇵🇹", country: "Portugal", name: "Elisa Pereira", img: "elisa-pereira", spec: "Jurado" },
   { flag: "🇵🇹", country: "Portugal", name: "Giovana Lima", img: "giovana-lima", spec: "Jurado" },
   { flag: "🇪🇸", country: "España", name: "Delma Lima", img: "delma-lima", spec: "Jurado" },
+  { flag: "🇵🇹", country: "Portugal", name: "Thais Prestes", img: "thais-prestes", spec: "Jurado" },
 ];
 const embajadoras = [
   { flag: "🇧🇷", country: "Brasil", name: "Adriana Matsuoka", img: "adriana-matsuoka-v2", spec: "Embaixadora" },

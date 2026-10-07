@@ -25,6 +25,7 @@ const demos = [
   { flag: "🇧🇷", country: "Brazil", name: "Renata Swierginski", img: "renata-swierginski", spec: "Live demo — Beard" },
   { flag: "🇧🇷", country: "Brazil", name: "Bia Lacerada", img: "bia-lacerada-v2", spec: "Luxer Liner — Eye technique" },
   { flag: "🇪🇸", country: "Spain", name: "Leticia Márquez", img: "leticia-marquez", spec: "Silver Lips" },
+  { flag: "🇧🇷", country: "Brazil", name: "Sand Guimarães", img: "sand-guimaraes-v2", spec: "Stretch Mark Camouflage" },
 ];
 
 // === TIERS ===
@@ -69,7 +70,7 @@ const day2 = [
   {t:"12:55", title:"Networking Lunch", desc:""},
   {t:"13:55", title:"Eyebrow Reconstruction · Marcela Macedo · 🇧🇷", desc:""},
   {t:"14:45", title:"Scalp Micropigmentation · Andreia Guerreiro · 🇵🇹", desc:""},
-  {t:"15:35", title:"Live Demos — Day 2", desc:"Adriana Matsuoka, Andreia Guerreiro, Bia Lacerada, Renata Swierginski."},
+  {t:"15:35", title:"Live Demos — Day 2", desc:"Adriana Matsuoka, Andreia Guerreiro, Bia Lacerada, Leticia Márquez, Renata Swierginski, Sand Guimarães."},
 
 ];
 
@@ -100,7 +101,7 @@ const premios = [
 // === FAQ ===
 const faqs = [
   { q:"What's included in each ticket type?", a:"All tickets include access to the 2-day event, international lectures, simultaneous translation, lunches, coffee breaks, access to the Awards Gala, welcome kit and certificate. The differences are in the additional benefits of each category (Gold and Divine VIP)." },
-  { q:"Is accommodation included?", a:"Accommodation is only included in the Divine VIP ticket (2 nights in a shared double room with breakfast at the HF Fénix Lisbon Hotel). For other categories, we offer an exclusive discount link for participants." },
+  { q:"Is accommodation included?", a:"Accommodation is only included in the Divine VIP ticket (2 nights in a shared double room with breakfast at the HF Fénix Lisbon Hotel). For other categories we negotiated <b>10% off</b> with the HF hotels in Lisbon, including the congress venue itself: <a href='https://magcolorexperiencelisboa.hfhotels.com/' target='_blank' rel='noopener' style='color:var(--gold)'>book here at the attendee rate</a>." },
   { q:"Will there be simultaneous translation?", a:"Yes! The event will have simultaneous Portuguese-Spanish translation at all lectures." },
   { q:"How does the Championship work?", a:"The championship has 3 categories: Hair by Hair, Powder Brows and Lips. Participants compete live on latex. An international jury evaluates each work and the winners are awarded at the Awards Gala with trophies, recognition and international visibility. The 1st and 2nd place prizes include Biomaser equipment, MAG Color pigments, a speaker slot or ticket for the next European edition, and 50% off a training program at Instituto Miriam Alcántara. See the full list on the Program page." },
   { q:"What are the payment methods?", a:"We accept online payment via Stripe (credit/debit card) and also bank transfer or Bizum." },
@@ -118,6 +119,7 @@ const jurados = [
   { flag: "🇵🇹", country: "Portugal", name: "Elisa Pereira", img: "elisa-pereira", spec: "Judge" },
   { flag: "🇵🇹", country: "Portugal", name: "Giovana Lima", img: "giovana-lima", spec: "Judge" },
   { flag: "🇪🇸", country: "Spain", name: "Delma Lima", img: "delma-lima", spec: "Judge" },
+  { flag: "🇵🇹", country: "Portugal", name: "Thais Prestes", img: "thais-prestes", spec: "Judge" },
 ];
 const embajadoras = [
   { flag: "🇧🇷", country: "Brazil", name: "Adriana Matsuoka", img: "adriana-matsuoka-v2", spec: "Ambassador" },
