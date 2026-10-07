@@ -114,7 +114,7 @@ const faqs = [
 const jurados = [
   { flag: "🇧🇷", country: "Brazil", name: "Gerliene Trindade", img: "gerliene-trindade-v2", spec: "Judge" },
   { flag: "🇪🇸", country: "Spain", name: "Natalia Puche", img: "natalia-puche-v2", spec: "Judge" },
-  { flag: "🇧🇷", country: "Brazil", name: "Glaucia Ferreira", img: "glaucia-ferreira", spec: "Judge" },
+  { flag: "🇧🇷", country: "Brazil", name: "Glaucia Ferreira", img: "glaucia-ferreira-v2", spec: "Judge" },
   { flag: "🇧🇷", country: "Brazil", name: "Daiane Santos", img: "daiane-santos", spec: "Judge" },
   { flag: "🇵🇹", country: "Portugal", name: "Elisa Pereira", img: "elisa-pereira", spec: "Judge" },
   { flag: "🇵🇹", country: "Portugal", name: "Giovana Lima", img: "giovana-lima", spec: "Judge" },
