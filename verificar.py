@@ -100,7 +100,7 @@ for lang in IDIOMAS:
     ok(len(d["demos"]) == 6, f"{lang}: 6 demos", str(len(d["demos"])))
     ok(len(d["jurados"]) == 8, f"{lang}: 8 jurados", str(len(d["jurados"])))
     ok(len(d["embajadoras"]) == 6, f"{lang}: 6 embajadoras", str(len(d["embajadoras"])))
-    ok(len(d["influencers"]) == 2, f"{lang}: 2 influencers", str(len(d["influencers"])))
+    ok(len(d["influencers"]) == 3, f"{lang}: 3 influencers", str(len(d["influencers"])))
     ok(len(d["premios"]) == 2, f"{lang}: 2 premios", str(len(d["premios"])))
     ok(len(d["tiers"]) == 3, f"{lang}: 3 entradas", str(len(d["tiers"])))
 
@@ -207,7 +207,7 @@ for lang in IDIOMAS:
                        capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=180)
     dom = p.stdout or ""
     for grid, minimo in (("sp-grid", 15), ("demos-grid", 6), ("jurados-grid", 8),
-                         ("embajadoras-grid", 6), ("influencers-grid", 2)):
+                         ("embajadoras-grid", 6), ("influencers-grid", 3)):
         m = re.search(r'id="' + grid + r'"[^>]*>(.*?)</div>\s*(?:<div style="text-align:center|</div></section>)', dom, re.S)
         trozo = m.group(1) if m else ""
         n = trozo.count('class="card center speaker"') or trozo.count('class="sp-card"')
@@ -271,6 +271,28 @@ for lang, d in D.items():
     cita = linea[0]["desc"] if linea else ""
     faltan = [x["name"] for x in d["demos"] if x["name"].split()[0] not in cita]
     ok(not faltan, f"{lang}: el programa cita a todas las de demos", ", ".join(faltan))
+
+print()
+print("=" * 72)
+print("10. PDF DE REGLAS DEL CAMPEONATO")
+print("=" * 72)
+import fitz, io as _io
+for lang in IDIOMAS:
+    prog = baja(f"/{lang}/programa/")
+    ok("reglas-campeonato-v2.pdf" in prog, f"{lang}: el boton apunta al PDF v2")
+    ok("reglas-campeonato.pdf\"" not in prog, f"{lang}: ya no apunta al PDF viejo")
+c, n = codigo("/reglas-campeonato-v2.pdf")
+ok(c == 200 and n > 1_000_000, "el PDF v2 se descarga", f"{c} · {n // 1024} KB")
+crudo = baja("/reglas-campeonato-v2.pdf", binario=True)
+doc = fitz.open(stream=crudo, filetype="pdf")
+texto = "".join(pg.get_text() for pg in doc).replace(" ", " ")
+ok(doc.page_count == 9, "el PDF tiene 9 paginas", str(doc.page_count))
+ok("domingo 25" not in texto, "ya no dice 'domingo 25'")
+ok(texto.count("sábado 24 de octubre") == 2, "dice 'sábado 24 de octubre' 2 veces",
+   str(texto.count("sábado 24 de octubre")))
+ok(texto.count("20:00 h") == 2, "dice '20:00 h' 2 veces", str(texto.count("20:00 h")))
+ok("Cena de Gala MAG COLOR EXPERIENCE" in texto, "no se perdio 'Cena de Gala MAG COLOR EXPERIENCE'")
+ok("Sonia Sogorb" in str([x["name"] for x in D["es"]["influencers"]]), "Sonia Sogorb esta entre las influencers")
 
 print()
 print("=" * 72)
