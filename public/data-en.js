@@ -133,6 +133,7 @@ const embajadoras = [
 const influencers = [
   { flag: "🇵🇹", country: "Portugal", name: "Bia Lashes", img: "bia-lashes", spec: "Influencer" },
   { flag: "🇵🇹", country: "Portugal", name: "Thais Silva", img: "thais-silva", spec: "Influencer" },
+  { flag: "🇪🇸", country: "Spain", name: "Sonia Sogorb", img: "sonia-sogorb", spec: "Influencer" },
 ];
 
 function renderSpeakers() {

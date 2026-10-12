@@ -59,7 +59,7 @@ magcolor-lisboa-2026/
 │   ├── og-image.jpg          # ★ 1200×630 — preview al compartir (WhatsApp/IG/Facebook)
 │   ├── certificado.jpg       # imagen del vale formativo (página entradas)
 │   ├── cejas.jpg / ojos.jpg / labios.jpg   # franja decorativa del home (opacidad 0.20)
-│   └── reglas-campeonato.pdf # PDF descargable de reglas (página programa)
+│   └── reglas-campeonato-v2.pdf # PDF descargable de reglas (página programa)
 ├── src/
 │   ├── styles/global.css     # ★ ÚNICO CSS del sitio (261 líneas, clases propias)
 │   ├── pages/                # ★ 18 páginas: 6 por idioma × pt/es/en
