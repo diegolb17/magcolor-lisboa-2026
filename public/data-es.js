@@ -128,6 +128,7 @@ const embajadoras = [
   { flag: "🇧🇷", country: "Brasil", name: "Gerliene Trindade", img: "gerliene-trindade-v2", spec: "Embajadora" },
   { flag: "🇵🇹", country: "Portugal", name: "Thais Prestes", img: "thais-prestes", spec: "Embajadora" },
   { flag: "🇵🇹", country: "Portugal", name: "Fernanda Zampiroli", img: "fernanda-zampiroli", spec: "Embajadora" },
+  { flag: "🇵🇹", country: "Portugal", name: "Susie Serra", img: "susie-serra", spec: "Embajadora y artista" },
 ];
 
 const influencers = [

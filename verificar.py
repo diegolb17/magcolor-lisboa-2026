@@ -99,7 +99,7 @@ for lang in IDIOMAS:
     ok(len(d["speakers"]) == 15, f"{lang}: 15 ponentes", str(len(d["speakers"])))
     ok(len(d["demos"]) == 6, f"{lang}: 6 demos", str(len(d["demos"])))
     ok(len(d["jurados"]) == 8, f"{lang}: 8 jurados", str(len(d["jurados"])))
-    ok(len(d["embajadoras"]) == 6, f"{lang}: 6 embajadoras", str(len(d["embajadoras"])))
+    ok(len(d["embajadoras"]) == 7, f"{lang}: 7 embajadoras", str(len(d["embajadoras"])))
     ok(len(d["influencers"]) == 3, f"{lang}: 3 influencers", str(len(d["influencers"])))
     ok(len(d["premios"]) == 2, f"{lang}: 2 premios", str(len(d["premios"])))
     ok(len(d["tiers"]) == 3, f"{lang}: 3 entradas", str(len(d["tiers"])))
@@ -207,7 +207,7 @@ for lang in IDIOMAS:
                        capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=180)
     dom = p.stdout or ""
     for grid, minimo in (("sp-grid", 15), ("demos-grid", 6), ("jurados-grid", 8),
-                         ("embajadoras-grid", 6), ("influencers-grid", 3)):
+                         ("embajadoras-grid", 7), ("influencers-grid", 3)):
         m = re.search(r'id="' + grid + r'"[^>]*>(.*?)</div>\s*(?:<div style="text-align:center|</div></section>)', dom, re.S)
         trozo = m.group(1) if m else ""
         n = trozo.count('class="card center speaker"') or trozo.count('class="sp-card"')
@@ -293,6 +293,17 @@ ok(texto.count("sábado 24 de octubre") == 2, "dice 'sábado 24 de octubre' 2 ve
 ok(texto.count("20:00 h") == 2, "dice '20:00 h' 2 veces", str(texto.count("20:00 h")))
 ok("Cena de Gala MAG COLOR EXPERIENCE" in texto, "no se perdio 'Cena de Gala MAG COLOR EXPERIENCE'")
 ok("Sonia Sogorb" in str([x["name"] for x in D["es"]["influencers"]]), "Sonia Sogorb esta entre las influencers")
+
+# Susie Serra: embajadora y artista, en los 3 idiomas, con su foto
+ARTISTA = {"pt": "Embaixadora e artista", "es": "Embajadora y artista", "en": "Ambassador and artist"}
+for lang, d in D.items():
+    su = [x for x in d["embajadoras"] if x["name"] == "Susie Serra"]
+    ok(len(su) == 1, f"{lang} · Susie Serra entre las embajadoras", str(len(su)))
+    if su:
+        ok(su[0]["spec"] == ARTISTA[lang], f"{lang} · Susie dice embajadora Y artista", su[0]["spec"])
+        ok(su[0]["img"] == "susie-serra", f"{lang} · Susie apunta a su foto", su[0]["img"])
+c, n = codigo("/assets/speakers/susie-serra.jpg")
+ok(c == 200 and n > 100000, "la foto de Susie se descarga", f"{c} · {n // 1024} KB")
 
 print()
 print("=" * 72)
