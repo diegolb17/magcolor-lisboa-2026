@@ -118,7 +118,6 @@ const jurados = [
   { flag: "🇧🇷", country: "Brasil", name: "Daiane Santos", img: "daiane-santos", spec: "Jurado" },
   { flag: "🇵🇹", country: "Portugal", name: "Elisa Pereira", img: "elisa-pereira", spec: "Jurado" },
   { flag: "🇵🇹", country: "Portugal", name: "Giovana Lima", img: "giovana-lima", spec: "Jurado" },
-  { flag: "🇪🇸", country: "España", name: "Delma Lima", img: "delma-lima", spec: "Jurado" },
   { flag: "🇵🇹", country: "Portugal", name: "Thais Prestes", img: "thais-prestes", spec: "Jurado" },
 ];
 const embajadoras = [

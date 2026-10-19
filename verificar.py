@@ -6,7 +6,7 @@ Comprueba, en los 3 idiomas:
   - los 3 data files parsean sin error (un fallo ahi deja la pagina en negro)
   - todas las fotos referenciadas existen y pesan
   - los 5 cambios de octubre (programa y premios)
-  - las 7 incorporaciones (jurados, demo, embajadoras, influencers)
+  - las incorporaciones (jurados, demo, embajadoras, influencers) y las bajas
   - la foto nueva de Marcela y que la vieja ya no se referencia
   - el SEO de cada pagina (canonical, hreflang, og:image)
 
@@ -98,7 +98,7 @@ for lang in IDIOMAS:
     D[lang] = d
     ok(len(d["speakers"]) == 15, f"{lang}: 15 ponentes", str(len(d["speakers"])))
     ok(len(d["demos"]) == 6, f"{lang}: 6 demos", str(len(d["demos"])))
-    ok(len(d["jurados"]) == 8, f"{lang}: 8 jurados", str(len(d["jurados"])))
+    ok(len(d["jurados"]) == 7, f"{lang}: 7 jurados", str(len(d["jurados"])))
     ok(len(d["embajadoras"]) == 7, f"{lang}: 7 embajadoras", str(len(d["embajadoras"])))
     ok(len(d["influencers"]) == 3, f"{lang}: 3 influencers", str(len(d["influencers"])))
     ok(len(d["premios"]) == 2, f"{lang}: 2 premios", str(len(d["premios"])))
@@ -175,10 +175,10 @@ for lang, d in D.items():
 
 print()
 print("=" * 72)
-print("5. LAS 7 INCORPORACIONES")
+print("5. LAS INCORPORACIONES (y las bajas)")
 print("=" * 72)
 NUEVAS = {
-    "jurados": ["Giovana Lima", "Delma Lima"],
+    "jurados": ["Giovana Lima"],
     "demos": ["Leticia Márquez"],
     "embajadoras": ["Thais Prestes", "Fernanda Zampiroli"],
     "influencers": ["Bia Lashes", "Thais Silva"],
@@ -188,7 +188,13 @@ for lang, d in D.items():
     for arr, gente in NUEVAS.items():
         nombres = [x["name"] for x in d[arr]]
         faltan += [f"{n} ({arr})" for n in gente if n not in nombres]
-    ok(not faltan, f"{lang}: las 7 estan", ", ".join(faltan))
+    ok(not faltan, f"{lang}: estan todas las incorporadas", ", ".join(faltan))
+# bajas: no pueden quedar ni en los datos ni en el HTML servido
+FUERA = ["Delma Lima"]
+for lang, d in D.items():
+    presente = [f"{n} ({arr})" for arr in ("speakers", "demos", "jurados", "embajadoras", "influencers")
+                for n in FUERA if n in [x["name"] for x in d[arr]]]
+    ok(not presente, f"{lang}: las dadas de baja ya no salen", ", ".join(presente))
 # que no se hayan colado duplicados
 for lang, d in D.items():
     dups = []
@@ -206,7 +212,7 @@ for lang in IDIOMAS:
                         "--virtual-time-budget=20000", f"{B}/{lang}/ponentes/"],
                        capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=180)
     dom = p.stdout or ""
-    for grid, minimo in (("sp-grid", 15), ("demos-grid", 6), ("jurados-grid", 8),
+    for grid, minimo in (("sp-grid", 15), ("demos-grid", 6), ("jurados-grid", 7),
                          ("embajadoras-grid", 7), ("influencers-grid", 3)):
         m = re.search(r'id="' + grid + r'"[^>]*>(.*?)</div>\s*(?:<div style="text-align:center|</div></section>)', dom, re.S)
         trozo = m.group(1) if m else ""
