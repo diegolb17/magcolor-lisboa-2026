@@ -52,7 +52,7 @@ magcolor-lisboa-2026/
 │   ├── data-es.js            # ★ DATA ES — mismo esquema, traducido
 │   ├── data-en.js            # ★ DATA EN — mismo esquema, traducido
 │   ├── assets/speakers/      # fotos (JPG; nombres versionados -v2/-v3 para cache-bust)
-│   ├── assets/sponsors/      # sponsor-1.jpg, sponsor-2.jpg, ten-image.png
+│   ├── assets/sponsors/      # sponsor-1.jpg, sponsor-2.jpg, ten-image.png, thuya.png
 │   ├── assets/bg/            # lisbon-bg.jpg
 │   ├── assets/logos/         # logo-mag-horizontal.jpeg, logo-mag-mark.png
 │   ├── logo.png, logo-horizontal.jpg, favicon.png, ig-logo.png
