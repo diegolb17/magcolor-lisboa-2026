@@ -313,6 +313,20 @@ ok(c == 200 and n > 100000, "la foto de Susie se descarga", f"{c} · {n // 1024}
 
 print()
 print("=" * 72)
+print("11. PATROCINADORES")
+print("=" * 72)
+for lang in IDIOMAS:
+    html = baja(f"/{lang}/patrocinadores/")
+    ok(html.count("/assets/sponsors/") == 3, f"{lang}: 3 logos de patrocinador",
+       str(html.count("/assets/sponsors/")))
+    ok("/assets/sponsors/ten-image.png" in html, f"{lang}: esta Ten Image")
+    ok("Ten Image Professional" in html, f"{lang}: con su alt")
+    ok('class="grid-2"' not in html, f"{lang}: el grid ya no deja huerfano al tercero")
+c, n = codigo("/assets/sponsors/ten-image.png")
+ok(c == 200 and n > 5000, "el logo de Ten Image se descarga", f"{c} · {n // 1024} KB")
+
+print()
+print("=" * 72)
 if fallos:
     print(f"RESULTADO: {len(fallos)} FALLO(S)")
     for f in fallos:
