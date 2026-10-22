@@ -81,6 +81,8 @@ a { color: inherit; text-decoration: none; }
 /* Grids */
 .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
 .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.sponsors { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; }
+.sponsors .card { flex: 1 1 200px; max-width: 244px; padding: 32px; display: flex; align-items: center; justify-content: center; }
 .grid-split { display: grid; grid-template-columns: 1.1fr 1fr; gap: 64px; align-items: center; }
 .mt-64 { margin-top: 64px; }
 .mt-48 { margin-top: 48px; }

@@ -317,16 +317,19 @@ print("11. PATROCINADORES")
 print("=" * 72)
 for lang in IDIOMAS:
     html = baja(f"/{lang}/patrocinadores/")
-    ok(html.count("/assets/sponsors/") == 4, f"{lang}: 4 logos de patrocinador",
+    ok(html.count("/assets/sponsors/") == 7, f"{lang}: 7 logos de patrocinador",
        str(html.count("/assets/sponsors/")))
+    for arch, marca in (("lissette.png", "Lissette"), ("vertice.png", "Vértice"), ("anubis.png", "Anubis")):
+        ok(f"/assets/sponsors/{arch}" in html and marca in html, f"{lang}: esta {marca}")
     ok("/assets/sponsors/ten-image.png" in html, f"{lang}: esta Ten Image")
     ok("Ten Image Professional" in html, f"{lang}: con su alt")
     ok("/assets/sponsors/thuya.png" in html, f"{lang}: esta Thuya")
     ok("Thuya Professional Line" in html, f"{lang}: con su alt")
     ok('href="https://www.thuya.com" target="_blank" rel="noopener"' in html,
        f"{lang}: Thuya enlaza a su web en pestana nueva")
-    ok('class="grid-4"' in html, f"{lang}: el grid reparte los 4 sin huerfanos")
-for img, minimo in (("ten-image.png", 5000), ("thuya.png", 10000)):
+    ok('class="sponsors"' in html, f"{lang}: el muro centra la ultima fila")
+for img, minimo in (("ten-image.png", 5000), ("thuya.png", 10000),
+                    ("lissette.png", 20000), ("vertice.png", 10000), ("anubis.png", 5000)):
     c, n = codigo("/assets/sponsors/" + img)
     ok(c == 200 and n > minimo, f"el logo {img} se descarga", f"{c} · {n // 1024} KB")
 ok(urllib.request.urlopen(urllib.request.Request("https://www.thuya.com/", headers=UA),
